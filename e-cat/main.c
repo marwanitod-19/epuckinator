@@ -126,7 +126,7 @@ int main(void)
           	chprintf((BaseSequentialStream *)&SD3, "time=%dus\n", time);
 
 
-            //SendFloatToComputer((BaseSequentialStream *) &SD3, bufferOutput, FFT_SIZE);
+            SendFloatToComputer((BaseSequentialStream *) &SD3, bufferOutput, FFT_SIZE);
 
         }
 #endif  /* SEND_FROM_MIC */
