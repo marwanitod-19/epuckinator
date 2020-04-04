@@ -1,5 +1,6 @@
+e-cat/.dep/
 e-cat/build/
 e-cat/.settings/
-e-cat/.dep/
 e-cat/libssp.a
 e-cat/libssp_nonshared.a
+

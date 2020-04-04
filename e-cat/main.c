@@ -110,7 +110,7 @@ int main(void)
 //        	}
 //
 //
-//        	doFFT_c(FFT_SIZE, converted_buff);
+        	doFFT_c(FFT_SIZE, bufferCmplxInput);
 //
 //          	for(uint16_t i = 0; i<(FFT_SIZE); i++){
 //        		bufferCmplxInput[2*i] = converted_buff[i].real;

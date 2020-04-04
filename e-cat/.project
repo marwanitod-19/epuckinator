@@ -33,13 +33,13 @@
 		<link>
 			<name>lib</name>
 			<type>2</type>
-			<location>C:/Users/Fahra/Desktop/Projets/Microinfo_TP/lib</location>
+			<locationURI>PARENT-2-PROJECT_LOC/lib</locationURI>
 		</link>
-	</linkedResources><variableList>
+	</linkedResources>
+	<variableList>
 		<variable>
 			<name>copy_PARENT</name>
 			<value>$%7BPARENT-6-PROJECT_LOC%7D/Documents/SmartGit/e-puck2-tps</value>
 		</variable>
 	</variableList>
-	
 </projectDescription>

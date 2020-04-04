@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
   55              		.loc 1 216 0
   56 001a 019A     		ldr	r2, [sp, #4]
   57              	.LVL3:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 2
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 2
 
 
   58 001c 1B68     		ldr	r3, [r3]
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  112              	.LVL7:
  113 0000 70B5     		push	{r4, r5, r6, lr}
  114              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 3
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 3
 
 
  115              		.cfi_offset 4, -16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  169 002a 2946     		mov	r1, r5
  170 002c 0C4A     		ldr	r2, .L20+8
  171 002e 3046     		mov	r0, r6
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 4
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 4
 
 
  172 0030 FFF7FEFF 		bl	usbInitEndpointI
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  226 005c 00000000 		.word	.LANCHOR3
  227 0060 00000000 		.word	.LANCHOR4
  228 0064 00000000 		.word	.LANCHOR5
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 5
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 5
 
 
  229              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  283 002e 0C49     		ldr	r1, .L26+16
  284 0030 FFF7FEFF 		bl	usbStart
  285              	.LVL22:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 6
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 6
 
 
  286              		.loc 1 339 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  332              		.section	.bss.ep1outstate,"aw",%nobits
  333              		.align	2
  334              		.type	ep1outstate, %object
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 7
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 7
 
 
  335              		.size	ep1outstate, 20
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  381              		.type	serusbcfg, %object
  382              		.size	serusbcfg, 8
  383              	serusbcfg:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 8
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 8
 
 
  384 0000 00000000 		.word	USBD1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  438 001a 00       		.byte	0
  439 001b 01       		.byte	1
  440 001c 04       		.byte	4
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 9
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 9
 
 
  441 001d 24       		.byte	36
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  495 0003 01       		.byte	1
  496 0004 02       		.byte	2
  497 0005 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 10
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 10
 
 
  498 0006 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  552 001c 6F       		.byte	111
  553 001d 00       		.byte	0
  554 001e 6E       		.byte	110
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 11
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 11
 
 
  555 001f 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  609 0001 03       		.byte	3
  610 0002 33       		.byte	51
  611 0003 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 12
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 12
 
 
  612 0004 30       		.byte	48
@@ -681,9 +681,9 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  629 001c 00000000 		.word	vcom_string3
  630              		.text
  631              	.Letext0:
- 632              		.file 4 "c:\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\lib\\gcc\\arm-none-e
- 633              		.file 5 "c:\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\arm-none-eabi\\inclu
- 634              		.file 6 "c:\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\arm-none-eabi\\inclu
+ 632              		.file 4 "d:\\work\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\lib\\gcc\\arm-
+ 633              		.file 5 "d:\\work\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\arm-none-eabi\
+ 634              		.file 6 "d:\\work\\eclipse_e-puck2\\tools\\gcc-arm-none-eabi-7-2017-q4-major-win32\\arm-none-eabi\
  635              		.file 7 "../../lib/e-puck2_main-processor/ChibiOS//os/rt/ports/ARMCMx/compilers/GCC/chtypes.h"
  636              		.file 8 "../../lib/e-puck2_main-processor/ChibiOS//os/rt/include/chsystypes.h"
  637              		.file 9 "../../lib/e-puck2_main-processor/ChibiOS//os/rt/include/chschd.h"
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  666              		.file 38 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/I2Cv1/i2c_lld.h"
  667              		.file 39 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/include/i2s.h"
  668              		.file 40 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/SPIv1/i2s_lld.h"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 13
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 13
 
 
  669              		.file 41 "../../lib/e-puck2_main-processor/ChibiOS//os/hal/include/pwm.h"
@@ -744,7 +744,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  689 000c DD0C0000 		.4byte	.LASF759
  690 0010 0C       		.byte	0xc
  691 0011 68070000 		.4byte	.LASF760
- 692 0015 171C0000 		.4byte	.LASF761
+ 692 0015 67190000 		.4byte	.LASF761
  693 0019 00000000 		.4byte	.Ldebug_ranges0+0
  694 001d 00000000 		.4byte	0
  695 0021 00000000 		.4byte	.Ldebug_line0
@@ -760,11 +760,11 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  705 0037 04       		.uleb128 0x4
  706 0038 04       		.byte	0x4
  707 0039 07       		.byte	0x7
- 708 003a BC1E0000 		.4byte	.LASF0
+ 708 003a C61E0000 		.4byte	.LASF0
  709 003e 04       		.uleb128 0x4
  710 003f 08       		.byte	0x8
  711 0040 05       		.byte	0x5
- 712 0041 DD1C0000 		.4byte	.LASF1
+ 712 0041 E71C0000 		.4byte	.LASF1
  713 0045 04       		.uleb128 0x4
  714 0046 08       		.byte	0x8
  715 0047 04       		.byte	0x4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  723 0058 05       		.byte	0x5
  724 0059 2B       		.byte	0x2b
  725 005a 5E000000 		.4byte	0x5e
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 14
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 14
 
 
  726 005e 04       		.uleb128 0x4
@@ -793,7 +793,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  735 0070 04       		.uleb128 0x4
  736 0071 02       		.byte	0x2
  737 0072 05       		.byte	0x5
- 738 0073 0B1F0000 		.4byte	.LASF8
+ 738 0073 151F0000 		.4byte	.LASF8
  739 0077 03       		.uleb128 0x3
  740 0078 57060000 		.4byte	.LASF9
  741 007c 05       		.byte	0x5
@@ -829,7 +829,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  771 00b8 04       		.uleb128 0x4
  772 00b9 08       		.byte	0x8
  773 00ba 07       		.byte	0x7
- 774 00bb B31A0000 		.4byte	.LASF16
+ 774 00bb F91A0000 		.4byte	.LASF16
  775 00bf 03       		.uleb128 0x3
  776 00c0 2F0B0000 		.4byte	.LASF17
  777 00c4 06       		.byte	0x6
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  780 00ca 05       		.uleb128 0x5
  781 00cb BF000000 		.4byte	0xbf
  782 00cf 03       		.uleb128 0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 15
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 15
 
 
  783 00d0 03120000 		.4byte	.LASF18
@@ -887,7 +887,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  826 0131 48       		.byte	0x48
  827 0132 BF000000 		.4byte	0xbf
  828 0136 03       		.uleb128 0x3
- 829 0137 761B0000 		.4byte	.LASF26
+ 829 0137 BC1B0000 		.4byte	.LASF26
  830 013b 07       		.byte	0x7
  831 013c 49       		.byte	0x49
  832 013d BF000000 		.4byte	0xbf
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  837 0148 BF000000 		.4byte	0xbf
  838 014c 03       		.uleb128 0x3
  839 014d 6E110000 		.4byte	.LASF28
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 16
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 16
 
 
  840 0151 07       		.byte	0x7
@@ -920,7 +920,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  856 0173 4F       		.byte	0x4f
  857 0174 F5000000 		.4byte	0xf5
  858 0178 03       		.uleb128 0x3
- 859 0179 631D0000 		.4byte	.LASF32
+ 859 0179 6D1D0000 		.4byte	.LASF32
  860 017d 07       		.byte	0x7
  861 017e 50       		.byte	0x50
  862 017f F5000000 		.4byte	0xf5
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  894 01c6 C3       		.byte	0xc3
  895 01c7 DD020000 		.4byte	0x2dd
  896 01cb 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 17
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 17
 
 
  897 01cc 08       		.uleb128 0x8
@@ -986,13 +986,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  919 01f7 DD020000 		.4byte	0x2dd
  920 01fb 10       		.byte	0x10
  921 01fc 08       		.uleb128 0x8
- 922 01fd D71D0000 		.4byte	.LASF42
+ 922 01fd E11D0000 		.4byte	.LASF42
  923 0201 09       		.byte	0x9
  924 0202 CB       		.byte	0xcb
  925 0203 DD020000 		.4byte	0x2dd
  926 0207 14       		.byte	0x14
  927 0208 08       		.uleb128 0x8
- 928 0209 E61B0000 		.4byte	.LASF43
+ 928 0209 2C1C0000 		.4byte	.LASF43
  929 020d 09       		.byte	0x9
  930 020e D2       		.byte	0xd2
  931 020f 5D100000 		.4byte	0x105d
@@ -1004,13 +1004,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  937 021b 74100000 		.4byte	0x1074
  938 021f 1C       		.byte	0x1c
  939 0220 08       		.uleb128 0x8
- 940 0221 961F0000 		.4byte	.LASF45
+ 940 0221 A01F0000 		.4byte	.LASF45
  941 0225 09       		.byte	0x9
  942 0226 DD       		.byte	0xdd
  943 0227 36010000 		.4byte	0x136
  944 022b 20       		.byte	0x20
  945 022c 08       		.uleb128 0x8
- 946 022d 3C1B0000 		.4byte	.LASF46
+ 946 022d 821B0000 		.4byte	.LASF46
  947 0231 09       		.byte	0x9
  948 0232 E1       		.byte	0xe1
  949 0233 2B010000 		.4byte	0x12b
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  951 0238 08       		.uleb128 0x8
  952 0239 3D140000 		.4byte	.LASF47
  953 023d 09       		.byte	0x9
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 18
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 18
 
 
  954 023e E6       		.byte	0xe6
@@ -1061,13 +1061,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  991 028b 62010000 		.4byte	0x162
  992 028f 38       		.byte	0x38
  993 0290 0A       		.uleb128 0xa
- 994 0291 67190000 		.4byte	.LASF53
+ 994 0291 AD190000 		.4byte	.LASF53
  995 0295 09       		.byte	0x9
  996 0296 4601     		.2byte	0x146
  997 0298 6D010000 		.4byte	0x16d
  998 029c 3C       		.byte	0x3c
  999 029d 0A       		.uleb128 0xa
- 1000 029e 611B0000 		.4byte	.LASF54
+ 1000 029e A71B0000 		.4byte	.LASF54
  1001 02a2 09       		.byte	0x9
  1002 02a3 4D01     		.2byte	0x14d
  1003 02a5 57100000 		.4byte	0x1057
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1008 02b0 5101     		.2byte	0x151
  1009 02b2 57010000 		.4byte	0x157
  1010 02b6 44       		.byte	0x44
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 19
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 19
 
 
  1011 02b7 0A       		.uleb128 0xa
@@ -1088,14 +1088,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1015 02bf BA030000 		.4byte	0x3ba
  1016 02c3 48       		.byte	0x48
  1017 02c4 0A       		.uleb128 0xa
- 1018 02c5 D11F0000 		.4byte	.LASF57
+ 1018 02c5 DB1F0000 		.4byte	.LASF57
  1019 02c9 09       		.byte	0x9
  1020 02ca 5E01     		.2byte	0x15e
  1021 02cc 3D0F0000 		.4byte	0xf3d
  1022 02d0 50       		.byte	0x50
  1023 02d1 00       		.byte	0
  1024 02d2 03       		.uleb128 0x3
- 1025 02d3 241E0000 		.4byte	.LASF58
+ 1025 02d3 2E1E0000 		.4byte	.LASF58
  1026 02d7 08       		.byte	0x8
  1027 02d8 44       		.byte	0x44
  1028 02d9 DD020000 		.4byte	0x2dd
@@ -1108,7 +1108,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1035 02e9 49       		.byte	0x49
  1036 02ea EE020000 		.4byte	0x2ee
  1037 02ee 07       		.uleb128 0x7
- 1038 02ef B01F0000 		.4byte	.LASF61
+ 1038 02ef BA1F0000 		.4byte	.LASF61
  1039 02f3 04       		.byte	0x4
  1040 02f4 09       		.byte	0x9
  1041 02f5 B0       		.byte	0xb0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1065 0325 DD020000 		.4byte	0x2dd
  1066 0329 00       		.byte	0
  1067 032a 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 20
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 20
 
 
  1068 032b 4F0B0000 		.4byte	.LASF38
@@ -1165,7 +1165,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1089 0357 07030000 		.4byte	0x307
  1090 035b 00       		.byte	0
  1091 035c 0A       		.uleb128 0xa
- 1092 035d 7D1A0000 		.4byte	.LASF67
+ 1092 035d C31A0000 		.4byte	.LASF67
  1093 0361 09       		.byte	0x9
  1094 0362 9201     		.2byte	0x192
  1095 0364 57010000 		.4byte	0x157
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1122 039e 03       		.uleb128 0x3
  1123 039f F7170000 		.4byte	.LASF72
  1124 03a3 08       		.byte	0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 21
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 21
 
 
  1125 03a4 5C       		.byte	0x5c
@@ -1219,7 +1219,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1140 03c2 61       		.byte	0x61
  1141 03c3 C7030000 		.4byte	0x3c7
  1142 03c7 0C       		.uleb128 0xc
- 1143 03c8 2B1B0000 		.4byte	.LASF74
+ 1143 03c8 711B0000 		.4byte	.LASF74
  1144 03cc 14       		.byte	0x14
  1145 03cd 09       		.byte	0x9
  1146 03ce 6B01     		.2byte	0x16b
@@ -1243,7 +1243,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1164 03f6 99010000 		.4byte	0x199
  1165 03fa 08       		.byte	0x8
  1166 03fb 0A       		.uleb128 0xa
- 1167 03fc 161B0000 		.4byte	.LASF78
+ 1167 03fc 5C1B0000 		.4byte	.LASF78
  1168 0400 09       		.byte	0x9
  1169 0401 6F01     		.2byte	0x16f
  1170 0403 9E030000 		.4byte	0x39e
@@ -1256,9 +1256,9 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1177 0414 10       		.byte	0x10
  1178 0415 00       		.byte	0
  1179 0416 03       		.uleb128 0x3
- 1180 0417 5D1C0000 		.4byte	.LASF80
+ 1180 0417 671C0000 		.4byte	.LASF80
  1181 041b 08       		.byte	0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 22
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 22
 
 
  1182 041c 66       		.byte	0x66
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1236 0491 83010000 		.4byte	0x183
  1237 0495 04       		.byte	0x4
  1238 0496 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 23
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 23
 
 
  1239 0497 06020000 		.4byte	.LASF87
@@ -1378,13 +1378,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1293 050d 190B0000 		.4byte	.LASF94
  1294 0511 09       		.byte	0x9
  1295 0512 DD01     		.2byte	0x1dd
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 24
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 24
 
 
  1296 0514 810F0000 		.4byte	0xf81
  1297 0518 B004     		.2byte	0x4b0
  1298 051a 11       		.uleb128 0x11
- 1299 051b F31A0000 		.4byte	.LASF95
+ 1299 051b 391B0000 		.4byte	.LASF95
  1300 051f 09       		.byte	0x9
  1301 0520 E301     		.2byte	0x1e3
  1302 0522 80100000 		.4byte	0x1080
@@ -1405,7 +1405,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1317 0547 07       		.byte	0x7
  1318 0548 00       		.byte	0
  1319 0549 15       		.uleb128 0x15
- 1320 054a 961A0000 		.4byte	.LASF96
+ 1320 054a DC1A0000 		.4byte	.LASF96
  1321 054e 0A       		.byte	0xa
  1322 054f A706     		.2byte	0x6a7
  1323 0551 F0000000 		.4byte	0xf0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1350 0586 00010000 		.4byte	0x100
  1351 058a 08       		.byte	0x8
  1352 058b 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 25
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 25
 
 
  1353 058c 33020000 		.4byte	.LASF98
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1407 05f8 43100000 		.4byte	.LASF105
  1408 05fc 0C       		.byte	0xc
  1409 05fd D2       		.byte	0xd2
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 26
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 26
 
 
  1410 05fe 00010000 		.4byte	0x100
@@ -1516,25 +1516,25 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1422 0616 00010000 		.4byte	0x100
  1423 061a 38       		.byte	0x38
  1424 061b 08       		.uleb128 0x8
- 1425 061c FA1B0000 		.4byte	.LASF108
+ 1425 061c 401C0000 		.4byte	.LASF108
  1426 0620 0C       		.byte	0xc
  1427 0621 D5       		.byte	0xd5
  1428 0622 00010000 		.4byte	0x100
  1429 0626 3C       		.byte	0x3c
  1430 0627 08       		.uleb128 0x8
- 1431 0628 FF1B0000 		.4byte	.LASF109
+ 1431 0628 451C0000 		.4byte	.LASF109
  1432 062c 0C       		.byte	0xc
  1433 062d D6       		.byte	0xd6
  1434 062e 00010000 		.4byte	0x100
  1435 0632 40       		.byte	0x40
  1436 0633 08       		.uleb128 0x8
- 1437 0634 041C0000 		.4byte	.LASF110
+ 1437 0634 4A1C0000 		.4byte	.LASF110
  1438 0638 0C       		.byte	0xc
  1439 0639 D7       		.byte	0xd7
  1440 063a 00010000 		.4byte	0x100
  1441 063e 44       		.byte	0x44
  1442 063f 08       		.uleb128 0x8
- 1443 0640 091C0000 		.4byte	.LASF111
+ 1443 0640 4F1C0000 		.4byte	.LASF111
  1444 0644 0C       		.byte	0xc
  1445 0645 D8       		.byte	0xd8
  1446 0646 00010000 		.4byte	0x100
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1464 0666 9B060000 		.4byte	0x69b
  1465 066a 18       		.uleb128 0x18
  1466 066b 54495200 		.ascii	"TIR\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 27
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 27
 
 
  1467 066f 0C       		.byte	0xc
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1521 06d8 FA       		.byte	0xfa
  1522 06d9 00010000 		.4byte	0x100
  1523 06dd 0C       		.byte	0xc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 28
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 28
 
 
  1524 06de 00       		.byte	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1578 0750 0C       		.byte	0xc
  1579 0751 1001     		.2byte	0x110
  1580 0753 00010000 		.4byte	0x100
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 29
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 29
 
 
  1581 0757 0C       		.byte	0xc
@@ -1707,7 +1707,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1604 0787 00010000 		.4byte	0x100
  1605 078b 1C       		.byte	0x1c
  1606 078c 0A       		.uleb128 0xa
- 1607 078d B9190000 		.4byte	.LASF124
+ 1607 078d FF190000 		.4byte	.LASF124
  1608 0791 0C       		.byte	0xc
  1609 0792 1501     		.2byte	0x115
  1610 0794 50080000 		.4byte	0x850
@@ -1719,13 +1719,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1616 07a1 60080000 		.4byte	0x860
  1617 07a5 8001     		.2byte	0x180
  1618 07a7 11       		.uleb128 0x11
- 1619 07a8 7A1D0000 		.4byte	.LASF126
+ 1619 07a8 841D0000 		.4byte	.LASF126
  1620 07ac 0C       		.byte	0xc
  1621 07ad 1701     		.2byte	0x117
  1622 07af 70080000 		.4byte	0x870
  1623 07b3 B001     		.2byte	0x1b0
  1624 07b5 11       		.uleb128 0x11
- 1625 07b6 C3190000 		.4byte	.LASF127
+ 1625 07b6 091A0000 		.4byte	.LASF127
  1626 07ba 0C       		.byte	0xc
  1627 07bb 1801     		.2byte	0x118
  1628 07bd 80080000 		.4byte	0x880
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1635 07cf 0002     		.2byte	0x200
  1636 07d1 11       		.uleb128 0x11
  1637 07d2 3E090000 		.4byte	.LASF128
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 30
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 30
 
 
  1638 07d6 0C       		.byte	0xc
@@ -1746,19 +1746,19 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1640 07d9 00010000 		.4byte	0x100
  1641 07dd 0402     		.2byte	0x204
  1642 07df 11       		.uleb128 0x11
- 1643 07e0 CD190000 		.4byte	.LASF129
+ 1643 07e0 131A0000 		.4byte	.LASF129
  1644 07e4 0C       		.byte	0xc
  1645 07e5 1B01     		.2byte	0x11b
  1646 07e7 F5000000 		.4byte	0xf5
  1647 07eb 0802     		.2byte	0x208
  1648 07ed 11       		.uleb128 0x11
- 1649 07ee 711B0000 		.4byte	.LASF130
+ 1649 07ee B71B0000 		.4byte	.LASF130
  1650 07f2 0C       		.byte	0xc
  1651 07f3 1C01     		.2byte	0x11c
  1652 07f5 00010000 		.4byte	0x100
  1653 07f9 0C02     		.2byte	0x20c
  1654 07fb 11       		.uleb128 0x11
- 1655 07fc D7190000 		.4byte	.LASF131
+ 1655 07fc 1D1A0000 		.4byte	.LASF131
  1656 0800 0C       		.byte	0xc
  1657 0801 1D01     		.2byte	0x11d
  1658 0803 F5000000 		.4byte	0xf5
@@ -1770,7 +1770,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1664 0811 00010000 		.4byte	0x100
  1665 0815 1402     		.2byte	0x214
  1666 0817 11       		.uleb128 0x11
- 1667 0818 E1190000 		.4byte	.LASF133
+ 1667 0818 271A0000 		.4byte	.LASF133
  1668 081c 0C       		.byte	0xc
  1669 081d 1F01     		.2byte	0x11f
  1670 081f F5000000 		.4byte	0xf5
@@ -1782,7 +1782,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1676 082d 00010000 		.4byte	0x100
  1677 0831 1C02     		.2byte	0x21c
  1678 0833 11       		.uleb128 0x11
- 1679 0834 EB190000 		.4byte	.LASF135
+ 1679 0834 311A0000 		.4byte	.LASF135
  1680 0838 0C       		.byte	0xc
  1681 0839 2101     		.2byte	0x121
  1682 083b 39050000 		.4byte	0x539
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1692 0851 F5000000 		.4byte	0xf5
  1693 0855 60080000 		.4byte	0x860
  1694 0859 14       		.uleb128 0x14
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 31
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 31
 
 
  1695 085a 37000000 		.4byte	0x37
@@ -1855,10 +1855,10 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1746 08c9 00010000 		.4byte	0x100
  1747 08cd 04       		.byte	0x4
  1748 08ce 0A       		.uleb128 0xa
- 1749 08cf 071A0000 		.4byte	.LASF139
+ 1749 08cf 4D1A0000 		.4byte	.LASF139
  1750 08d3 0C       		.byte	0xc
  1751 08d4 3A01     		.2byte	0x13a
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 32
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 32
 
 
  1752 08d6 00010000 		.4byte	0x100
@@ -1876,7 +1876,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1764 08f0 00010000 		.4byte	0x100
  1765 08f4 10       		.byte	0x10
  1766 08f5 0A       		.uleb128 0xa
- 1767 08f6 0F1A0000 		.4byte	.LASF142
+ 1767 08f6 551A0000 		.4byte	.LASF142
  1768 08fa 0C       		.byte	0xc
  1769 08fb 3D01     		.2byte	0x13d
  1770 08fd 00010000 		.4byte	0x100
@@ -1894,7 +1894,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1782 0917 00010000 		.4byte	0x100
  1783 091b 1C       		.byte	0x1c
  1784 091c 0A       		.uleb128 0xa
- 1785 091d 561A0000 		.4byte	.LASF145
+ 1785 091d 9C1A0000 		.4byte	.LASF145
  1786 0921 0C       		.byte	0xc
  1787 0922 4001     		.2byte	0x140
  1788 0924 00010000 		.4byte	0x100
@@ -1906,7 +1906,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1794 0931 00010000 		.4byte	0x100
  1795 0935 24       		.byte	0x24
  1796 0936 0A       		.uleb128 0xa
- 1797 0937 911D0000 		.4byte	.LASF147
+ 1797 0937 9B1D0000 		.4byte	.LASF147
  1798 093b 0C       		.byte	0xc
  1799 093c 4201     		.2byte	0x142
  1800 093e 00010000 		.4byte	0x100
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1806 094b 00010000 		.4byte	0x100
  1807 094f 2C       		.byte	0x2c
  1808 0950 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 33
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 33
 
 
  1809 0951 5C010000 		.4byte	.LASF149
@@ -1950,7 +1950,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1835 0986 00010000 		.4byte	0x100
  1836 098a 00       		.byte	0
  1837 098b 0A       		.uleb128 0xa
- 1838 098c DE1A0000 		.4byte	.LASF151
+ 1838 098c 241B0000 		.4byte	.LASF151
  1839 0990 0C       		.byte	0xc
  1840 0991 6E01     		.2byte	0x16e
  1841 0993 00010000 		.4byte	0x100
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1863 09c4 0C       		.byte	0xc
  1864 09c5 7201     		.2byte	0x172
  1865 09c7 00010000 		.4byte	0x100
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 34
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 34
 
 
  1866 09cb 14       		.byte	0x14
@@ -2024,13 +2024,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1906 0a21 00010000 		.4byte	0x100
  1907 0a25 04       		.byte	0x4
  1908 0a26 0A       		.uleb128 0xa
- 1909 0a27 C71F0000 		.4byte	.LASF155
+ 1909 0a27 D11F0000 		.4byte	.LASF155
  1910 0a2b 0C       		.byte	0xc
  1911 0a2c 4302     		.2byte	0x243
  1912 0a2e 00010000 		.4byte	0x100
  1913 0a32 08       		.byte	0x8
  1914 0a33 0A       		.uleb128 0xa
- 1915 0a34 CC1F0000 		.4byte	.LASF156
+ 1915 0a34 D61F0000 		.4byte	.LASF156
  1916 0a38 0C       		.byte	0xc
  1917 0a39 4402     		.2byte	0x244
  1918 0a3b 00010000 		.4byte	0x100
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1920 0a40 09       		.uleb128 0x9
  1921 0a41 445200   		.ascii	"DR\000"
  1922 0a44 0C       		.byte	0xc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 35
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 35
 
 
  1923 0a45 4502     		.2byte	0x245
@@ -2069,7 +2069,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1948 0a7b 00010000 		.4byte	0x100
  1949 0a7f 20       		.byte	0x20
  1950 0a80 0A       		.uleb128 0xa
- 1951 0a81 A51E0000 		.4byte	.LASF158
+ 1951 0a81 AF1E0000 		.4byte	.LASF158
  1952 0a85 0C       		.byte	0xc
  1953 0a86 4A02     		.2byte	0x24a
  1954 0a88 00010000 		.4byte	0x100
@@ -2092,13 +2092,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  1971 0aab 00010000 		.4byte	0x100
  1972 0aaf 00       		.byte	0
  1973 0ab0 0A       		.uleb128 0xa
- 1974 0ab1 D61B0000 		.4byte	.LASF161
+ 1974 0ab1 1C1C0000 		.4byte	.LASF161
  1975 0ab5 0C       		.byte	0xc
  1976 0ab6 C202     		.2byte	0x2c2
  1977 0ab8 00010000 		.4byte	0x100
  1978 0abc 04       		.byte	0x4
  1979 0abd 09       		.uleb128 0x9
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 36
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 36
 
 
  1980 0abe 41524700 		.ascii	"ARG\000"
@@ -2155,16 +2155,16 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2031 0b2d 00010000 		.4byte	0x100
  2032 0b31 28       		.byte	0x28
  2033 0b32 0A       		.uleb128 0xa
- 2034 0b33 911E0000 		.4byte	.LASF169
+ 2034 0b33 9B1E0000 		.4byte	.LASF169
  2035 0b37 0C       		.byte	0xc
  2036 0b38 CC02     		.2byte	0x2cc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 37
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 37
 
 
  2037 0b3a 00010000 		.4byte	0x100
  2038 0b3e 2C       		.byte	0x2c
  2039 0b3f 0A       		.uleb128 0xa
- 2040 0b40 C01F0000 		.4byte	.LASF170
+ 2040 0b40 CA1F0000 		.4byte	.LASF170
  2041 0b44 0C       		.byte	0xc
  2042 0b45 CD02     		.2byte	0x2cd
  2043 0b47 05010000 		.4byte	0x105
@@ -2188,7 +2188,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2061 0b6e 00010000 		.4byte	0x100
  2062 0b72 3C       		.byte	0x3c
  2063 0b73 0A       		.uleb128 0xa
- 2064 0b74 B9190000 		.4byte	.LASF124
+ 2064 0b74 FF190000 		.4byte	.LASF124
  2065 0b78 0C       		.byte	0xc
  2066 0b79 D102     		.2byte	0x2d1
  2067 0b7b 29050000 		.4byte	0x529
@@ -2200,7 +2200,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2073 0b88 05010000 		.4byte	0x105
  2074 0b8c 48       		.byte	0x48
  2075 0b8d 0A       		.uleb128 0xa
- 2076 0b8e C3190000 		.4byte	.LASF127
+ 2076 0b8e 091A0000 		.4byte	.LASF127
  2077 0b92 0C       		.byte	0xc
  2078 0b93 D302     		.2byte	0x2d3
  2079 0b95 A80B0000 		.4byte	0xba8
@@ -2218,12 +2218,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2091 0bb1 14       		.uleb128 0x14
  2092 0bb2 37000000 		.4byte	0x37
  2093 0bb6 0C       		.byte	0xc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 38
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 38
 
 
  2094 0bb7 00       		.byte	0
  2095 0bb8 1A       		.uleb128 0x1a
- 2096 0bb9 CA1A0000 		.4byte	.LASF174
+ 2096 0bb9 101B0000 		.4byte	.LASF174
  2097 0bbd 0C       		.byte	0xc
  2098 0bbe D502     		.2byte	0x2d5
  2099 0bc0 9A0A0000 		.4byte	0xa9a
@@ -2275,10 +2275,10 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2145 0c21 00010000 		.4byte	0x100
  2146 0c25 18       		.byte	0x18
  2147 0c26 0A       		.uleb128 0xa
- 2148 0c27 BB1C0000 		.4byte	.LASF178
+ 2148 0c27 C51C0000 		.4byte	.LASF178
  2149 0c2b 0C       		.byte	0xc
  2150 0c2c E402     		.2byte	0x2e4
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 39
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 39
 
 
  2151 0c2e 00010000 		.4byte	0x100
@@ -2291,7 +2291,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2158 0c3f 20       		.byte	0x20
  2159 0c40 00       		.byte	0
  2160 0c41 1A       		.uleb128 0x1a
- 2161 0c42 0A1B0000 		.4byte	.LASF180
+ 2161 0c42 501B0000 		.4byte	.LASF180
  2162 0c46 0C       		.byte	0xc
  2163 0c47 E602     		.2byte	0x2e6
  2164 0c49 C40B0000 		.4byte	0xbc4
@@ -2337,8 +2337,8 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2204 0c9d 00010000 		.4byte	0x100
  2205 0ca1 14       		.byte	0x14
  2206 0ca2 0A       		.uleb128 0xa
- 2207 0ca3 721E0000 		.4byte	.LASF181
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 40
+ 2207 0ca3 7C1E0000 		.4byte	.LASF181
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 40
 
 
  2208 0ca7 0C       		.byte	0xc
@@ -2347,7 +2347,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2211 0cae 18       		.byte	0x18
  2212 0caf 00       		.byte	0
  2213 0cb0 1A       		.uleb128 0x1a
- 2214 0cb1 2B1F0000 		.4byte	.LASF182
+ 2214 0cb1 351F0000 		.4byte	.LASF182
  2215 0cb5 0C       		.byte	0xc
  2216 0cb6 1203     		.2byte	0x312
  2217 0cb8 4D0C0000 		.4byte	0xc4d
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2262 0d18 18       		.uleb128 0x18
  2263 0d19 73313700 		.ascii	"s17\000"
  2264 0d1d 0E       		.byte	0xe
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 41
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 41
 
 
  2265 0d1e F7       		.byte	0xf7
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2319 0d8a 0001     		.2byte	0x100
  2320 0d8c D10C0000 		.4byte	0xcd1
  2321 0d90 28       		.byte	0x28
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 42
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 42
 
 
  2322 0d91 09       		.uleb128 0x9
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2376 0e02 09       		.uleb128 0x9
  2377 0e03 723800   		.ascii	"r8\000"
  2378 0e06 0E       		.byte	0xe
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 43
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 43
 
 
  2379 0e07 0B01     		.2byte	0x10b
@@ -2558,7 +2558,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2413 0e4a 51       		.byte	0x51
  2414 0e4b 800E0000 		.4byte	0xe80
  2415 0e4f 08       		.uleb128 0x8
- 2416 0e50 2D1A0000 		.4byte	.LASF187
+ 2416 0e50 731A0000 		.4byte	.LASF187
  2417 0e54 0F       		.byte	0xf
  2418 0e55 55       		.byte	0x55
  2419 0e56 99010000 		.4byte	0x199
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2433 0e73 08       		.uleb128 0x8
  2434 0e74 83080000 		.4byte	.LASF190
  2435 0e78 0F       		.byte	0xf
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 44
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 44
 
 
  2436 0e79 61       		.byte	0x61
@@ -2635,17 +2635,17 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2487 0edd 38       		.byte	0x38
  2488 0ede EF0E0000 		.4byte	0xeef
  2489 0ee2 08       		.uleb128 0x8
- 2490 0ee3 D71A0000 		.4byte	.LASF196
+ 2490 0ee3 1D1B0000 		.4byte	.LASF196
  2491 0ee7 10       		.byte	0x10
  2492 0ee8 3C       		.byte	0x3c
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 45
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 45
 
 
  2493 0ee9 15010000 		.4byte	0x115
  2494 0eed 00       		.byte	0
  2495 0eee 00       		.byte	0
  2496 0eef 03       		.uleb128 0x3
- 2497 0ef0 581E0000 		.4byte	.LASF197
+ 2497 0ef0 621E0000 		.4byte	.LASF197
  2498 0ef4 10       		.byte	0x10
  2499 0ef5 3D       		.byte	0x3d
  2500 0ef6 DA0E0000 		.4byte	0xeda
@@ -2686,7 +2686,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2535 0f3b 10       		.byte	0x10
  2536 0f3c 00       		.byte	0
  2537 0f3d 03       		.uleb128 0x3
- 2538 0f3e 111D0000 		.4byte	.LASF202
+ 2538 0f3e 1B1D0000 		.4byte	.LASF202
  2539 0f42 10       		.byte	0x10
  2540 0f43 4E       		.byte	0x4e
  2541 0f44 FA0E0000 		.4byte	0xefa
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2547 0f50 08       		.uleb128 0x8
  2548 0f51 72050000 		.4byte	.LASF203
  2549 0f55 11       		.byte	0x11
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 46
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 46
 
 
  2550 0f56 39       		.byte	0x39
@@ -2711,7 +2711,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2557 0f63 8E010000 		.4byte	0x18e
  2558 0f67 04       		.byte	0x4
  2559 0f68 08       		.uleb128 0x8
- 2560 0f69 9E1C0000 		.4byte	.LASF205
+ 2560 0f69 A81C0000 		.4byte	.LASF205
  2561 0f6d 11       		.byte	0x11
  2562 0f6e 3B       		.byte	0x3b
  2563 0f6f 3D0F0000 		.4byte	0xf3d
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2604 0fc9 09       		.byte	0x9
  2605 0fca 1E01     		.2byte	0x11e
  2606 0fcc 14100000 		.4byte	0x1014
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 47
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 47
 
 
  2607 0fd0 1E       		.uleb128 0x1e
@@ -2767,7 +2767,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2610 0fd6 2701     		.2byte	0x127
  2611 0fd8 57100000 		.4byte	0x1057
  2612 0fdc 1E       		.uleb128 0x1e
- 2613 0fdd 441B0000 		.4byte	.LASF214
+ 2613 0fdd 8A1B0000 		.4byte	.LASF214
  2614 0fe1 09       		.byte	0x9
  2615 0fe2 2F01     		.2byte	0x12f
  2616 0fe4 6D010000 		.4byte	0x16d
@@ -2782,7 +2782,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2625 0ff6 34       		.byte	0x34
  2626 0ff7 14100000 		.4byte	0x1014
  2627 0ffb 08       		.uleb128 0x8
- 2628 0ffc 961C0000 		.4byte	.LASF216
+ 2628 0ffc A01C0000 		.4byte	.LASF216
  2629 1000 12       		.byte	0x12
  2630 1001 35       		.byte	0x35
  2631 1002 07030000 		.4byte	0x307
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2661 103e 08       		.uleb128 0x8
  2662 103f 6B010000 		.4byte	.LASF221
  2663 1043 13       		.byte	0x13
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 48
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 48
 
 
  2664 1044 3E       		.byte	0x3e
@@ -2869,16 +2869,16 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2709 109e 34       		.byte	0x34
  2710 109f 7C110000 		.4byte	0x117c
  2711 10a3 08       		.uleb128 0x8
- 2712 10a4 C81C0000 		.4byte	.LASF224
+ 2712 10a4 D21C0000 		.4byte	.LASF224
  2713 10a8 14       		.byte	0x14
  2714 10a9 35       		.byte	0x35
  2715 10aa 7C110000 		.4byte	0x117c
  2716 10ae 00       		.byte	0
  2717 10af 08       		.uleb128 0x8
- 2718 10b0 771E0000 		.4byte	.LASF225
+ 2718 10b0 811E0000 		.4byte	.LASF225
  2719 10b4 14       		.byte	0x14
  2720 10b5 36       		.byte	0x36
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 49
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 49
 
 
  2721 10b6 BF000000 		.4byte	0xbf
@@ -2908,13 +2908,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2745 10e6 BF000000 		.4byte	0xbf
  2746 10ea 09       		.byte	0x9
  2747 10eb 08       		.uleb128 0x8
- 2748 10ec 971E0000 		.4byte	.LASF230
+ 2748 10ec A11E0000 		.4byte	.LASF230
  2749 10f0 14       		.byte	0x14
  2750 10f1 3B       		.byte	0x3b
  2751 10f2 BF000000 		.4byte	0xbf
  2752 10f6 0A       		.byte	0xa
  2753 10f7 08       		.uleb128 0x8
- 2754 10f8 F41C0000 		.4byte	.LASF231
+ 2754 10f8 FE1C0000 		.4byte	.LASF231
  2755 10fc 14       		.byte	0x14
  2756 10fd 3C       		.byte	0x3c
  2757 10fe BF000000 		.4byte	0xbf
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2775 1122 BF000000 		.4byte	0xbf
  2776 1126 0E       		.byte	0xe
  2777 1127 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 50
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 50
 
 
  2778 1128 560B0000 		.4byte	.LASF235
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2832 1197 05       		.uleb128 0x5
  2833 1198 8C110000 		.4byte	0x118c
  2834 119c 16       		.uleb128 0x16
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 51
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 51
 
 
  2835 119d 30090000 		.4byte	.LASF243
@@ -3019,7 +3019,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2850 11be 34       		.byte	0x34
  2851 11bf C3110000 		.4byte	0x11c3
  2852 11c3 07       		.uleb128 0x7
- 2853 11c4 FC1E0000 		.4byte	.LASF246
+ 2853 11c4 061F0000 		.4byte	.LASF246
  2854 11c8 14       		.byte	0x14
  2855 11c9 15       		.byte	0x15
  2856 11ca 39       		.byte	0x39
@@ -3031,7 +3031,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2862 11d6 0C120000 		.4byte	0x120c
  2863 11da 00       		.byte	0
  2864 11db 08       		.uleb128 0x8
- 2865 11dc 5E1A0000 		.4byte	.LASF248
+ 2865 11dc A41A0000 		.4byte	.LASF248
  2866 11e0 15       		.byte	0x15
  2867 11e1 3D       		.byte	0x3d
  2868 11e2 DD020000 		.4byte	0x2dd
@@ -3043,7 +3043,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2874 11ee 6D010000 		.4byte	0x16d
  2875 11f2 08       		.byte	0x8
  2876 11f3 08       		.uleb128 0x8
- 2877 11f4 4B1B0000 		.4byte	.LASF250
+ 2877 11f4 911B0000 		.4byte	.LASF250
  2878 11f8 15       		.byte	0x15
  2879 11f9 41       		.byte	0x41
  2880 11fa 78010000 		.4byte	0x178
@@ -3058,17 +3058,17 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2889 120c 0B       		.uleb128 0xb
  2890 120d 04       		.byte	0x4
  2891 120e B8110000 		.4byte	0x11b8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 52
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 52
 
 
  2892 1212 07       		.uleb128 0x7
- 2893 1213 541B0000 		.4byte	.LASF252
+ 2893 1213 9A1B0000 		.4byte	.LASF252
  2894 1217 04       		.byte	0x4
  2895 1218 15       		.byte	0x15
  2896 1219 4A       		.byte	0x4a
  2897 121a 2B120000 		.4byte	0x122b
  2898 121e 08       		.uleb128 0x8
- 2899 121f E31A0000 		.4byte	.LASF253
+ 2899 121f 291B0000 		.4byte	.LASF253
  2900 1223 15       		.byte	0x15
  2901 1224 4B       		.byte	0x4b
  2902 1225 0C120000 		.4byte	0x120c
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2946 127e D5150000 		.4byte	.LASF261
  2947 1282 16       		.byte	0x16
  2948 1283 53       		.byte	0x53
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 53
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 53
 
 
  2949 1284 D0120000 		.4byte	0x12d0
@@ -3167,7 +3167,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  2992 12dc 64       		.byte	0x64
  2993 12dd 36120000 		.4byte	0x1236
  2994 12e1 03       		.uleb128 0x3
- 2995 12e2 391F0000 		.4byte	.LASF267
+ 2995 12e2 431F0000 		.4byte	.LASF267
  2996 12e6 16       		.byte	0x16
  2997 12e7 71       		.byte	0x71
  2998 12e8 36120000 		.4byte	0x1236
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3003 12f6 BA030000 		.4byte	0x3ba
  3004 12fa 0E       		.uleb128 0xe
  3005 12fb 05130000 		.4byte	0x1305
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 54
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 54
 
 
  3006 12ff 0E       		.uleb128 0xe
@@ -3229,7 +3229,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3051 1362 DA       		.byte	0xda
  3052 1363 A4130000 		.4byte	0x13a4
  3053 1367 08       		.uleb128 0x8
- 3054 1368 E31E0000 		.4byte	.LASF268
+ 3054 1368 ED1E0000 		.4byte	.LASF268
  3055 136c 17       		.byte	0x17
  3056 136d DB       		.byte	0xdb
  3057 136e A4130000 		.4byte	0x13a4
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3060 1374 4A0E0000 		.4byte	.LASF269
  3061 1378 17       		.byte	0x17
  3062 1379 DC       		.byte	0xdc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 55
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 55
 
 
  3063 137a AA130000 		.4byte	0x13aa
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3117 13f0 BF000000 		.4byte	0xbf
  3118 13f4 0E       		.uleb128 0xe
  3119 13f5 99010000 		.4byte	0x199
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 56
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 56
 
 
  3120 13f9 00       		.byte	0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3174 1474 00       		.byte	0
  3175 1475 22       		.uleb128 0x22
  3176 1476 630C0000 		.4byte	.LASF276
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 57
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 57
 
 
  3177 147a 01       		.byte	0x1
@@ -3369,7 +3369,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3182 1482 CA170000 		.4byte	.LASF278
  3183 1486 03       		.byte	0x3
  3184 1487 22       		.uleb128 0x22
- 3185 1488 0B1E0000 		.4byte	.LASF279
+ 3185 1488 151E0000 		.4byte	.LASF279
  3186 148c 04       		.byte	0x4
  3187 148d 22       		.uleb128 0x22
  3188 148e 43060000 		.4byte	.LASF280
@@ -3381,7 +3381,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3194 149a 48150000 		.4byte	.LASF282
  3195 149e 07       		.byte	0x7
  3196 149f 22       		.uleb128 0x22
- 3197 14a0 DF1D0000 		.4byte	.LASF283
+ 3197 14a0 E91D0000 		.4byte	.LASF283
  3198 14a4 08       		.byte	0x8
  3199 14a5 00       		.byte	0
  3200 14a6 03       		.uleb128 0x3
@@ -3408,7 +3408,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3221 14d0 04       		.byte	0x4
  3222 14d1 00       		.byte	0
  3223 14d2 03       		.uleb128 0x3
- 3224 14d3 A31A0000 		.4byte	.LASF287
+ 3224 14d3 E91A0000 		.4byte	.LASF287
  3225 14d7 18       		.byte	0x18
  3226 14d8 3A       		.byte	0x3a
  3227 14d9 B1140000 		.4byte	0x14b1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3231 14e6 0E       		.uleb128 0xe
  3232 14e7 BA030000 		.4byte	0x3ba
  3233 14eb 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 58
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 58
 
 
  3234 14ec 04       		.uleb128 0x4
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3288 156a 14       		.uleb128 0x14
  3289 156b 37000000 		.4byte	0x37
  3290 156f 03       		.byte	0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 59
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 59
 
 
  3291 1570 00       		.byte	0
@@ -3524,7 +3524,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3331 15b5 A9       		.byte	0xa9
  3332 15b6 3F160000 		.4byte	0x163f
  3333 15ba 08       		.uleb128 0x8
- 3334 15bb 8F190000 		.4byte	.LASF290
+ 3334 15bb D5190000 		.4byte	.LASF290
  3335 15bf 19       		.byte	0x19
  3336 15c0 AB       		.byte	0xab
  3337 15c1 00010000 		.4byte	0x100
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3345 15d2 08       		.uleb128 0x8
  3346 15d3 360C0000 		.4byte	.LASF292
  3347 15d7 19       		.byte	0x19
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 60
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 60
 
 
  3348 15d8 AD       		.byte	0xad
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3402 1644 19       		.byte	0x19
  3403 1645 BC       		.byte	0xbc
  3404 1646 B2150000 		.4byte	0x15b2
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 61
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 61
 
 
  3405 164a 17       		.uleb128 0x17
@@ -3607,7 +3607,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3408 164d C1       		.byte	0xc1
  3409 164e A7160000 		.4byte	0x16a7
  3410 1652 08       		.uleb128 0x8
- 3411 1653 901C0000 		.4byte	.LASF299
+ 3411 1653 9A1C0000 		.4byte	.LASF299
  3412 1657 19       		.byte	0x19
  3413 1658 C3       		.byte	0xc3
  3414 1659 F5000000 		.4byte	0xf5
@@ -3625,7 +3625,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3426 1671 F5000000 		.4byte	0xf5
  3427 1675 08       		.byte	0x8
  3428 1676 08       		.uleb128 0x8
- 3429 1677 991B0000 		.4byte	.LASF302
+ 3429 1677 DF1B0000 		.4byte	.LASF302
  3430 167b 19       		.byte	0x19
  3431 167c C9       		.byte	0xc9
  3432 167d F5000000 		.4byte	0xf5
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3459 16b3 FC       		.byte	0xfc
  3460 16b4 19       		.byte	0x19
  3461 16b5 D9       		.byte	0xd9
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 62
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 62
 
 
  3462 16b6 27170000 		.4byte	0x1727
@@ -3693,7 +3693,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3491 16f1 A7160000 		.4byte	0x16a7
  3492 16f5 70       		.byte	0x70
  3493 16f6 08       		.uleb128 0x8
- 3494 16f7 861F0000 		.4byte	.LASF311
+ 3494 16f7 901F0000 		.4byte	.LASF311
  3495 16fb 19       		.byte	0x19
  3496 16fc F0       		.byte	0xf0
  3497 16fd A7160000 		.4byte	0x16a7
@@ -3711,14 +3711,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3509 1715 A7160000 		.4byte	0x16a7
  3510 1719 C4       		.byte	0xc4
  3511 171a 08       		.uleb128 0x8
- 3512 171b EB1D0000 		.4byte	.LASF314
+ 3512 171b F51D0000 		.4byte	.LASF314
  3513 171f 19       		.byte	0x19
  3514 1720 FC       		.byte	0xfc
  3515 1721 A7160000 		.4byte	0x16a7
  3516 1725 E0       		.byte	0xe0
  3517 1726 00       		.byte	0
  3518 1727 03       		.uleb128 0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 63
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 63
 
 
  3519 1728 43090000 		.4byte	.LASF315
@@ -3736,7 +3736,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3531 1744 04       		.byte	0x4
  3532 1745 3F160000 		.4byte	0x163f
  3533 1749 15       		.uleb128 0x15
- 3534 174a 3E1A0000 		.4byte	.LASF317
+ 3534 174a 841A0000 		.4byte	.LASF317
  3535 174e 19       		.byte	0x19
  3536 174f DA01     		.2byte	0x1da
  3537 1751 32170000 		.4byte	0x1732
@@ -3754,7 +3754,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3549 1769 84120000 		.4byte	.LASF319
  3550 176d 01       		.byte	0x1
  3551 176e 22       		.uleb128 0x22
- 3552 176f 531C0000 		.4byte	.LASF320
+ 3552 176f 5D1C0000 		.4byte	.LASF320
  3553 1773 02       		.byte	0x2
  3554 1774 22       		.uleb128 0x22
  3555 1775 33100000 		.4byte	.LASF321
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3573 179a DA000000 		.4byte	0xda
  3574 179e 1A       		.uleb128 0x1a
  3575 179f E4170000 		.4byte	.LASF326
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 64
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 64
 
 
  3576 17a3 1B       		.byte	0x1b
@@ -3799,7 +3799,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3591 17c3 01       		.byte	0x1
  3592 17c4 00       		.byte	0
  3593 17c5 1A       		.uleb128 0x1a
- 3594 17c6 461D0000 		.4byte	.LASF329
+ 3594 17c6 501D0000 		.4byte	.LASF329
  3595 17ca 1B       		.byte	0x1b
  3596 17cb 3601     		.2byte	0x136
  3597 17cd AA170000 		.4byte	0x17aa
@@ -3838,11 +3838,11 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3630 1817 AF01     		.2byte	0x1af
  3631 1819 2C000000 		.4byte	0x2c
  3632 181d 0C       		.byte	0xc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 65
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 65
 
 
  3633 181e 0A       		.uleb128 0xa
- 3634 181f 511A0000 		.4byte	.LASF335
+ 3634 181f 971A0000 		.4byte	.LASF335
  3635 1823 1B       		.byte	0x1b
  3636 1824 B301     		.2byte	0x1b3
  3637 1826 9A190000 		.4byte	0x199a
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3687 1894 0B       		.uleb128 0xb
  3688 1895 04       		.byte	0x4
  3689 1896 D1170000 		.4byte	0x17d1
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 66
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 66
 
 
  3690 189a 0B       		.uleb128 0xb
@@ -3925,7 +3925,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3711 18c5 5801     		.2byte	0x158
  3712 18c7 5B190000 		.4byte	0x195b
  3713 18cb 0A       		.uleb128 0xa
- 3714 18cc 7C1C0000 		.4byte	.LASF342
+ 3714 18cc 861C0000 		.4byte	.LASF342
  3715 18d0 1B       		.byte	0x1b
  3716 18d1 5C01     		.2byte	0x15c
  3717 18d3 EC140000 		.4byte	0x14ec
@@ -3943,7 +3943,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3729 18ed 6D180000 		.4byte	0x186d
  3730 18f1 04       		.byte	0x4
  3731 18f2 0A       		.uleb128 0xa
- 3732 18f3 021E0000 		.4byte	.LASF345
+ 3732 18f3 0C1E0000 		.4byte	.LASF345
  3733 18f7 1B       		.byte	0x1b
  3734 18f8 6801     		.2byte	0x168
  3735 18fa A0180000 		.4byte	0x18a0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3744 190d 63723200 		.ascii	"cr2\000"
  3745 1911 1B       		.byte	0x1b
  3746 1912 7601     		.2byte	0x176
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 67
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 67
 
 
  3747 1914 F5000000 		.4byte	0xf5
@@ -3982,13 +3982,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3765 193b F5000000 		.4byte	0xf5
  3766 193f 1C       		.byte	0x1c
  3767 1940 0A       		.uleb128 0xa
- 3768 1941 C91E0000 		.4byte	.LASF349
+ 3768 1941 D31E0000 		.4byte	.LASF349
  3769 1945 1B       		.byte	0x1b
  3770 1946 8C01     		.2byte	0x18c
  3771 1948 F5000000 		.4byte	0xf5
  3772 194c 20       		.byte	0x20
  3773 194d 0A       		.uleb128 0xa
- 3774 194e CE1E0000 		.4byte	.LASF350
+ 3774 194e D81E0000 		.4byte	.LASF350
  3775 1952 1B       		.byte	0x1b
  3776 1953 9101     		.2byte	0x191
  3777 1955 F5000000 		.4byte	0xf5
@@ -4007,7 +4007,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3790 196f 9801     		.2byte	0x198
  3791 1971 83190000 		.4byte	0x1983
  3792 1975 0A       		.uleb128 0xa
- 3793 1976 EA1E0000 		.4byte	.LASF352
+ 3793 1976 F41E0000 		.4byte	.LASF352
  3794 197a 1B       		.byte	0x1b
  3795 197b 9901     		.2byte	0x199
  3796 197d F5000000 		.4byte	0xf5
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3801 1988 1B       		.byte	0x1b
  3802 1989 9A01     		.2byte	0x19a
  3803 198b 6C190000 		.4byte	0x196c
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 68
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 68
 
 
  3804 198f 05       		.uleb128 0x5
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3858 1a01 1C       		.byte	0x1c
  3859 1a02 65       		.byte	0x65
  3860 1a03 D0190000 		.4byte	0x19d0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 69
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 69
 
 
  3861 1a07 13       		.uleb128 0x13
@@ -4137,8 +4137,8 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3914 1a75 07030000 		.4byte	0x307
  3915 1a79 08       		.byte	0x8
  3916 1a7a 0A       		.uleb128 0xa
- 3917 1a7b 251A0000 		.4byte	.LASF365
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 70
+ 3917 1a7b 6B1A0000 		.4byte	.LASF365
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 70
 
 
  3918 1a7f 1D       		.byte	0x1d
@@ -4194,11 +4194,11 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3968 1ae8 4001     		.2byte	0x140
  3969 1aea 4A1A0000 		.4byte	0x1a4a
  3970 1aee 15       		.uleb128 0x15
- 3971 1aef 6B1B0000 		.4byte	.LASF372
+ 3971 1aef B11B0000 		.4byte	.LASF372
  3972 1af3 1D       		.byte	0x1d
  3973 1af4 4B01     		.2byte	0x14b
  3974 1af6 E21A0000 		.4byte	0x1ae2
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 71
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 71
 
 
  3975 1afa 21       		.uleb128 0x21
@@ -4212,7 +4212,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  3983 1b08 D9170000 		.4byte	.LASF373
  3984 1b0c 00       		.byte	0
  3985 1b0d 22       		.uleb128 0x22
- 3986 1b0e A91C0000 		.4byte	.LASF374
+ 3986 1b0e B31C0000 		.4byte	.LASF374
  3987 1b12 01       		.byte	0x1
  3988 1b13 22       		.uleb128 0x22
  3989 1b14 3E0C0000 		.4byte	.LASF375
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4029 1b65 0A       		.uleb128 0xa
  4030 1b66 91010000 		.4byte	.LASF382
  4031 1b6a 1F       		.byte	0x1f
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 72
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 72
 
 
  4032 1b6b 0901     		.2byte	0x109
@@ -4311,14 +4311,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4079 1bd2 2C1B0000 		.4byte	0x1b2c
  4080 1bd6 00       		.byte	0
  4081 1bd7 0A       		.uleb128 0xa
- 4082 1bd8 511A0000 		.4byte	.LASF335
+ 4082 1bd8 971A0000 		.4byte	.LASF335
  4083 1bdc 1F       		.byte	0x1f
  4084 1bdd 8301     		.2byte	0x183
  4085 1bdf 711D0000 		.4byte	0x1d71
  4086 1be3 04       		.byte	0x4
  4087 1be4 0A       		.uleb128 0xa
  4088 1be5 7E010000 		.4byte	.LASF333
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 73
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 73
 
 
  4089 1be9 1F       		.byte	0x1f
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4143 1c5d 01       		.byte	0x1
  4144 1c5e 00       		.byte	0
  4145 1c5f 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 74
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 74
 
 
  4146 1c60 600F0000 		.4byte	.LASF390
@@ -4409,7 +4409,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4171 1c99 04       		.byte	0x4
  4172 1c9a 3F1C0000 		.4byte	0x1c3f
  4173 1c9e 1A       		.uleb128 0x1a
- 4174 1c9f 9F1B0000 		.4byte	.LASF392
+ 4174 1c9f E51B0000 		.4byte	.LASF392
  4175 1ca3 1F       		.byte	0x1f
  4176 1ca4 3F01     		.2byte	0x13f
  4177 1ca6 AA1C0000 		.4byte	0x1caa
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4200 1cd9 01       		.byte	0x1
  4201 1cda 22       		.uleb128 0x22
  4202 1cdb AA130000 		.4byte	.LASF395
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 75
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 75
 
 
  4203 1cdf 02       		.byte	0x2
@@ -4466,7 +4466,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4225 1d0b 6B1C0000 		.4byte	0x1c6b
  4226 1d0f 04       		.byte	0x4
  4227 1d10 0A       		.uleb128 0xa
- 4228 1d11 021E0000 		.4byte	.LASF345
+ 4228 1d11 0C1E0000 		.4byte	.LASF345
  4229 1d15 1F       		.byte	0x1f
  4230 1d16 5E01     		.2byte	0x15e
  4231 1d18 9E1C0000 		.4byte	0x1c9e
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4257 1d51 00       		.byte	0
  4258 1d52 0A       		.uleb128 0xa
  4259 1d53 0C010000 		.4byte	.LASF400
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 76
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 76
 
 
  4260 1d57 1F       		.byte	0x1f
@@ -4538,7 +4538,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4294 1d9d 5F080000 		.4byte	.LASF403
  4295 1da1 00       		.byte	0
  4296 1da2 22       		.uleb128 0x22
- 4297 1da3 8D1F0000 		.4byte	.LASF404
+ 4297 1da3 971F0000 		.4byte	.LASF404
  4298 1da7 01       		.byte	0x1
  4299 1da8 22       		.uleb128 0x22
  4300 1da9 C2010000 		.4byte	.LASF405
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4314 1dc6 33070000 		.4byte	.LASF407
  4315 1dca 08       		.byte	0x8
  4316 1dcb 21       		.byte	0x21
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 77
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 77
 
 
  4317 1dcc 71       		.byte	0x71
@@ -4577,12 +4577,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4330 1de8 04       		.byte	0x4
  4331 1de9 00       		.byte	0
  4332 1dea 03       		.uleb128 0x3
- 4333 1deb 371E0000 		.4byte	.LASF408
+ 4333 1deb 411E0000 		.4byte	.LASF408
  4334 1def 21       		.byte	0x21
  4335 1df0 47       		.byte	0x47
  4336 1df1 F5000000 		.4byte	0xf5
  4337 1df5 03       		.uleb128 0x3
- 4338 1df6 171A0000 		.4byte	.LASF409
+ 4338 1df6 5D1A0000 		.4byte	.LASF409
  4339 1dfa 21       		.byte	0x21
  4340 1dfb 4F       		.byte	0x4f
  4341 1dfc 001E0000 		.4byte	0x1e00
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4371 1e3a 04       		.byte	0x4
  4372 1e3b 00       		.byte	0
  4373 1e3c 03       		.uleb128 0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 78
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 78
 
 
  4374 1e3d 250C0000 		.4byte	.LASF411
@@ -4631,7 +4631,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4381 1e4a 66       		.byte	0x66
  4382 1e4b 5C1E0000 		.4byte	0x1e5c
  4383 1e4f 08       		.uleb128 0x8
- 4384 1e50 CD1B0000 		.4byte	.LASF412
+ 4384 1e50 131C0000 		.4byte	.LASF412
  4385 1e54 21       		.byte	0x21
  4386 1e55 6A       		.byte	0x6a
  4387 1e56 5C1E0000 		.4byte	0x1e5c
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4428 1eac 22       		.uleb128 0x22
  4429 1ead 62060000 		.4byte	.LASF418
  4430 1eb1 03       		.byte	0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 79
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 79
 
 
  4431 1eb2 22       		.uleb128 0x22
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4485 1f23 2D1F0000 		.4byte	0x1f2d
  4486 1f27 0E       		.uleb128 0xe
  4487 1f28 2D1F0000 		.4byte	0x1f2d
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 80
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 80
 
 
  4488 1f2c 00       		.byte	0
@@ -4763,7 +4763,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4507 1f51 00010000 		.4byte	0x100
  4508 1f55 04       		.byte	0x4
  4509 1f56 0A       		.uleb128 0xa
- 4510 1f57 1E1B0000 		.4byte	.LASF424
+ 4510 1f57 641B0000 		.4byte	.LASF424
  4511 1f5b 24       		.byte	0x24
  4512 1f5c A101     		.2byte	0x1a1
  4513 1f5e 00010000 		.4byte	0x100
@@ -4787,18 +4787,18 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4531 1f84 00010000 		.4byte	0x100
  4532 1f88 14       		.byte	0x14
  4533 1f89 0A       		.uleb128 0xa
- 4534 1f8a AA1E0000 		.4byte	.LASF426
+ 4534 1f8a B41E0000 		.4byte	.LASF426
  4535 1f8e 24       		.byte	0x24
  4536 1f8f A501     		.2byte	0x1a5
  4537 1f91 00010000 		.4byte	0x100
  4538 1f95 18       		.byte	0x18
  4539 1f96 0A       		.uleb128 0xa
- 4540 1f97 B01E0000 		.4byte	.LASF427
+ 4540 1f97 BA1E0000 		.4byte	.LASF427
  4541 1f9b 24       		.byte	0x24
  4542 1f9c A601     		.2byte	0x1a6
  4543 1f9e 00010000 		.4byte	0x100
  4544 1fa2 1C       		.byte	0x1c
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 81
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 81
 
 
  4545 1fa3 0A       		.uleb128 0xa
@@ -4858,14 +4858,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4599 2018 09       		.uleb128 0x9
  4600 2019 4F5200   		.ascii	"OR\000"
  4601 201c 24       		.byte	0x24
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 82
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 82
 
 
  4602 201d B001     		.2byte	0x1b0
  4603 201f 00010000 		.4byte	0x100
  4604 2023 50       		.byte	0x50
  4605 2024 0A       		.uleb128 0xa
- 4606 2025 B61E0000 		.4byte	.LASF431
+ 4606 2025 C01E0000 		.4byte	.LASF431
  4607 2029 24       		.byte	0x24
  4608 202a B101     		.2byte	0x1b1
  4609 202c 00010000 		.4byte	0x100
@@ -4878,7 +4878,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4616 203d 58       		.byte	0x58
  4617 203e 00       		.byte	0
  4618 203f 1A       		.uleb128 0x1a
- 4619 2040 711A0000 		.4byte	.LASF433
+ 4619 2040 B71A0000 		.4byte	.LASF433
  4620 2044 24       		.byte	0x24
  4621 2045 B301     		.2byte	0x1b3
  4622 2047 331F0000 		.4byte	0x1f33
@@ -4893,7 +4893,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4631 205a 7801     		.2byte	0x178
  4632 205c 95200000 		.4byte	0x2095
  4633 2060 0A       		.uleb128 0xa
- 4634 2061 4E1E0000 		.4byte	.LASF435
+ 4634 2061 581E0000 		.4byte	.LASF435
  4635 2065 23       		.byte	0x23
  4636 2066 7E01     		.2byte	0x17e
  4637 2068 4B200000 		.4byte	0x204b
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4656 2093 0C       		.byte	0xc
  4657 2094 00       		.byte	0
  4658 2095 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 83
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 83
 
 
  4659 2096 56050000 		.4byte	.LASF438
@@ -4934,7 +4934,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4669 20ad 04       		.byte	0x4
  4670 20ae 3F200000 		.4byte	0x203f
  4671 20b2 15       		.uleb128 0x15
- 4672 20b3 FC1D0000 		.4byte	.LASF439
+ 4672 20b3 061E0000 		.4byte	.LASF439
  4673 20b7 23       		.byte	0x23
  4674 20b8 F201     		.2byte	0x1f2
  4675 20ba C41E0000 		.4byte	0x1ec4
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4713 2109 470F0000 		.4byte	.LASF448
  4714 210d 25       		.byte	0x25
  4715 210e 53       		.byte	0x53
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 84
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 84
 
 
  4716 210f D6200000 		.4byte	0x20d6
@@ -5010,7 +5010,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4742 214a 03       		.byte	0x3
  4743 214b 00       		.byte	0
  4744 214c 1A       		.uleb128 0x1a
- 4745 214d F01E0000 		.4byte	.LASF454
+ 4745 214d FA1E0000 		.4byte	.LASF454
  4746 2151 26       		.byte	0x26
  4747 2152 7801     		.2byte	0x178
  4748 2154 2B210000 		.4byte	0x212b
@@ -5025,7 +5025,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4757 2167 A3040000 		.4byte	.LASF455
  4758 216b 01       		.byte	0x1
  4759 216c 22       		.uleb128 0x22
- 4760 216d 7F1E0000 		.4byte	.LASF456
+ 4760 216d 891E0000 		.4byte	.LASF456
  4761 2171 02       		.byte	0x2
  4762 2172 22       		.uleb128 0x22
  4763 2173 09090000 		.4byte	.LASF457
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4770 2181 58210000 		.4byte	0x2158
  4771 2185 19       		.uleb128 0x19
  4772 2186 0C       		.byte	0xc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 85
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 85
 
 
  4773 2187 26       		.byte	0x26
@@ -5057,7 +5057,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4786 21a3 F5000000 		.4byte	0xf5
  4787 21a7 04       		.byte	0x4
  4788 21a8 0A       		.uleb128 0xa
- 4789 21a9 5E1F0000 		.4byte	.LASF461
+ 4789 21a9 681F0000 		.4byte	.LASF461
  4790 21ad 26       		.byte	0x26
  4791 21ae 8C01     		.2byte	0x18c
  4792 21b0 79210000 		.4byte	0x2179
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4827 21ff 26       		.byte	0x26
  4828 2200 A401     		.2byte	0x1a4
  4829 2202 1F210000 		.4byte	0x211f
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 86
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 86
 
 
  4830 2206 08       		.byte	0x8
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4884 2277 04       		.byte	0x4
  4885 2278 8E0A0000 		.4byte	0xa8e
  4886 227c 15       		.uleb128 0x15
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 87
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 87
 
 
  4887 227d A00F0000 		.4byte	.LASF470
@@ -5185,21 +5185,21 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4908 22a8 AF150000 		.4byte	.LASF474
  4909 22ac 03       		.byte	0x3
  4910 22ad 22       		.uleb128 0x22
- 4911 22ae AC190000 		.4byte	.LASF475
+ 4911 22ae F2190000 		.4byte	.LASF475
  4912 22b2 04       		.byte	0x4
  4913 22b3 00       		.byte	0
  4914 22b4 03       		.uleb128 0x3
- 4915 22b5 851C0000 		.4byte	.LASF476
+ 4915 22b5 8F1C0000 		.4byte	.LASF476
  4916 22b9 27       		.byte	0x27
  4917 22ba 3F       		.byte	0x3f
  4918 22bb 88220000 		.4byte	0x2288
  4919 22bf 03       		.uleb128 0x3
- 4920 22c0 541F0000 		.4byte	.LASF477
+ 4920 22c0 5E1F0000 		.4byte	.LASF477
  4921 22c4 28       		.byte	0x28
  4922 22c5 E2       		.byte	0xe2
  4923 22c6 CA220000 		.4byte	0x22ca
  4924 22ca 0C       		.uleb128 0xc
- 4925 22cb 541F0000 		.4byte	.LASF477
+ 4925 22cb 5E1F0000 		.4byte	.LASF477
  4926 22cf 20       		.byte	0x20
  4927 22d0 28       		.byte	0x28
  4928 22d1 1B01     		.2byte	0x11b
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4941 22f0 04       		.byte	0x4
  4942 22f1 09       		.uleb128 0x9
  4943 22f2 73706900 		.ascii	"spi\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 88
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 88
 
 
  4944 22f6 28       		.byte	0x28
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  4998 2368 BF220000 		.4byte	0x22bf
  4999 236c 17       		.uleb128 0x17
  5000 236d 14       		.byte	0x14
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 89
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 89
 
 
  5001 236e 28       		.byte	0x28
@@ -5326,7 +5326,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5043 23c2 C6230000 		.4byte	0x23c6
  5044 23c6 25       		.uleb128 0x25
  5045 23c7 1A       		.uleb128 0x1a
- 5046 23c8 691F0000 		.4byte	.LASF484
+ 5046 23c8 731F0000 		.4byte	.LASF484
  5047 23cc 28       		.byte	0x28
  5048 23cd 1601     		.2byte	0x116
  5049 23cf 6C230000 		.4byte	0x236c
@@ -5338,11 +5338,11 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5055 23de 0B       		.uleb128 0xb
  5056 23df 04       		.byte	0x4
  5057 23e0 410C0000 		.4byte	0xc41
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 90
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 90
 
 
  5058 23e4 15       		.uleb128 0x15
- 5059 23e5 9E1F0000 		.4byte	.LASF485
+ 5059 23e5 A81F0000 		.4byte	.LASF485
  5060 23e9 28       		.byte	0x28
  5061 23ea 4801     		.2byte	0x148
  5062 23ec BF220000 		.4byte	0x22bf
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5112 2455 D5240000 		.4byte	0x24d5
  5113 2459 08       		.byte	0x8
  5114 245a 0A       		.uleb128 0xa
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 91
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 91
 
 
  5115 245b 5D160000 		.4byte	.LASF492
@@ -5407,7 +5407,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5118 2462 C9240000 		.4byte	0x24c9
  5119 2466 0C       		.byte	0xc
  5120 2467 0A       		.uleb128 0xa
- 5121 2468 CD1B0000 		.4byte	.LASF412
+ 5121 2468 131C0000 		.4byte	.LASF412
  5122 246c 2A       		.byte	0x2a
  5123 246d 8D01     		.2byte	0x18d
  5124 246f BD240000 		.4byte	0x24bd
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5169 24d1 F5000000 		.4byte	0xf5
  5170 24d5 1A       		.uleb128 0x1a
  5171 24d6 730B0000 		.4byte	.LASF497
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 92
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 92
 
 
  5172 24da 2A       		.byte	0x2a
@@ -5493,7 +5493,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5201 2514 4A01     		.2byte	0x14a
  5202 2516 69250000 		.4byte	0x2569
  5203 251a 0A       		.uleb128 0xa
- 5204 251b 4E1E0000 		.4byte	.LASF435
+ 5204 251b 581E0000 		.4byte	.LASF435
  5205 251f 2A       		.byte	0x2a
  5206 2520 5001     		.2byte	0x150
  5207 2522 F5000000 		.4byte	0xf5
@@ -5511,14 +5511,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5219 253c 8F240000 		.4byte	0x248f
  5220 2540 08       		.byte	0x8
  5221 2541 0A       		.uleb128 0xa
- 5222 2542 CD1B0000 		.4byte	.LASF412
+ 5222 2542 131C0000 		.4byte	.LASF412
  5223 2546 2A       		.byte	0x2a
  5224 2547 6001     		.2byte	0x160
  5225 2549 69250000 		.4byte	0x2569
  5226 254d 0C       		.byte	0xc
  5227 254e 09       		.uleb128 0x9
  5228 254f 63723200 		.ascii	"cr2\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 93
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 93
 
 
  5229 2553 2A       		.byte	0x2a
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5283 25c9 E0250000 		.4byte	0x25e0
  5284 25cd 22       		.uleb128 0x22
  5285 25ce 60050000 		.4byte	.LASF504
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 94
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 94
 
 
  5286 25d2 00       		.byte	0
@@ -5595,12 +5595,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5297 25e6 59       		.byte	0x59
  5298 25e7 C0250000 		.4byte	0x25c0
  5299 25eb 03       		.uleb128 0x3
- 5300 25ec ED1B0000 		.4byte	.LASF508
+ 5300 25ec 331C0000 		.4byte	.LASF508
  5301 25f0 2B       		.byte	0x2b
  5302 25f1 5E       		.byte	0x5e
  5303 25f2 F6250000 		.4byte	0x25f6
  5304 25f6 07       		.uleb128 0x7
- 5305 25f7 ED1B0000 		.4byte	.LASF508
+ 5305 25f7 331C0000 		.4byte	.LASF508
  5306 25fb 78       		.byte	0x78
  5307 25fc 2B       		.byte	0x2b
  5308 25fd 78       		.byte	0x78
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5340 263e 18       		.uleb128 0x18
  5341 263f 696200   		.ascii	"ib\000"
  5342 2642 2B       		.byte	0x2b
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 95
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 95
 
 
  5343 2643 7B       		.byte	0x7b
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5397 26af 6E       		.byte	0x6e
  5398 26b0 FA130000 		.4byte	0x13fa
  5399 26b4 10       		.byte	0x10
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 96
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 96
 
 
  5400 26b5 08       		.uleb128 0x8
@@ -5708,7 +5708,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5404 26bc 14140000 		.4byte	0x1414
  5405 26c0 14       		.byte	0x14
  5406 26c1 08       		.uleb128 0x8
- 5407 26c2 D61C0000 		.4byte	.LASF518
+ 5407 26c2 E01C0000 		.4byte	.LASF518
  5408 26c6 2B       		.byte	0x2b
  5409 26c7 6E       		.byte	0x6e
  5410 26c8 38140000 		.4byte	0x1438
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5454 2721 70       		.byte	0x70
  5455 2722 FB260000 		.4byte	0x26fb
  5456 2726 03       		.uleb128 0x3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 97
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 97
 
 
  5457 2727 8B160000 		.4byte	.LASF524
@@ -5771,12 +5771,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5464 2737 C4       		.byte	0xc4
  5465 2738 F5000000 		.4byte	0xf5
  5466 273c 03       		.uleb128 0x3
- 5467 273d DC1B0000 		.4byte	.LASF526
+ 5467 273d 221C0000 		.4byte	.LASF526
  5468 2741 2E       		.byte	0x2e
  5469 2742 C9       		.byte	0xc9
  5470 2743 47270000 		.4byte	0x2747
  5471 2747 07       		.uleb128 0x7
- 5472 2748 DC1B0000 		.4byte	.LASF526
+ 5472 2748 221C0000 		.4byte	.LASF526
  5473 274c 4C       		.byte	0x4c
  5474 274d 2E       		.byte	0x2e
  5475 274e F2       		.byte	0xf2
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5511 2796 9F280000 		.4byte	0x289f
  5512 279a 2C       		.byte	0x2c
  5513 279b 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 98
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 98
 
 
  5514 279c 47120000 		.4byte	.LASF528
@@ -5875,10 +5875,10 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5565 2805 D0120000 		.4byte	0x12d0
  5566 2809 00       		.byte	0
  5567 280a 08       		.uleb128 0x8
- 5568 280b 871D0000 		.4byte	.LASF531
+ 5568 280b 911D0000 		.4byte	.LASF531
  5569 280f 2E       		.byte	0x2e
  5570 2810 DC       		.byte	0xdc
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 99
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 99
 
 
  5571 2811 1B270000 		.4byte	0x271b
@@ -5892,13 +5892,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5579 2822 05       		.uleb128 0x5
  5580 2823 17280000 		.4byte	0x2817
  5581 2827 07       		.uleb128 0x7
- 5582 2828 9D1D0000 		.4byte	.LASF533
+ 5582 2828 A71D0000 		.4byte	.LASF533
  5583 282c 20       		.byte	0x20
  5584 282d 2E       		.byte	0x2e
  5585 282e EB       		.byte	0xeb
  5586 282f 94280000 		.4byte	0x2894
  5587 2833 08       		.uleb128 0x8
- 5588 2834 A41F0000 		.4byte	.LASF534
+ 5588 2834 AE1F0000 		.4byte	.LASF534
  5589 2838 2E       		.byte	0x2e
  5590 2839 EC       		.byte	0xec
  5591 283a F3140000 		.4byte	0x14f3
@@ -5938,12 +5938,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5625 2880 2E       		.byte	0x2e
  5626 2881 EC       		.byte	0xec
  5627 2882 F3140000 		.4byte	0x14f3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 100
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 100
 
 
  5628 2886 18       		.byte	0x18
  5629 2887 08       		.uleb128 0x8
- 5630 2888 241D0000 		.4byte	.LASF539
+ 5630 2888 2E1D0000 		.4byte	.LASF539
  5631 288c 2E       		.byte	0x2e
  5632 288d EC       		.byte	0xec
  5633 288e 5B150000 		.4byte	0x155b
@@ -5979,7 +5979,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5663 28cb 4C020000 		.4byte	.LASF542
  5664 28cf 01       		.byte	0x1
  5665 28d0 22       		.uleb128 0x22
- 5666 28d1 701D0000 		.4byte	.LASF543
+ 5666 28d1 7A1D0000 		.4byte	.LASF543
  5667 28d5 02       		.byte	0x2
  5668 28d6 22       		.uleb128 0x22
  5669 28d7 1A0C0000 		.4byte	.LASF544
@@ -5994,15 +5994,15 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5678 28e9 4C       		.byte	0x4c
  5679 28ea B7280000 		.4byte	0x28b7
  5680 28ee 1A       		.uleb128 0x1a
- 5681 28ef 7F1B0000 		.4byte	.LASF547
+ 5681 28ef C51B0000 		.4byte	.LASF547
  5682 28f3 30       		.byte	0x30
  5683 28f4 9601     		.2byte	0x196
  5684 28f6 FA280000 		.4byte	0x28fa
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 101
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 101
 
 
  5685 28fa 0C       		.uleb128 0xc
- 5686 28fb 7F1B0000 		.4byte	.LASF547
+ 5686 28fb C51B0000 		.4byte	.LASF547
  5687 28ff 34       		.byte	0x34
  5688 2900 30       		.byte	0x30
  5689 2901 BA01     		.2byte	0x1ba
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5739 296f 0A       		.uleb128 0xa
  5740 2970 5E070000 		.4byte	.LASF467
  5741 2974 30       		.byte	0x30
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 102
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 102
 
 
  5742 2975 E601     		.2byte	0x1e6
@@ -6093,7 +6093,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5771 29b1 7D290000 		.4byte	0x297d
  5772 29b5 00       		.byte	0
  5773 29b6 0A       		.uleb128 0xa
- 5774 29b7 1D1E0000 		.4byte	.LASF549
+ 5774 29b7 271E0000 		.4byte	.LASF549
  5775 29bb 30       		.byte	0x30
  5776 29bc AC01     		.2byte	0x1ac
  5777 29be 37170000 		.4byte	0x1737
@@ -6112,13 +6112,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5790 29dc 0A       		.byte	0xa
  5791 29dd 00       		.byte	0
  5792 29de 1A       		.uleb128 0x1a
- 5793 29df 8F1B0000 		.4byte	.LASF551
+ 5793 29df D51B0000 		.4byte	.LASF551
  5794 29e3 30       		.byte	0x30
  5795 29e4 B501     		.2byte	0x1b5
  5796 29e6 A0290000 		.4byte	0x29a0
  5797 29ea 05       		.uleb128 0x5
  5798 29eb DE290000 		.4byte	0x29de
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 103
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 103
 
 
  5799 29ef 0B       		.uleb128 0xb
@@ -6153,13 +6153,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5828 2a2f 93340000 		.4byte	0x3493
  5829 2a33 04       		.byte	0x4
  5830 2a34 0A       		.uleb128 0xa
- 5831 2a35 B21B0000 		.4byte	.LASF554
+ 5831 2a35 F81B0000 		.4byte	.LASF554
  5832 2a39 32       		.byte	0x32
  5833 2a3a 8301     		.2byte	0x183
  5834 2a3c DA000000 		.4byte	0xda
  5835 2a40 08       		.byte	0x8
  5836 2a41 0A       		.uleb128 0xa
- 5837 2a42 441E0000 		.4byte	.LASF555
+ 5837 2a42 4E1E0000 		.4byte	.LASF555
  5838 2a46 32       		.byte	0x32
  5839 2a47 8701     		.2byte	0x187
  5840 2a49 DA000000 		.4byte	0xda
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5853 2a67 1C       		.byte	0x1c
  5854 2a68 0A       		.uleb128 0xa
  5855 2a69 3E0A0000 		.4byte	.LASF557
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 104
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 104
 
 
  5856 2a6d 32       		.byte	0x32
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5910 2ae2 32       		.byte	0x32
  5911 2ae3 C101     		.2byte	0x1c1
  5912 2ae5 BF340000 		.4byte	0x34bf
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 105
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 105
 
 
  5913 2ae9 50       		.byte	0x50
@@ -6249,7 +6249,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5918 2af2 C5340000 		.4byte	0x34c5
  5919 2af6 54       		.byte	0x54
  5920 2af7 0A       		.uleb128 0xa
- 5921 2af8 841A0000 		.4byte	.LASF567
+ 5921 2af8 CA1A0000 		.4byte	.LASF567
  5922 2afc 32       		.byte	0x32
  5923 2afd C901     		.2byte	0x1c9
  5924 2aff F5000000 		.4byte	0xf5
@@ -6292,13 +6292,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5961 2b4b 0401     		.2byte	0x104
  5962 2b4d 702B0000 		.4byte	0x2b70
  5963 2b51 22       		.uleb128 0x22
- 5964 2b52 D81E0000 		.4byte	.LASF572
+ 5964 2b52 E21E0000 		.4byte	.LASF572
  5965 2b56 00       		.byte	0
  5966 2b57 22       		.uleb128 0x22
  5967 2b58 12000000 		.4byte	.LASF573
  5968 2b5c 01       		.byte	0x1
  5969 2b5d 22       		.uleb128 0x22
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 106
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 106
 
 
  5970 2b5e B9100000 		.4byte	.LASF574
@@ -6311,7 +6311,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  5977 2b6e 04       		.byte	0x4
  5978 2b6f 00       		.byte	0
  5979 2b70 1A       		.uleb128 0x1a
- 5980 2b71 D91F0000 		.4byte	.LASF577
+ 5980 2b71 E31F0000 		.4byte	.LASF577
  5981 2b75 31       		.byte	0x31
  5982 2b76 0A01     		.2byte	0x10a
  5983 2b78 432B0000 		.4byte	0x2b43
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6024 2bcb F42B0000 		.4byte	0x2bf4
  6025 2bcf 22       		.uleb128 0x22
  6026 2bd0 B9180000 		.4byte	.LASF586
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 107
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 107
 
 
  6027 2bd4 00       		.byte	0
@@ -6372,7 +6372,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6035 2be2 F1110000 		.4byte	.LASF589
  6036 2be6 03       		.byte	0x3
  6037 2be7 22       		.uleb128 0x22
- 6038 2be8 B81D0000 		.4byte	.LASF590
+ 6038 2be8 C21D0000 		.4byte	.LASF590
  6039 2bec 04       		.byte	0x4
  6040 2bed 22       		.uleb128 0x22
  6041 2bee 0C110000 		.4byte	.LASF591
@@ -6389,7 +6389,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6052 2c03 3101     		.2byte	0x131
  6053 2c05 242C0000 		.4byte	0x2c24
  6054 2c09 0A       		.uleb128 0xa
- 6055 2c0a 731F0000 		.4byte	.LASF593
+ 6055 2c0a 7D1F0000 		.4byte	.LASF593
  6056 2c0e 31       		.byte	0x31
  6057 2c0f 3501     		.2byte	0x135
  6058 2c11 2C000000 		.4byte	0x2c
@@ -6409,7 +6409,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6072 2c30 05       		.uleb128 0x5
  6073 2c31 242C0000 		.4byte	0x2c24
  6074 2c35 1A       		.uleb128 0x1a
- 6075 2c36 151F0000 		.4byte	.LASF596
+ 6075 2c36 1F1F0000 		.4byte	.LASF596
  6076 2c3a 31       		.byte	0x31
  6077 2c3b 4201     		.2byte	0x142
  6078 2c3d 412C0000 		.4byte	0x2c41
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6081 2c43 472C0000 		.4byte	0x2c47
  6082 2c47 0D       		.uleb128 0xd
  6083 2c48 522C0000 		.4byte	0x2c52
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 108
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 108
 
 
  6084 2c4c 0E       		.uleb128 0xe
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6138 2cc5 C92C0000 		.4byte	0x2cc9
  6139 2cc9 0B       		.uleb128 0xb
  6140 2cca 04       		.byte	0x4
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 109
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 109
 
 
  6141 2ccb CF2C0000 		.4byte	0x2ccf
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6195 2d3d 3E       		.byte	0x3e
  6196 2d3e 00010000 		.4byte	0x100
  6197 2d42 14       		.byte	0x14
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 110
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 110
 
 
  6198 2d43 08       		.uleb128 0x8
@@ -6577,7 +6577,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6231 2d82 00010000 		.4byte	0x100
  6232 2d86 04       		.byte	0x4
  6233 2d87 08       		.uleb128 0x8
- 6234 2d88 021B0000 		.4byte	.LASF612
+ 6234 2d88 481B0000 		.4byte	.LASF612
  6235 2d8c 33       		.byte	0x33
  6236 2d8d 4A       		.byte	0x4a
  6237 2d8e 00010000 		.4byte	0x100
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6252 2dac 370B0000 		.4byte	.LASF606
  6253 2db0 33       		.byte	0x33
  6254 2db1 4F       		.byte	0x4f
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 111
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 111
 
 
  6255 2db2 00010000 		.4byte	0x100
@@ -6610,7 +6610,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6261 2dbe 00010000 		.4byte	0x100
  6262 2dc2 18       		.byte	0x18
  6263 2dc3 08       		.uleb128 0x8
- 6264 2dc4 EB1A0000 		.4byte	.LASF616
+ 6264 2dc4 311B0000 		.4byte	.LASF616
  6265 2dc8 33       		.byte	0x33
  6266 2dc9 52       		.byte	0x52
  6267 2dca 00010000 		.4byte	0x100
@@ -6651,14 +6651,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6302 2e0e 00010000 		.4byte	0x100
  6303 2e12 0C       		.byte	0xc
  6304 2e13 08       		.uleb128 0x8
- 6305 2e14 0E1C0000 		.4byte	.LASF620
+ 6305 2e14 541C0000 		.4byte	.LASF620
  6306 2e18 33       		.byte	0x33
  6307 2e19 5F       		.byte	0x5f
  6308 2e1a 00010000 		.4byte	0x100
  6309 2e1e 10       		.byte	0x10
  6310 2e1f 08       		.uleb128 0x8
  6311 2e20 370B0000 		.4byte	.LASF606
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 112
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 112
 
 
  6312 2e24 33       		.byte	0x33
@@ -6672,7 +6672,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6320 2e32 00010000 		.4byte	0x100
  6321 2e36 18       		.byte	0x18
  6322 2e37 08       		.uleb128 0x8
- 6323 2e38 EB1A0000 		.4byte	.LASF616
+ 6323 2e38 311B0000 		.4byte	.LASF616
  6324 2e3c 33       		.byte	0x33
  6325 2e3d 63       		.byte	0x63
  6326 2e3e 00010000 		.4byte	0x100
@@ -6707,7 +6707,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6355 2e79 00010000 		.4byte	0x100
  6356 2e7d 08       		.byte	0x8
  6357 2e7e 08       		.uleb128 0x8
- 6358 2e7f 231F0000 		.4byte	.LASF625
+ 6358 2e7f 2D1F0000 		.4byte	.LASF625
  6359 2e83 33       		.byte	0x33
  6360 2e84 6D       		.byte	0x6d
  6361 2e85 00010000 		.4byte	0x100
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6366 2e90 6E       		.byte	0x6e
  6367 2e91 00010000 		.4byte	0x100
  6368 2e95 10       		.byte	0x10
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 113
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 113
 
 
  6369 2e96 08       		.uleb128 0x8
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6423 2f02 08       		.uleb128 0x8
  6424 2f03 86010000 		.4byte	.LASF636
  6425 2f07 33       		.byte	0x33
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 114
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 114
 
 
  6426 2f08 7C       		.byte	0x7c
@@ -6797,7 +6797,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6439 2f21 3C310000 		.4byte	0x313c
  6440 2f25 40       		.byte	0x40
  6441 2f26 27       		.uleb128 0x27
- 6442 2f27 EB1C0000 		.4byte	.LASF638
+ 6442 2f27 F51C0000 		.4byte	.LASF638
  6443 2f2b 33       		.byte	0x33
  6444 2f2c 7F       		.byte	0x7f
  6445 2f2d 00010000 		.4byte	0x100
@@ -6821,7 +6821,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6463 2f54 00010000 		.4byte	0x100
  6464 2f58 0004     		.2byte	0x400
  6465 2f5a 27       		.uleb128 0x27
- 6466 2f5b D31E0000 		.4byte	.LASF642
+ 6466 2f5b DD1E0000 		.4byte	.LASF642
  6467 2f5f 33       		.byte	0x33
  6468 2f60 85       		.byte	0x85
  6469 2f61 00010000 		.4byte	0x100
@@ -6833,12 +6833,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6475 2f6e 00010000 		.4byte	0x100
  6476 2f72 0804     		.2byte	0x408
  6477 2f74 27       		.uleb128 0x27
- 6478 2f75 731C0000 		.4byte	.LASF644
+ 6478 2f75 7D1C0000 		.4byte	.LASF644
  6479 2f79 33       		.byte	0x33
  6480 2f7a 88       		.byte	0x88
  6481 2f7b 00010000 		.4byte	0x100
  6482 2f7f 0C04     		.2byte	0x40c
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 115
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 115
 
 
  6483 2f81 27       		.uleb128 0x27
@@ -6872,7 +6872,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6511 2fbc 00010000 		.4byte	0x100
  6512 2fc0 4004     		.2byte	0x440
  6513 2fc2 27       		.uleb128 0x27
- 6514 2fc3 351A0000 		.4byte	.LASF650
+ 6514 2fc3 7B1A0000 		.4byte	.LASF650
  6515 2fc7 33       		.byte	0x33
  6516 2fc8 92       		.byte	0x92
  6517 2fc9 7B310000 		.4byte	0x317b
@@ -6884,7 +6884,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6523 2fd5 80310000 		.4byte	0x3180
  6524 2fd9 0005     		.2byte	0x500
  6525 2fdb 27       		.uleb128 0x27
- 6526 2fdc B21C0000 		.4byte	.LASF651
+ 6526 2fdc BC1C0000 		.4byte	.LASF651
  6527 2fe0 33       		.byte	0x33
  6528 2fe1 94       		.byte	0x94
  6529 2fe2 A0310000 		.4byte	0x31a0
@@ -6896,9 +6896,9 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6535 2fef 00010000 		.4byte	0x100
  6536 2ff3 0008     		.2byte	0x800
  6537 2ff5 27       		.uleb128 0x27
- 6538 2ff6 981D0000 		.4byte	.LASF653
+ 6538 2ff6 A21D0000 		.4byte	.LASF653
  6539 2ffa 33       		.byte	0x33
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 116
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 116
 
 
  6540 2ffb 96       		.byte	0x96
@@ -6923,13 +6923,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6559 3023 00010000 		.4byte	0x100
  6560 3027 1008     		.2byte	0x810
  6561 3029 27       		.uleb128 0x27
- 6562 302a 231B0000 		.4byte	.LASF657
+ 6562 302a 691B0000 		.4byte	.LASF657
  6563 302e 33       		.byte	0x33
  6564 302f 9B       		.byte	0x9b
  6565 3030 00010000 		.4byte	0x100
  6566 3034 1408     		.2byte	0x814
  6567 3036 27       		.uleb128 0x27
- 6568 3037 891B0000 		.4byte	.LASF658
+ 6568 3037 CF1B0000 		.4byte	.LASF658
  6569 303b 33       		.byte	0x33
  6570 303c 9D       		.byte	0x9d
  6571 303d 00010000 		.4byte	0x100
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6594 3070 A3       		.byte	0xa3
  6595 3071 00010000 		.4byte	0x100
  6596 3075 2808     		.2byte	0x828
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 117
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 117
 
 
  6597 3077 27       		.uleb128 0x27
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6651 30eb 28       		.uleb128 0x28
  6652 30ec 6F6500   		.ascii	"oe\000"
  6653 30ef 33       		.byte	0x33
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 118
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 118
 
 
  6654 30f0 B0       		.byte	0xb0
@@ -7031,7 +7031,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6661 30fe A0310000 		.4byte	0x31a0
  6662 3102 000D     		.2byte	0xd00
  6663 3104 27       		.uleb128 0x27
- 6664 3105 B01D0000 		.4byte	.LASF672
+ 6664 3105 BA1D0000 		.4byte	.LASF672
  6665 3109 33       		.byte	0x33
  6666 310a B2       		.byte	0xb2
  6667 310b 00010000 		.4byte	0x100
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6708 3167 56310000 		.4byte	0x3156
  6709 316b 13       		.uleb128 0x13
  6710 316c 00010000 		.4byte	0x100
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 119
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 119
 
 
  6711 3170 7B310000 		.4byte	0x317b
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6765 31eb DA310000 		.4byte	0x31da
  6766 31ef 13       		.uleb128 0x13
  6767 31f0 00010000 		.4byte	0x100
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 120
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 120
 
 
  6768 31f4 06320000 		.4byte	0x3206
@@ -7152,7 +7152,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6776 3206 06       		.uleb128 0x6
  6777 3207 EF310000 		.4byte	0x31ef
  6778 320b 03       		.uleb128 0x3
- 6779 320c 481F0000 		.4byte	.LASF674
+ 6779 320c 521F0000 		.4byte	.LASF674
  6780 3210 33       		.byte	0x33
  6781 3211 B6       		.byte	0xb6
  6782 3212 4F2E0000 		.4byte	0x2e4f
@@ -7193,12 +7193,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6817 3256 DD       		.byte	0xdd
  6818 3257 68320000 		.4byte	0x3268
  6819 325b 08       		.uleb128 0x8
- 6820 325c AA1D0000 		.4byte	.LASF679
+ 6820 325c B41D0000 		.4byte	.LASF679
  6821 3260 32       		.byte	0x32
  6822 3261 E1       		.byte	0xe1
  6823 3262 05130000 		.4byte	0x1305
  6824 3266 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 121
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 121
 
 
  6825 3267 00       		.byte	0
@@ -7223,7 +7223,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6844 3286 DC       		.byte	0xdc
  6845 3287 A2320000 		.4byte	0x32a2
  6846 328b 2A       		.uleb128 0x2a
- 6847 328c 6A1A0000 		.4byte	.LASF680
+ 6847 328c B01A0000 		.4byte	.LASF680
  6848 3290 32       		.byte	0x32
  6849 3291 E2       		.byte	0xe2
  6850 3292 53320000 		.4byte	0x3253
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6879 32cd 08       		.byte	0x8
  6880 32ce 08       		.uleb128 0x8
  6881 32cf 28070000 		.4byte	.LASF410
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 122
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 122
 
 
  6882 32d3 32       		.byte	0x32
@@ -7295,7 +7295,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6913 330c 0701     		.2byte	0x107
  6914 330e 20330000 		.4byte	0x3320
  6915 3312 0A       		.uleb128 0xa
- 6916 3313 251A0000 		.4byte	.LASF365
+ 6916 3313 6B1A0000 		.4byte	.LASF365
  6917 3317 32       		.byte	0x32
  6918 3318 0B01     		.2byte	0x10b
  6919 331a 20330000 		.4byte	0x3320
@@ -7310,7 +7310,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6928 3329 0001     		.2byte	0x100
  6929 332b 48330000 		.4byte	0x3348
  6930 332f 1E       		.uleb128 0x1e
- 6931 3330 6A1A0000 		.4byte	.LASF680
+ 6931 3330 B01A0000 		.4byte	.LASF680
  6932 3334 32       		.byte	0x32
  6933 3335 0601     		.2byte	0x106
  6934 3337 F2320000 		.4byte	0x32f2
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6936 333c 46190000 		.4byte	.LASF681
  6937 3340 32       		.byte	0x32
  6938 3341 0C01     		.2byte	0x10c
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 123
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 123
 
 
  6939 3343 09330000 		.4byte	0x3309
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  6993 33b1 0A       		.uleb128 0xa
  6994 33b2 FA070000 		.4byte	.LASF693
  6995 33b6 32       		.byte	0x32
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 124
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 124
 
 
  6996 33b7 2701     		.2byte	0x127
@@ -7397,7 +7397,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7009 33d3 582C0000 		.4byte	0x2c58
  7010 33d7 0C       		.byte	0xc
  7011 33d8 0A       		.uleb128 0xa
- 7012 33d9 7B1F0000 		.4byte	.LASF696
+ 7012 33d9 851F0000 		.4byte	.LASF696
  7013 33dd 32       		.byte	0x32
  7014 33de 3901     		.2byte	0x139
  7015 33e0 DA000000 		.4byte	0xda
@@ -7409,7 +7409,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7021 33ed DA000000 		.4byte	0xda
  7022 33f1 12       		.byte	0x12
  7023 33f2 0A       		.uleb128 0xa
- 7024 33f3 691E0000 		.4byte	.LASF698
+ 7024 33f3 731E0000 		.4byte	.LASF698
  7025 33f7 32       		.byte	0x32
  7026 33f8 4401     		.2byte	0x144
  7027 33fa 27340000 		.4byte	0x3427
@@ -7427,7 +7427,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7039 3414 DA000000 		.4byte	0xda
  7040 3418 1C       		.byte	0x1c
  7041 3419 0A       		.uleb128 0xa
- 7042 341a F21D0000 		.4byte	.LASF701
+ 7042 341a FC1D0000 		.4byte	.LASF701
  7043 341e 32       		.byte	0x32
  7044 341f 5601     		.2byte	0x156
  7045 3421 D0120000 		.4byte	0x12d0
@@ -7438,12 +7438,12 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7050 3429 E7320000 		.4byte	0x32e7
  7051 342d 0B       		.uleb128 0xb
  7052 342e 04       		.byte	0x4
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 125
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 125
 
 
  7053 342f 8F330000 		.4byte	0x338f
  7054 3433 1A       		.uleb128 0x1a
- 7055 3434 F5190000 		.4byte	.LASF702
+ 7055 3434 3B1A0000 		.4byte	.LASF702
  7056 3438 32       		.byte	0x32
  7057 3439 5701     		.2byte	0x157
  7058 343b 9B330000 		.4byte	0x339b
@@ -7461,7 +7461,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7070 3455 7A2C0000 		.4byte	0x2c7a
  7071 3459 00       		.byte	0
  7072 345a 0A       		.uleb128 0xa
- 7073 345b 511D0000 		.4byte	.LASF704
+ 7073 345b 5B1D0000 		.4byte	.LASF704
  7074 345f 32       		.byte	0x32
  7075 3460 6601     		.2byte	0x166
  7076 3462 BD2C0000 		.4byte	0x2cbd
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7107 34a8 00       		.byte	0
  7108 34a9 0B       		.uleb128 0xb
  7109 34aa 04       		.byte	0x4
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 126
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 126
 
 
  7110 34ab 3F340000 		.4byte	0x343f
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7164 351e F6010000 		.4byte	.LASF713
  7165 3522 5802     		.2byte	0x258
  7166 3524 34       		.byte	0x34
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 127
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 127
 
 
  7167 3525 E5       		.byte	0xe5
@@ -7618,10 +7618,10 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7221 358e A7       		.byte	0xa7
  7222 358f C4350000 		.4byte	0x35c4
  7223 3593 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 128
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 128
 
 
- 7224 3594 C31C0000 		.4byte	.LASF714
+ 7224 3594 CD1C0000 		.4byte	.LASF714
  7225 3598 34       		.byte	0x34
  7226 3599 AB       		.byte	0xab
  7227 359a 522C0000 		.4byte	0x2c52
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7278 3603 08       		.byte	0x8
  7279 3604 18       		.uleb128 0x18
  7280 3605 67657400 		.ascii	"get\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 129
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 129
 
 
  7281 3609 34       		.byte	0x34
@@ -7698,7 +7698,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7295 3623 14140000 		.4byte	0x1414
  7296 3627 14       		.byte	0x14
  7297 3628 08       		.uleb128 0x8
- 7298 3629 D61C0000 		.4byte	.LASF518
+ 7298 3629 E01C0000 		.4byte	.LASF518
  7299 362d 34       		.byte	0x34
  7300 362e DB       		.byte	0xdb
  7301 362f 38140000 		.4byte	0x1438
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7335 3678 83360000 		.4byte	0x3683
  7336 367c 14       		.uleb128 0x14
  7337 367d 37000000 		.4byte	0x37
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 130
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 130
 
 
  7338 3681 11       		.byte	0x11
@@ -7754,7 +7754,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7348 3694 03       		.byte	0x3
  7349 3695 00000000 		.4byte	vcom_device_descriptor_data
  7350 3699 2E       		.uleb128 0x2e
- 7351 369a 95190000 		.4byte	.LASF722
+ 7351 369a DB190000 		.4byte	.LASF722
  7352 369e 01       		.byte	0x1
  7353 369f 32       		.byte	0x32
  7354 36a0 302C0000 		.4byte	0x2c30
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7392 36f6 2E       		.uleb128 0x2e
  7393 36f7 D4060000 		.4byte	.LASF725
  7394 36fb 01       		.byte	0x1
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 131
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 131
 
 
  7395 36fc 8F       		.byte	0x8f
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7449 3774 03       		.byte	0x3
  7450 3775 00000000 		.4byte	vcom_string3
  7451 3779 13       		.uleb128 0x13
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 132
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 132
 
 
  7452 377a 302C0000 		.4byte	0x2c30
@@ -7902,7 +7902,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7490 37cd 03       		.byte	0x3
  7491 37ce 00000000 		.4byte	ep1config
  7492 37d2 2E       		.uleb128 0x2e
- 7493 37d3 8B1A0000 		.4byte	.LASF733
+ 7493 37d3 D11A0000 		.4byte	.LASF733
  7494 37d7 01       		.byte	0x1
  7495 37d8 F7       		.byte	0xf7
  7496 37d9 E7320000 		.4byte	0x32e7
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7506 37ef 03       		.byte	0x3
  7507 37f0 00000000 		.4byte	ep2config
  7508 37f4 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 133
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 133
 
 
  7509 37f5 A0070000 		.4byte	.LASF735
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7563 386a 203B0000 		.4byte	0x3b20
  7564 386e 7A380000 		.4byte	0x387a
  7565 3872 32       		.uleb128 0x32
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 134
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 134
 
 
  7566 3873 01       		.uleb128 0x1
@@ -8015,7 +8015,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7597 38a9 01       		.byte	0x1
  7598 38aa D3380000 		.4byte	0x38d3
  7599 38ae 35       		.uleb128 0x35
- 7600 38af C31C0000 		.4byte	.LASF714
+ 7600 38af CD1C0000 		.4byte	.LASF714
  7601 38b3 01       		.byte	0x1
  7602 38b4 0C01     		.2byte	0x10c
  7603 38b6 522C0000 		.4byte	0x2c52
@@ -8038,13 +8038,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7620 38de 00000000 		.4byte	.LFB256
  7621 38e2 50000000 		.4byte	.LFE256-.LFB256
  7622 38e6 01       		.uleb128 0x1
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 135
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 135
 
 
  7623 38e7 9C       		.byte	0x9c
  7624 38e8 32390000 		.4byte	0x3932
  7625 38ec 37       		.uleb128 0x37
- 7626 38ed C31C0000 		.4byte	.LASF714
+ 7626 38ed CD1C0000 		.4byte	.LASF714
  7627 38f1 01       		.byte	0x1
  7628 38f2 C3       		.byte	0xc3
  7629 38f3 522C0000 		.4byte	0x2c52
@@ -8077,7 +8077,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7656 3938 9601     		.2byte	0x196
  7657 393a 03       		.byte	0x3
  7658 393b 38       		.uleb128 0x38
- 7659 393c 001D0000 		.4byte	.LASF741
+ 7659 393c 0A1D0000 		.4byte	.LASF741
  7660 3940 03       		.byte	0x3
  7661 3941 8201     		.2byte	0x182
  7662 3943 03       		.byte	0x3
@@ -8098,14 +8098,14 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7677 395e 03       		.byte	0x3
  7678 395f 38       		.uleb128 0x38
  7679 3960 59150000 		.4byte	.LASF745
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 136
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 136
 
 
  7680 3964 0E       		.byte	0xe
  7681 3965 BC01     		.2byte	0x1bc
  7682 3967 03       		.byte	0x3
  7683 3968 34       		.uleb128 0x34
- 7684 3969 C91D0000 		.4byte	.LASF747
+ 7684 3969 D31D0000 		.4byte	.LASF747
  7685 396d 02       		.byte	0x2
  7686 396e 2002     		.2byte	0x220
  7687 3970 03       		.byte	0x3
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7734 39f5 06000000 		.4byte	.LBE66-.LBB66
  7735 39f9 03       		.byte	0x3
  7736 39fa 8401     		.2byte	0x184
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 137
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 137
 
 
  7737 39fc 2C3A0000 		.4byte	0x3a2c
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7791 3a8c 31010000 		.4byte	.LLST9
  7792 3a90 00       		.byte	0
  7793 3a91 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 138
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 138
 
 
  7794 3a92 00       		.byte	0
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7848 3aec 3A000000 		.4byte	.LVL14
  7849 3af0 783B0000 		.4byte	0x3b78
  7850 3af4 32       		.uleb128 0x32
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 139
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 139
 
 
  7851 3af5 01       		.uleb128 0x1
@@ -8294,8 +8294,8 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7861 3b05 373B0000 		.4byte	0x3b37
  7862 3b09 00       		.byte	0
  7863 3b0a 41       		.uleb128 0x41
- 7864 3b0b BF1B0000 		.4byte	.LASF749
- 7865 3b0f BF1B0000 		.4byte	.LASF749
+ 7864 3b0b 051C0000 		.4byte	.LASF749
+ 7865 3b0f 051C0000 		.4byte	.LASF749
  7866 3b13 34       		.byte	0x34
  7867 3b14 F7       		.byte	0xf7
  7868 3b15 41       		.uleb128 0x41
@@ -8322,8 +8322,8 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7889 3b49 11       		.byte	0x11
  7890 3b4a 51       		.byte	0x51
  7891 3b4b 41       		.uleb128 0x41
- 7892 3b4c 2D1D0000 		.4byte	.LASF754
- 7893 3b50 2D1D0000 		.4byte	.LASF754
+ 7892 3b4c 371D0000 		.4byte	.LASF754
+ 7893 3b50 371D0000 		.4byte	.LASF754
  7894 3b54 0F       		.byte	0xf
  7895 3b55 DA       		.byte	0xda
  7896 3b56 41       		.uleb128 0x41
@@ -8332,13 +8332,13 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7899 3b5f 0F       		.byte	0xf
  7900 3b60 DB       		.byte	0xdb
  7901 3b61 41       		.uleb128 0x41
- 7902 3b62 72190000 		.4byte	.LASF756
- 7903 3b66 72190000 		.4byte	.LASF756
+ 7902 3b62 B8190000 		.4byte	.LASF756
+ 7903 3b66 B8190000 		.4byte	.LASF756
  7904 3b6a 11       		.byte	0x11
  7905 3b6b 52       		.byte	0x52
  7906 3b6c 42       		.uleb128 0x42
  7907 3b6d 4A000000 		.4byte	.LASF757
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 140
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 140
 
 
  7908 3b71 4A000000 		.4byte	.LASF757
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  7962 002b 04       		.uleb128 0x4
  7963 002c 24       		.uleb128 0x24
  7964 002d 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 141
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 141
 
 
  7965 002e 0B       		.uleb128 0xb
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8019 0064 00       		.byte	0
  8020 0065 03       		.uleb128 0x3
  8021 0066 08       		.uleb128 0x8
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 142
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 142
 
 
  8022 0067 3A       		.uleb128 0x3a
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8076 009d 01       		.uleb128 0x1
  8077 009e 13       		.uleb128 0x13
  8078 009f 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 143
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 143
 
 
  8079 00a0 00       		.byte	0
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8133 00d6 49       		.uleb128 0x49
  8134 00d7 13       		.uleb128 0x13
  8135 00d8 38       		.uleb128 0x38
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 144
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 144
 
 
  8136 00d9 05       		.uleb128 0x5
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8190 010f 00       		.byte	0
  8191 0110 17       		.uleb128 0x17
  8192 0111 13       		.uleb128 0x13
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 145
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 145
 
 
  8193 0112 01       		.byte	0x1
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8247 0148 01       		.byte	0x1
  8248 0149 0B       		.uleb128 0xb
  8249 014a 05       		.uleb128 0x5
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 146
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 146
 
 
  8250 014b 3A       		.uleb128 0x3a
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8304 0181 3B       		.uleb128 0x3b
  8305 0182 05       		.uleb128 0x5
  8306 0183 49       		.uleb128 0x49
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 147
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 147
 
 
  8307 0184 13       		.uleb128 0x13
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8361 01ba 13       		.uleb128 0x13
  8362 01bb 00       		.byte	0
  8363 01bc 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 148
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 148
 
 
  8364 01bd 24       		.uleb128 0x24
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8418 01f3 08       		.uleb128 0x8
  8419 01f4 3A       		.uleb128 0x3a
  8420 01f5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 149
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 149
 
 
  8421 01f6 3B       		.uleb128 0x3b
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8475 022c 01       		.uleb128 0x1
  8476 022d 13       		.uleb128 0x13
  8477 022e 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 150
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 150
 
 
  8478 022f 00       		.byte	0
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8532 0265 19       		.uleb128 0x19
  8533 0266 03       		.uleb128 0x3
  8534 0267 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 151
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 151
 
 
  8535 0268 3A       		.uleb128 0x3a
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8589 02a6 3B       		.uleb128 0x3b
  8590 02a7 05       		.uleb128 0x5
  8591 02a8 27       		.uleb128 0x27
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 152
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 152
 
 
  8592 02a9 19       		.uleb128 0x19
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8646 02e0 49       		.uleb128 0x49
  8647 02e1 13       		.uleb128 0x13
  8648 02e2 02       		.uleb128 0x2
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 153
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 153
 
 
  8649 02e3 17       		.uleb128 0x17
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8703 031a 13       		.uleb128 0x13
  8704 031b 00       		.byte	0
  8705 031c 00       		.byte	0
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 154
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 154
 
 
  8706 031d 3C       		.uleb128 0x3c
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8760 0355 01       		.uleb128 0x1
  8761 0356 31       		.uleb128 0x31
  8762 0357 13       		.uleb128 0x13
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 155
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 155
 
 
  8763 0358 00       		.byte	0
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8817 0004 08000000 		.4byte	.LVL2
  8818 0008 0100     		.2byte	0x1
  8819 000a 50       		.byte	0x50
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 156
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 156
 
 
  8820 000b 08000000 		.4byte	.LVL2
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8874 008b 50000000 		.4byte	.LFE256
  8875 008f 0400     		.2byte	0x4
  8876 0091 F3       		.byte	0xf3
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 157
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 157
 
 
  8877 0092 01       		.uleb128 0x1
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8931 0114 00000000 		.4byte	0
  8932 0118 00000000 		.4byte	0
  8933              	.LLST8:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 158
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 158
 
 
  8934 011c 12000000 		.4byte	.LVL8
@@ -9465,8 +9465,8 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8975 001c 00000000 		.4byte	0
  8976              		.section	.debug_line,"",%progbits
  8977              	.Ldebug_line0:
- 8978 0000 70080000 		.section	.debug_str,"MS",%progbits,1
- 8978      0200F207 
+ 8978 0000 7F080000 		.section	.debug_str,"MS",%progbits,1
+ 8978      02000108 
  8978      00000201 
  8978      FB0E0D00 
  8978      01010101 
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  8980      4900
  8981              	.LASF573:
  8982 0012 5553425F 		.ascii	"USB_STOP\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 159
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 159
 
 
  8982      53544F50 
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9006      5F636F6E 
  9006      66696775 
  9006      72617469 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 160
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 160
 
 
  9006      6F6E5F64 
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9036      727300
  9037              	.LASF199:
  9038 0146 776F7273 		.ascii	"worst\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 161
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 161
 
 
  9038      7400
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9071              	.LASF405:
  9072 01c2 4558545F 		.ascii	"EXT_ACTIVE\000"
  9072      41435449 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 162
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 162
 
 
  9072      564500
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9100      00
  9101              	.LASF496:
  9102 0255 70776D63 		.ascii	"pwmchnmsk_t\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 163
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 163
 
 
  9102      686E6D73 
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9130      696D6572 
  9130      735F6C69 
  9131              	.LASF272:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 164
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 164
 
 
  9132 02f6 76656374 		.ascii	"vector\000"
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9162      667400
  9163              	.LASF419:
  9164 0380 4750545F 		.ascii	"GPT_ONESHOT\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 165
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 165
 
 
  9164      4F4E4553 
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9191              	.LASF92:
  9192 040e 76746C69 		.ascii	"vtlist\000"
  9192      737400
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 166
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 166
 
 
  9193              	.LASF157:
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9218      44555459 
  9218      5F435943 
  9218      4C4500
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 167
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 167
 
 
  9219              	.LASF360:
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9246      495400
  9247              	.LASF599:
  9248 0539 75736272 		.ascii	"usbreqhandler_t\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 168
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 168
 
 
  9248      65716861 
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9276 05c4 72656773 		.ascii	"regshift\000"
  9276      68696674 
  9276      00
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 169
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 169
 
 
  9277              	.LASF562:
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9307              	.LASF7:
  9308 064d 5F5F696E 		.ascii	"__int16_t\000"
  9308      7431365F 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 170
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 170
 
 
  9308      7400
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9335              	.LASF726:
  9336 06e1 76636F6D 		.ascii	"vcom_string1\000"
  9336      5F737472 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 171
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 171
 
 
  9336      696E6731 
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9362      622F652D 
  9362      7075636B 
  9362      325F6D61 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 172
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 172
 
 
  9363              	.LASF434:
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9389              	.LASF364:
  9390 0820 74787175 		.ascii	"txqueue\000"
  9390      65756500 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 173
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 173
 
 
  9391              	.LASF217:
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9418 08b3 44485238 		.ascii	"DHR8R2\000"
  9418      523200
  9419              	.LASF425:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 174
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 174
 
 
  9420 08ba 44494552 		.ascii	"DIER\000"
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9450 0939 696E6974 		.ascii	"init\000"
  9450      00
  9451              	.LASF128:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 175
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 175
 
 
  9452 093e 464D3152 		.ascii	"FM1R\000"
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9478      7074795F 
  9478      6576656E 
  9478      7400
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 176
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 176
 
 
  9479              	.LASF709:
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9508      00
  9509              	.LASF437:
  9510 0a58 64696572 		.ascii	"dier\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 177
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 177
 
 
  9510      00
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9540 0add 636C6561 		.ascii	"clear\000"
  9540      7200
  9541              	.LASF432:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 178
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 178
 
 
  9542 0ae3 43435852 		.ascii	"CCXR\000"
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9571              	.LASF497:
  9572 0b73 70776D63 		.ascii	"pwmcnt_t\000"
  9572      6E745F74 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 179
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 179
 
 
  9572      00
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9602 0c02 52463052 		.ascii	"RF0R\000"
  9602      00
  9603              	.LASF327:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 180
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 180
 
 
  9604 0c07 4144435F 		.ascii	"ADC_ERR_DMAFAILURE\000"
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9630      72697665 
  9630      7200
  9631              	.LASF677:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 181
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 181
 
 
  9632 0ca1 6E756D5F 		.ascii	"num_endpoints\000"
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9648      2D636F6E 
  9648      7374616E 
  9648      7400
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 182
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 182
 
 
  9649              	.LASF378:
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9676 0ebc 6572726F 		.ascii	"error_event\000"
  9676      725F6576 
  9676      656E7400 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 183
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 183
 
 
  9677              	.LASF343:
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9704      70307374 
  9704      6174655F 
  9704      7400
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 184
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 184
 
 
  9705              	.LASF390:
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9735              	.LASF503:
  9736 0fe3 50574D44 		.ascii	"PWMD5\000"
  9736      3500
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 185
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 185
 
 
  9737              	.LASF511:
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9764      00
  9765              	.LASF522:
  9766 1076 5344435F 		.ascii	"SDC_MODE_8BIT\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 186
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 186
 
 
  9766      4D4F4445 
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9794      77657200 
  9795              	.LASF591:
  9796 110c 5553425F 		.ascii	"USB_EVENT_STALLED\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 187
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 187
 
 
  9796      4556454E 
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9821              	.LASF172:
  9822 11b9 4649464F 		.ascii	"FIFOCNT\000"
  9822      434E5400 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 188
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 188
 
 
  9823              	.LASF254:
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9850 1250 5F737461 		.ascii	"_stats_start_measure_crit_isr\000"
  9850      74735F73 
  9850      74617274 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 189
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 189
 
 
  9850      5F6D6561 
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9878      756500
  9879              	.LASF239:
  9880 12f0 63665F6F 		.ascii	"cf_off_refs\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 190
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 190
 
 
  9880      66665F72 
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9908 1384 63616C6C 		.ascii	"callback\000"
  9908      6261636B 
  9908      00
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 191
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 191
 
 
  9909              	.LASF90:
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9935              	.LASF62:
  9936 141b 74687265 		.ascii	"threads_queue_t\000"
  9936      6164735F 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 192
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 192
 
 
  9936      71756575 
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  9966 14a8 50484461 		.ascii	"PHData\000"
  9966      746100
  9967              	.LASF316:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 193
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 193
 
 
  9968 14af 696F706F 		.ascii	"ioportid_t\000"
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10002      00
  10003              	.LASF507:
  10004 152a 73647374 		.ascii	"sdstate_t\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 194
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 194
 
 
  10004      6174655F 
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10031              	.LASF417:
  10032 15ba 4750545F 		.ascii	"GPT_READY\000"
  10032      52454144 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 195
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 195
 
 
  10032      5900
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10062 164a 63685379 		.ascii	"chSysUnlockFromISR\000"
  10062      73556E6C 
  10062      6F636B46 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 196
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 196
 
 
  10062      726F6D49 
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10090      5F7400
  10091              	.LASF274:
  10092 16e2 5F73746D 		.ascii	"_stm32_dma_streams\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 197
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 197
 
 
  10092      33325F64 
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10118      00
  10119              	.LASF750:
  10120 177f 73647553 		.ascii	"sduStart\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 198
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 198
 
 
  10120      74617274 
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10146 1818 4441435F 		.ascii	"DAC_TypeDef\000"
  10146      54797065 
  10146      44656600 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 199
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 199
 
 
  10147              	.LASF210:
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10172      545F5245 
  10172      53455400 
  10173              	.LASF65:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 200
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 200
 
 
  10174 18c9 63685F72 		.ascii	"ch_ready_list\000"
@@ -11998,717 +11998,718 @@ ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 1
  10200      696E6465 
  10200      7800
  10201              	.LASF244:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 201
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 201
 
 
  10202 195f 6D757465 		.ascii	"mutex_t\000"
  10202      785F7400 
- 10203              	.LASF53:
- 10204 1967 705F6570 		.ascii	"p_epending\000"
- 10204      656E6469 
- 10204      6E6700
- 10205              	.LASF756:
- 10206 1972 5F737461 		.ascii	"_stats_stop_measure_crit_isr\000"
- 10206      74735F73 
- 10206      746F705F 
- 10206      6D656173 
- 10206      7572655F 
- 10207              	.LASF290:
- 10208 198f 4D4F4445 		.ascii	"MODER\000"
- 10208      5200
- 10209              	.LASF722:
- 10210 1995 76636F6D 		.ascii	"vcom_device_descriptor\000"
- 10210      5F646576 
- 10210      6963655F 
- 10210      64657363 
- 10210      72697074 
- 10211              	.LASF475:
- 10212 19ac 4932535F 		.ascii	"I2S_COMPLETE\000"
- 10212      434F4D50 
- 10212      4C455445 
- 10212      00
- 10213              	.LASF124:
- 10214 19b9 52455345 		.ascii	"RESERVED0\000"
- 10214      52564544 
- 10214      3000
- 10215              	.LASF127:
- 10216 19c3 52455345 		.ascii	"RESERVED1\000"
- 10216      52564544 
- 10216      3100
- 10217              	.LASF129:
- 10218 19cd 52455345 		.ascii	"RESERVED2\000"
- 10218      52564544 
- 10218      3200
- 10219              	.LASF131:
- 10220 19d7 52455345 		.ascii	"RESERVED3\000"
- 10220      52564544 
- 10220      3300
- 10221              	.LASF133:
- 10222 19e1 52455345 		.ascii	"RESERVED4\000"
- 10222      52564544 
- 10222      3400
- 10223              	.LASF135:
- 10224 19eb 52455345 		.ascii	"RESERVED5\000"
- 10224      52564544 
- 10224      3500
- 10225              	.LASF702:
- 10226 19f5 55534245 		.ascii	"USBEndpointConfig\000"
- 10226      6E64706F 
- 10226      696E7443 
- 10226      6F6E6669 
- 10226      6700
- 10227              	.LASF139:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 202
+ 10203              	.LASF761:
+ 10204 1967 443A5C57 		.ascii	"D:\\Work\\EPFL Studies\\BA6\\Micro-informatique\\Pr"
+ 10204      6F726B5C 
+ 10204      4550464C 
+ 10204      20537475 
+ 10204      64696573 
+ 10205 1995 6F6A6563 		.ascii	"oject\\epuckinator\\e-cat\000"
+ 10205      745C6570 
+ 10205      75636B69 
+ 10205      6E61746F 
+ 10205      725C652D 
+ 10206              	.LASF53:
+ 10207 19ad 705F6570 		.ascii	"p_epending\000"
+ 10207      656E6469 
+ 10207      6E6700
+ 10208              	.LASF756:
+ 10209 19b8 5F737461 		.ascii	"_stats_stop_measure_crit_isr\000"
+ 10209      74735F73 
+ 10209      746F705F 
+ 10209      6D656173 
+ 10209      7572655F 
+ 10210              	.LASF290:
+ 10211 19d5 4D4F4445 		.ascii	"MODER\000"
+ 10211      5200
+ 10212              	.LASF722:
+ 10213 19db 76636F6D 		.ascii	"vcom_device_descriptor\000"
+ 10213      5F646576 
+ 10213      6963655F 
+ 10213      64657363 
+ 10213      72697074 
+ 10214              	.LASF475:
+ 10215 19f2 4932535F 		.ascii	"I2S_COMPLETE\000"
+ 10215      434F4D50 
+ 10215      4C455445 
+ 10215      00
+ 10216              	.LASF124:
+ 10217 19ff 52455345 		.ascii	"RESERVED0\000"
+ 10217      52564544 
+ 10217      3000
+ 10218              	.LASF127:
+ 10219 1a09 52455345 		.ascii	"RESERVED1\000"
+ 10219      52564544 
+ 10219      3100
+ 10220              	.LASF129:
+ 10221 1a13 52455345 		.ascii	"RESERVED2\000"
+ 10221      52564544 
+ 10221      3200
+ 10222              	.LASF131:
+ 10223 1a1d 52455345 		.ascii	"RESERVED3\000"
+ 10223      52564544 
+ 10223      3300
+ 10224              	.LASF133:
+ 10225 1a27 52455345 		.ascii	"RESERVED4\000"
+ 10225      52564544 
+ 10225      3400
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 202
 
 
- 10228 1a07 44485231 		.ascii	"DHR12R1\000"
- 10228      32523100 
- 10229              	.LASF142:
- 10230 1a0f 44485231 		.ascii	"DHR12R2\000"
- 10230      32523200 
- 10231              	.LASF409:
- 10232 1a17 65787463 		.ascii	"extcallback_t\000"
- 10232      616C6C62 
- 10232      61636B5F 
- 10232      7400
- 10233              	.LASF365:
- 10234 1a25 72787175 		.ascii	"rxqueue\000"
- 10234      65756500 
- 10235              	.LASF187:
- 10236 1a2d 73655F74 		.ascii	"se_time\000"
- 10236      696D6500 
- 10237              	.LASF650:
- 10238 1a35 72657376 		.ascii	"resvd444\000"
- 10238      64343434 
- 10238      00
- 10239              	.LASF317:
- 10240 1a3e 70616C5F 		.ascii	"pal_default_config\000"
- 10240      64656661 
- 10240      756C745F 
- 10240      636F6E66 
- 10240      696700
- 10241              	.LASF335:
- 10242 1a51 67727070 		.ascii	"grpp\000"
- 10242      00
- 10243              	.LASF145:
- 10244 1a56 44485231 		.ascii	"DHR12RD\000"
- 10244      32524400 
- 10245              	.LASF248:
- 10246 1a5e 656C5F6C 		.ascii	"el_listener\000"
- 10246      69737465 
- 10246      6E657200 
- 10247              	.LASF680:
- 10248 1a6a 6C696E65 		.ascii	"linear\000"
- 10248      617200
- 10249              	.LASF433:
- 10250 1a71 73746D33 		.ascii	"stm32_tim_t\000"
- 10250      325F7469 
- 10250      6D5F7400 
- 10251              	.LASF67:
- 10252 1a7d 725F7072 		.ascii	"r_prio\000"
- 10252      696F00
- 10253              	.LASF567:
- 10254 1a84 706D6E65 		.ascii	"pmnext\000"
- 10254      787400
- 10255              	.LASF733:
- 10256 1a8b 65703269 		.ascii	"ep2instate\000"
- 10256      6E737461 
- 10256      746500
- 10257              	.LASF96:
- 10258 1a96 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 10258      52784275 
- 10258      66666572 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 203
+ 10226              	.LASF135:
+ 10227 1a31 52455345 		.ascii	"RESERVED5\000"
+ 10227      52564544 
+ 10227      3500
+ 10228              	.LASF702:
+ 10229 1a3b 55534245 		.ascii	"USBEndpointConfig\000"
+ 10229      6E64706F 
+ 10229      696E7443 
+ 10229      6F6E6669 
+ 10229      6700
+ 10230              	.LASF139:
+ 10231 1a4d 44485231 		.ascii	"DHR12R1\000"
+ 10231      32523100 
+ 10232              	.LASF142:
+ 10233 1a55 44485231 		.ascii	"DHR12R2\000"
+ 10233      32523200 
+ 10234              	.LASF409:
+ 10235 1a5d 65787463 		.ascii	"extcallback_t\000"
+ 10235      616C6C62 
+ 10235      61636B5F 
+ 10235      7400
+ 10236              	.LASF365:
+ 10237 1a6b 72787175 		.ascii	"rxqueue\000"
+ 10237      65756500 
+ 10238              	.LASF187:
+ 10239 1a73 73655F74 		.ascii	"se_time\000"
+ 10239      696D6500 
+ 10240              	.LASF650:
+ 10241 1a7b 72657376 		.ascii	"resvd444\000"
+ 10241      64343434 
+ 10241      00
+ 10242              	.LASF317:
+ 10243 1a84 70616C5F 		.ascii	"pal_default_config\000"
+ 10243      64656661 
+ 10243      756C745F 
+ 10243      636F6E66 
+ 10243      696700
+ 10244              	.LASF335:
+ 10245 1a97 67727070 		.ascii	"grpp\000"
+ 10245      00
+ 10246              	.LASF145:
+ 10247 1a9c 44485231 		.ascii	"DHR12RD\000"
+ 10247      32524400 
+ 10248              	.LASF248:
+ 10249 1aa4 656C5F6C 		.ascii	"el_listener\000"
+ 10249      69737465 
+ 10249      6E657200 
+ 10250              	.LASF680:
+ 10251 1ab0 6C696E65 		.ascii	"linear\000"
+ 10251      617200
+ 10252              	.LASF433:
+ 10253 1ab7 73746D33 		.ascii	"stm32_tim_t\000"
+ 10253      325F7469 
+ 10253      6D5F7400 
+ 10254              	.LASF67:
+ 10255 1ac3 725F7072 		.ascii	"r_prio\000"
+ 10255      696F00
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 203
 
 
- 10258      00
- 10259              	.LASF287:
- 10260 1aa3 426C6F63 		.ascii	"BlockDeviceInfo\000"
- 10260      6B446576 
- 10260      69636549 
- 10260      6E666F00 
- 10261              	.LASF16:
- 10262 1ab3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 10262      206C6F6E 
- 10262      6720756E 
- 10262      7369676E 
- 10262      65642069 
- 10263              	.LASF174:
- 10264 1aca 5344494F 		.ascii	"SDIO_TypeDef\000"
- 10264      5F547970 
- 10264      65446566 
- 10264      00
- 10265              	.LASF196:
- 10266 1ad7 6F666673 		.ascii	"offset\000"
- 10266      657400
- 10267              	.LASF151:
- 10268 1ade 4E445452 		.ascii	"NDTR\000"
- 10268      00
- 10269              	.LASF253:
- 10270 1ae3 65735F6E 		.ascii	"es_next\000"
- 10270      65787400 
- 10271              	.LASF616:
- 10272 1aeb 72657376 		.ascii	"resvd1C\000"
- 10272      64314300 
- 10273              	.LASF95:
- 10274 1af3 69646C65 		.ascii	"idle_thread_wa\000"
- 10274      5F746872 
- 10274      6561645F 
- 10274      776100
- 10275              	.LASF612:
- 10276 1b02 44494550 		.ascii	"DIEPINT\000"
- 10276      494E5400 
- 10277              	.LASF180:
- 10278 1b0a 5350495F 		.ascii	"SPI_TypeDef\000"
- 10278      54797065 
- 10278      44656600 
- 10279              	.LASF78:
- 10280 1b16 76745F66 		.ascii	"vt_func\000"
- 10280      756E6300 
- 10281              	.LASF424:
- 10282 1b1e 534D4352 		.ascii	"SMCR\000"
- 10282      00
- 10283              	.LASF657:
- 10284 1b23 444F4550 		.ascii	"DOEPMSK\000"
- 10284      4D534B00 
- 10285              	.LASF74:
- 10286 1b2b 63685F76 		.ascii	"ch_virtual_timer\000"
- 10286      69727475 
- 10286      616C5F74 
- 10286      696D6572 
- 10286      00
- 10287              	.LASF46:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 204
+ 10256              	.LASF567:
+ 10257 1aca 706D6E65 		.ascii	"pmnext\000"
+ 10257      787400
+ 10258              	.LASF733:
+ 10259 1ad1 65703269 		.ascii	"ep2instate\000"
+ 10259      6E737461 
+ 10259      746500
+ 10260              	.LASF96:
+ 10261 1adc 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 10261      52784275 
+ 10261      66666572 
+ 10261      00
+ 10262              	.LASF287:
+ 10263 1ae9 426C6F63 		.ascii	"BlockDeviceInfo\000"
+ 10263      6B446576 
+ 10263      69636549 
+ 10263      6E666F00 
+ 10264              	.LASF16:
+ 10265 1af9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 10265      206C6F6E 
+ 10265      6720756E 
+ 10265      7369676E 
+ 10265      65642069 
+ 10266              	.LASF174:
+ 10267 1b10 5344494F 		.ascii	"SDIO_TypeDef\000"
+ 10267      5F547970 
+ 10267      65446566 
+ 10267      00
+ 10268              	.LASF196:
+ 10269 1b1d 6F666673 		.ascii	"offset\000"
+ 10269      657400
+ 10270              	.LASF151:
+ 10271 1b24 4E445452 		.ascii	"NDTR\000"
+ 10271      00
+ 10272              	.LASF253:
+ 10273 1b29 65735F6E 		.ascii	"es_next\000"
+ 10273      65787400 
+ 10274              	.LASF616:
+ 10275 1b31 72657376 		.ascii	"resvd1C\000"
+ 10275      64314300 
+ 10276              	.LASF95:
+ 10277 1b39 69646C65 		.ascii	"idle_thread_wa\000"
+ 10277      5F746872 
+ 10277      6561645F 
+ 10277      776100
+ 10278              	.LASF612:
+ 10279 1b48 44494550 		.ascii	"DIEPINT\000"
+ 10279      494E5400 
+ 10280              	.LASF180:
+ 10281 1b50 5350495F 		.ascii	"SPI_TypeDef\000"
+ 10281      54797065 
+ 10281      44656600 
+ 10282              	.LASF78:
+ 10283 1b5c 76745F66 		.ascii	"vt_func\000"
+ 10283      756E6300 
+ 10284              	.LASF424:
+ 10285 1b64 534D4352 		.ascii	"SMCR\000"
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 204
 
 
- 10288 1b3c 705F666C 		.ascii	"p_flags\000"
- 10288      61677300 
- 10289              	.LASF214:
- 10290 1b44 65776D61 		.ascii	"ewmask\000"
- 10290      736B00
- 10291              	.LASF250:
- 10292 1b4b 656C5F66 		.ascii	"el_flags\000"
- 10292      6C616773 
- 10292      00
- 10293              	.LASF252:
- 10294 1b54 6576656E 		.ascii	"event_source\000"
- 10294      745F736F 
- 10294      75726365 
- 10294      00
- 10295              	.LASF54:
- 10296 1b61 705F6D74 		.ascii	"p_mtxlist\000"
- 10296      786C6973 
- 10296      7400
- 10297              	.LASF372:
- 10298 1b6b 43414E44 		.ascii	"CAND1\000"
- 10298      3100
- 10299              	.LASF130:
- 10300 1b71 46533152 		.ascii	"FS1R\000"
- 10300      00
- 10301              	.LASF26:
- 10302 1b76 74737461 		.ascii	"tstate_t\000"
- 10302      74655F74 
- 10302      00
- 10303              	.LASF547:
- 10304 1b7f 53504944 		.ascii	"SPIDriver\000"
- 10304      72697665 
- 10304      7200
- 10305              	.LASF658:
- 10306 1b89 4441494E 		.ascii	"DAINT\000"
- 10306      5400
- 10307              	.LASF551:
- 10308 1b8f 53504943 		.ascii	"SPIConfig\000"
- 10308      6F6E6669 
- 10308      6700
- 10309              	.LASF302:
- 10310 1b99 70757064 		.ascii	"pupdr\000"
- 10310      7200
- 10311              	.LASF392:
- 10312 1b9f 64616365 		.ascii	"dacerrorcallback_t\000"
- 10312      72726F72 
- 10312      63616C6C 
- 10312      6261636B 
- 10312      5F7400
- 10313              	.LASF554:
- 10314 1bb2 7472616E 		.ascii	"transmitting\000"
- 10314      736D6974 
- 10314      74696E67 
- 10314      00
- 10315              	.LASF749:
- 10316 1bbf 7364754F 		.ascii	"sduObjectInit\000"
- 10316      626A6563 
- 10316      74496E69 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 205
+ 10285      00
+ 10286              	.LASF657:
+ 10287 1b69 444F4550 		.ascii	"DOEPMSK\000"
+ 10287      4D534B00 
+ 10288              	.LASF74:
+ 10289 1b71 63685F76 		.ascii	"ch_virtual_timer\000"
+ 10289      69727475 
+ 10289      616C5F74 
+ 10289      696D6572 
+ 10289      00
+ 10290              	.LASF46:
+ 10291 1b82 705F666C 		.ascii	"p_flags\000"
+ 10291      61677300 
+ 10292              	.LASF214:
+ 10293 1b8a 65776D61 		.ascii	"ewmask\000"
+ 10293      736B00
+ 10294              	.LASF250:
+ 10295 1b91 656C5F66 		.ascii	"el_flags\000"
+ 10295      6C616773 
+ 10295      00
+ 10296              	.LASF252:
+ 10297 1b9a 6576656E 		.ascii	"event_source\000"
+ 10297      745F736F 
+ 10297      75726365 
+ 10297      00
+ 10298              	.LASF54:
+ 10299 1ba7 705F6D74 		.ascii	"p_mtxlist\000"
+ 10299      786C6973 
+ 10299      7400
+ 10300              	.LASF372:
+ 10301 1bb1 43414E44 		.ascii	"CAND1\000"
+ 10301      3100
+ 10302              	.LASF130:
+ 10303 1bb7 46533152 		.ascii	"FS1R\000"
+ 10303      00
+ 10304              	.LASF26:
+ 10305 1bbc 74737461 		.ascii	"tstate_t\000"
+ 10305      74655F74 
+ 10305      00
+ 10306              	.LASF547:
+ 10307 1bc5 53504944 		.ascii	"SPIDriver\000"
+ 10307      72697665 
+ 10307      7200
+ 10308              	.LASF658:
+ 10309 1bcf 4441494E 		.ascii	"DAINT\000"
+ 10309      5400
+ 10310              	.LASF551:
+ 10311 1bd5 53504943 		.ascii	"SPIConfig\000"
+ 10311      6F6E6669 
+ 10311      6700
+ 10312              	.LASF302:
+ 10313 1bdf 70757064 		.ascii	"pupdr\000"
+ 10313      7200
+ 10314              	.LASF392:
+ 10315 1be5 64616365 		.ascii	"dacerrorcallback_t\000"
+ 10315      72726F72 
+ 10315      63616C6C 
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 205
 
 
- 10316      7400
- 10317              	.LASF412:
- 10318 1bcd 6368616E 		.ascii	"channels\000"
- 10318      6E656C73 
- 10318      00
- 10319              	.LASF161:
- 10320 1bd6 434C4B43 		.ascii	"CLKCR\000"
- 10320      5200
- 10321              	.LASF526:
- 10322 1bdc 53444344 		.ascii	"SDCDriver\000"
- 10322      72697665 
- 10322      7200
- 10323              	.LASF43:
- 10324 1be6 705F6E61 		.ascii	"p_name\000"
- 10324      6D6500
- 10325              	.LASF508:
- 10326 1bed 53657269 		.ascii	"SerialDriver\000"
- 10326      616C4472 
- 10326      69766572 
- 10326      00
- 10327              	.LASF108:
- 10328 1bfa 4A445231 		.ascii	"JDR1\000"
- 10328      00
- 10329              	.LASF109:
- 10330 1bff 4A445232 		.ascii	"JDR2\000"
- 10330      00
- 10331              	.LASF110:
- 10332 1c04 4A445233 		.ascii	"JDR3\000"
- 10332      00
- 10333              	.LASF111:
- 10334 1c09 4A445234 		.ascii	"JDR4\000"
- 10334      00
- 10335              	.LASF620:
- 10336 1c0e 444F4550 		.ascii	"DOEPTSIZ\000"
- 10336      5453495A 
- 10336      00
- 10337              	.LASF761:
- 10338 1c17 433A5C55 		.ascii	"C:\\Users\\Fahra\\Desktop\\Projets\\Microinfo_TP\\T"
- 10338      73657273 
- 10338      5C466168 
- 10338      72615C44 
- 10338      65736B74 
- 10339 1c44 50355F4E 		.ascii	"P5_Noisy\\Noisy\000"
- 10339      6F697379 
- 10339      5C4E6F69 
- 10339      737900
+ 10315      6261636B 
+ 10315      5F7400
+ 10316              	.LASF554:
+ 10317 1bf8 7472616E 		.ascii	"transmitting\000"
+ 10317      736D6974 
+ 10317      74696E67 
+ 10317      00
+ 10318              	.LASF749:
+ 10319 1c05 7364754F 		.ascii	"sduObjectInit\000"
+ 10319      626A6563 
+ 10319      74496E69 
+ 10319      7400
+ 10320              	.LASF412:
+ 10321 1c13 6368616E 		.ascii	"channels\000"
+ 10321      6E656C73 
+ 10321      00
+ 10322              	.LASF161:
+ 10323 1c1c 434C4B43 		.ascii	"CLKCR\000"
+ 10323      5200
+ 10324              	.LASF526:
+ 10325 1c22 53444344 		.ascii	"SDCDriver\000"
+ 10325      72697665 
+ 10325      7200
+ 10326              	.LASF43:
+ 10327 1c2c 705F6E61 		.ascii	"p_name\000"
+ 10327      6D6500
+ 10328              	.LASF508:
+ 10329 1c33 53657269 		.ascii	"SerialDriver\000"
+ 10329      616C4472 
+ 10329      69766572 
+ 10329      00
+ 10330              	.LASF108:
+ 10331 1c40 4A445231 		.ascii	"JDR1\000"
+ 10331      00
+ 10332              	.LASF109:
+ 10333 1c45 4A445232 		.ascii	"JDR2\000"
+ 10333      00
+ 10334              	.LASF110:
+ 10335 1c4a 4A445233 		.ascii	"JDR3\000"
+ 10335      00
+ 10336              	.LASF111:
+ 10337 1c4f 4A445234 		.ascii	"JDR4\000"
+ 10337      00
+ 10338              	.LASF620:
+ 10339 1c54 444F4550 		.ascii	"DOEPTSIZ\000"
+ 10339      5453495A 
+ 10339      00
  10340              	.LASF320:
- 10341 1c53 4144435F 		.ascii	"ADC_READY\000"
+ 10341 1c5d 4144435F 		.ascii	"ADC_READY\000"
  10341      52454144 
  10341      5900
  10342              	.LASF80:
- 10343 1c5d 76697274 		.ascii	"virtual_timers_list_t\000"
+ 10343 1c67 76697274 		.ascii	"virtual_timers_list_t\000"
  10343      75616C5F 
  10343      74696D65 
  10343      72735F6C 
  10343      6973745F 
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 206
+
+
  10344              	.LASF644:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 206
-
-
- 10345 1c73 72657376 		.ascii	"resvd40C\000"
+ 10345 1c7d 72657376 		.ascii	"resvd40C\000"
  10345      64343043 
  10345      00
  10346              	.LASF342:
- 10347 1c7c 63697263 		.ascii	"circular\000"
+ 10347 1c86 63697263 		.ascii	"circular\000"
  10347      756C6172 
  10347      00
  10348              	.LASF476:
- 10349 1c85 69327373 		.ascii	"i2sstate_t\000"
+ 10349 1c8f 69327373 		.ascii	"i2sstate_t\000"
  10349      74617465 
  10349      5F7400
  10350              	.LASF299:
- 10351 1c90 6D6F6465 		.ascii	"moder\000"
+ 10351 1c9a 6D6F6465 		.ascii	"moder\000"
  10351      7200
  10352              	.LASF216:
- 10353 1c96 735F7175 		.ascii	"s_queue\000"
+ 10353 1ca0 735F7175 		.ascii	"s_queue\000"
  10353      65756500 
  10354              	.LASF205:
- 10355 1c9e 6D5F6372 		.ascii	"m_crit_thd\000"
+ 10355 1ca8 6D5F6372 		.ascii	"m_crit_thd\000"
  10355      69745F74 
  10355      686400
  10356              	.LASF374:
- 10357 1ca9 4441435F 		.ascii	"DAC_STOP\000"
+ 10357 1cb3 4441435F 		.ascii	"DAC_STOP\000"
  10357      53544F50 
  10357      00
  10358              	.LASF651:
- 10359 1cb2 72657376 		.ascii	"resvd700\000"
+ 10359 1cbc 72657376 		.ascii	"resvd700\000"
  10359      64373030 
  10359      00
  10360              	.LASF178:
- 10361 1cbb 49325343 		.ascii	"I2SCFGR\000"
+ 10361 1cc5 49325343 		.ascii	"I2SCFGR\000"
  10361      46475200 
  10362              	.LASF714:
- 10363 1cc3 75736270 		.ascii	"usbp\000"
+ 10363 1ccd 75736270 		.ascii	"usbp\000"
  10363      00
  10364              	.LASF224:
- 10365 1cc8 63685F69 		.ascii	"ch_identifier\000"
+ 10365 1cd2 63685F69 		.ascii	"ch_identifier\000"
  10365      64656E74 
  10365      69666965 
  10365      7200
  10366              	.LASF518:
- 10367 1cd6 77726974 		.ascii	"writet\000"
+ 10367 1ce0 77726974 		.ascii	"writet\000"
  10367      657400
  10368              	.LASF1:
- 10369 1cdd 6C6F6E67 		.ascii	"long long int\000"
+ 10369 1ce7 6C6F6E67 		.ascii	"long long int\000"
  10369      206C6F6E 
  10369      6720696E 
  10369      7400
  10370              	.LASF638:
- 10371 1ceb 48505458 		.ascii	"HPTXFSIZ\000"
+ 10371 1cf5 48505458 		.ascii	"HPTXFSIZ\000"
  10371      4653495A 
  10371      00
  10372              	.LASF231:
- 10373 1cf4 63665F6F 		.ascii	"cf_off_prio\000"
+ 10373 1cfe 63665F6F 		.ascii	"cf_off_prio\000"
  10373      66665F70 
  10373      72696F00 
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 207
+
+
  10374              	.LASF741:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 207
-
-
- 10375 1d00 63685379 		.ascii	"chSysLockFromISR\000"
+ 10375 1d0a 63685379 		.ascii	"chSysLockFromISR\000"
  10375      734C6F63 
  10375      6B46726F 
  10375      6D495352 
  10375      00
  10376              	.LASF202:
- 10377 1d11 74696D65 		.ascii	"time_measurement_t\000"
+ 10377 1d1b 74696D65 		.ascii	"time_measurement_t\000"
  10377      5F6D6561 
  10377      73757265 
  10377      6D656E74 
  10377      5F7400
  10378              	.LASF539:
- 10379 1d24 6765745F 		.ascii	"get_info\000"
+ 10379 1d2e 6765745F 		.ascii	"get_info\000"
  10379      696E666F 
  10379      00
  10380              	.LASF754:
- 10381 1d2d 5F646267 		.ascii	"_dbg_check_lock_from_isr\000"
+ 10381 1d37 5F646267 		.ascii	"_dbg_check_lock_from_isr\000"
  10381      5F636865 
  10381      636B5F6C 
  10381      6F636B5F 
  10381      66726F6D 
  10382              	.LASF329:
- 10383 1d46 61646365 		.ascii	"adcerror_t\000"
+ 10383 1d50 61646365 		.ascii	"adcerror_t\000"
  10383      72726F72 
  10383      5F7400
  10384              	.LASF704:
- 10385 1d51 6765745F 		.ascii	"get_descriptor_cb\000"
+ 10385 1d5b 6765745F 		.ascii	"get_descriptor_cb\000"
  10385      64657363 
  10385      72697074 
  10385      6F725F63 
  10385      6200
  10386              	.LASF32:
- 10387 1d63 6576656E 		.ascii	"eventflags_t\000"
+ 10387 1d6d 6576656E 		.ascii	"eventflags_t\000"
  10387      74666C61 
  10387      67735F74 
  10387      00
  10388              	.LASF543:
- 10389 1d70 5350495F 		.ascii	"SPI_READY\000"
+ 10389 1d7a 5350495F 		.ascii	"SPI_READY\000"
  10389      52454144 
  10389      5900
  10390              	.LASF126:
- 10391 1d7a 73464946 		.ascii	"sFIFOMailBox\000"
+ 10391 1d84 73464946 		.ascii	"sFIFOMailBox\000"
  10391      4F4D6169 
  10391      6C426F78 
  10391      00
  10392              	.LASF531:
- 10393 1d87 6275735F 		.ascii	"bus_width\000"
+ 10393 1d91 6275735F 		.ascii	"bus_width\000"
  10393      77696474 
  10393      6800
  10394              	.LASF147:
- 10395 1d91 44485238 		.ascii	"DHR8RD\000"
+ 10395 1d9b 44485238 		.ascii	"DHR8RD\000"
  10395      524400
  10396              	.LASF653:
- 10397 1d98 4443544C 		.ascii	"DCTL\000"
+ 10397 1da2 4443544C 		.ascii	"DCTL\000"
  10397      00
  10398              	.LASF533:
- 10399 1d9d 53444344 		.ascii	"SDCDriverVMT\000"
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 208
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 208
 
 
+ 10399 1da7 53444344 		.ascii	"SDCDriverVMT\000"
  10399      72697665 
  10399      72564D54 
  10399      00
  10400              	.LASF679:
- 10401 1daa 74786275 		.ascii	"txbuf\000"
+ 10401 1db4 74786275 		.ascii	"txbuf\000"
  10401      6600
  10402              	.LASF672:
- 10403 1db0 50434743 		.ascii	"PCGCCTL\000"
+ 10403 1dba 50434743 		.ascii	"PCGCCTL\000"
  10403      43544C00 
  10404              	.LASF590:
- 10405 1db8 5553425F 		.ascii	"USB_EVENT_WAKEUP\000"
+ 10405 1dc2 5553425F 		.ascii	"USB_EVENT_WAKEUP\000"
  10405      4556454E 
  10405      545F5741 
  10405      4B455550 
  10405      00
  10406              	.LASF747:
- 10407 1dc9 5F5F7365 		.ascii	"__set_BASEPRI\000"
+ 10407 1dd3 5F5F7365 		.ascii	"__set_BASEPRI\000"
  10407      745F4241 
  10407      53455052 
  10407      4900
  10408              	.LASF42:
- 10409 1dd7 705F6F6C 		.ascii	"p_older\000"
+ 10409 1de1 705F6F6C 		.ascii	"p_older\000"
  10409      64657200 
  10410              	.LASF283:
- 10411 1ddf 424C4B5F 		.ascii	"BLK_SYNCING\000"
+ 10411 1de9 424C4B5F 		.ascii	"BLK_SYNCING\000"
  10411      53594E43 
  10411      494E4700 
  10412              	.LASF314:
- 10413 1deb 50494461 		.ascii	"PIData\000"
+ 10413 1df5 50494461 		.ascii	"PIData\000"
  10413      746100
  10414              	.LASF701:
- 10415 1df2 73657475 		.ascii	"setup_buf\000"
+ 10415 1dfc 73657475 		.ascii	"setup_buf\000"
  10415      705F6275 
  10415      6600
  10416              	.LASF439:
- 10417 1dfc 47505444 		.ascii	"GPTD6\000"
+ 10417 1e06 47505444 		.ascii	"GPTD6\000"
  10417      3600
  10418              	.LASF345:
- 10419 1e02 6572726F 		.ascii	"error_cb\000"
+ 10419 1e0c 6572726F 		.ascii	"error_cb\000"
  10419      725F6362 
  10419      00
  10420              	.LASF279:
- 10421 1e0b 424C4B5F 		.ascii	"BLK_DISCONNECTING\000"
+ 10421 1e15 424C4B5F 		.ascii	"BLK_DISCONNECTING\000"
  10421      44495343 
  10421      4F4E4E45 
  10421      4354494E 
  10421      4700
  10422              	.LASF549:
- 10423 1e1d 7373706F 		.ascii	"ssport\000"
+ 10423 1e27 7373706F 		.ascii	"ssport\000"
  10423      727400
  10424              	.LASF58:
- 10425 1e24 74687265 		.ascii	"thread_reference_t\000"
+ 10425 1e2e 74687265 		.ascii	"thread_reference_t\000"
  10425      61645F72 
  10425      65666572 
  10425      656E6365 
  10425      5F7400
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 209
+
+
  10426              	.LASF408:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 209
-
-
- 10427 1e37 65787063 		.ascii	"expchannel_t\000"
+ 10427 1e41 65787063 		.ascii	"expchannel_t\000"
  10427      68616E6E 
  10427      656C5F74 
  10427      00
  10428              	.LASF555:
- 10429 1e44 72656365 		.ascii	"receiving\000"
+ 10429 1e4e 72656365 		.ascii	"receiving\000"
  10429      6976696E 
  10429      6700
  10430              	.LASF435:
- 10431 1e4e 66726571 		.ascii	"frequency\000"
+ 10431 1e58 66726571 		.ascii	"frequency\000"
  10431      75656E63 
  10431      7900
  10432              	.LASF197:
- 10433 1e58 746D5F63 		.ascii	"tm_calibration_t\000"
+ 10433 1e62 746D5F63 		.ascii	"tm_calibration_t\000"
  10433      616C6962 
  10433      72617469 
  10433      6F6E5F74 
  10433      00
  10434              	.LASF698:
- 10435 1e69 696E5F73 		.ascii	"in_state\000"
+ 10435 1e73 696E5F73 		.ascii	"in_state\000"
  10435      74617465 
  10435      00
  10436              	.LASF181:
- 10437 1e72 47545052 		.ascii	"GTPR\000"
+ 10437 1e7c 47545052 		.ascii	"GTPR\000"
  10437      00
  10438              	.LASF225:
- 10439 1e77 63685F7A 		.ascii	"ch_zero\000"
+ 10439 1e81 63685F7A 		.ascii	"ch_zero\000"
  10439      65726F00 
  10440              	.LASF456:
- 10441 1e7f 46415354 		.ascii	"FAST_DUTY_CYCLE_2\000"
+ 10441 1e89 46415354 		.ascii	"FAST_DUTY_CYCLE_2\000"
  10441      5F445554 
  10441      595F4359 
  10441      434C455F 
  10441      3200
  10442              	.LASF169:
- 10443 1e91 44435452 		.ascii	"DCTRL\000"
+ 10443 1e9b 44435452 		.ascii	"DCTRL\000"
  10443      4C00
  10444              	.LASF230:
- 10445 1e97 63685F74 		.ascii	"ch_threadsize\000"
+ 10445 1ea1 63685F74 		.ascii	"ch_threadsize\000"
  10445      68726561 
  10445      6473697A 
  10445      6500
  10446              	.LASF158:
- 10447 1ea5 464C5452 		.ascii	"FLTR\000"
+ 10447 1eaf 464C5452 		.ascii	"FLTR\000"
  10447      00
  10448              	.LASF426:
- 10449 1eaa 43434D52 		.ascii	"CCMR1\000"
+ 10449 1eb4 43434D52 		.ascii	"CCMR1\000"
  10449      3100
  10450              	.LASF427:
- 10451 1eb0 43434D52 		.ascii	"CCMR2\000"
+ 10451 1eba 43434D52 		.ascii	"CCMR2\000"
  10451      3200
  10452              	.LASF431:
- 10453 1eb6 43434D52 		.ascii	"CCMR3\000"
+ 10453 1ec0 43434D52 		.ascii	"CCMR3\000"
  10453      3300
  10454              	.LASF0:
- 10455 1ebc 756E7369 		.ascii	"unsigned int\000"
+ 10455 1ec6 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 210
+
+
  10455      676E6564 
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 210
-
-
  10455      20696E74 
  10455      00
  10456              	.LASF349:
- 10457 1ec9 73717232 		.ascii	"sqr2\000"
+ 10457 1ed3 73717232 		.ascii	"sqr2\000"
  10457      00
  10458              	.LASF350:
- 10459 1ece 73717233 		.ascii	"sqr3\000"
+ 10459 1ed8 73717233 		.ascii	"sqr3\000"
  10459      00
  10460              	.LASF642:
- 10461 1ed3 48464952 		.ascii	"HFIR\000"
+ 10461 1edd 48464952 		.ascii	"HFIR\000"
  10461      00
  10462              	.LASF572:
- 10463 1ed8 5553425F 		.ascii	"USB_UNINIT\000"
+ 10463 1ee2 5553425F 		.ascii	"USB_UNINIT\000"
  10463      554E494E 
  10463      495400
  10464              	.LASF268:
- 10465 1ee3 73747265 		.ascii	"stream\000"
+ 10465 1eed 73747265 		.ascii	"stream\000"
  10465      616D00
  10466              	.LASF352:
- 10467 1eea 64756D6D 		.ascii	"dummy\000"
+ 10467 1ef4 64756D6D 		.ascii	"dummy\000"
  10467      7900
  10468              	.LASF454:
- 10469 1ef0 6932636F 		.ascii	"i2copmode_t\000"
+ 10469 1efa 6932636F 		.ascii	"i2copmode_t\000"
  10469      706D6F64 
  10469      655F7400 
  10470              	.LASF246:
- 10471 1efc 6576656E 		.ascii	"event_listener\000"
+ 10471 1f06 6576656E 		.ascii	"event_listener\000"
  10471      745F6C69 
  10471      7374656E 
  10471      657200
  10472              	.LASF8:
- 10473 1f0b 73686F72 		.ascii	"short int\000"
+ 10473 1f15 73686F72 		.ascii	"short int\000"
  10473      7420696E 
  10473      7400
  10474              	.LASF596:
- 10475 1f15 75736263 		.ascii	"usbcallback_t\000"
+ 10475 1f1f 75736263 		.ascii	"usbcallback_t\000"
  10475      616C6C62 
  10475      61636B5F 
  10475      7400
  10476              	.LASF625:
- 10477 1f23 47555342 		.ascii	"GUSBCFG\000"
+ 10477 1f2d 47555342 		.ascii	"GUSBCFG\000"
  10477      43464700 
  10478              	.LASF182:
- 10479 1f2b 55534152 		.ascii	"USART_TypeDef\000"
+ 10479 1f35 55534152 		.ascii	"USART_TypeDef\000"
  10479      545F5479 
  10479      70654465 
  10479      6600
  10480              	.LASF267:
- 10481 1f39 6F757470 		.ascii	"output_queue_t\000"
+ 10481 1f43 6F757470 		.ascii	"output_queue_t\000"
  10481      75745F71 
  10481      75657565 
  10481      5F7400
  10482              	.LASF674:
- 10483 1f48 73746D33 		.ascii	"stm32_otg_t\000"
+ 10483 1f52 73746D33 		.ascii	"stm32_otg_t\000"
  10483      325F6F74 
  10483      675F7400 
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 211
+
+
  10484              	.LASF477:
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 211
-
-
- 10485 1f54 49325344 		.ascii	"I2SDriver\000"
+ 10485 1f5e 49325344 		.ascii	"I2SDriver\000"
  10485      72697665 
  10485      7200
  10486              	.LASF461:
- 10487 1f5e 64757479 		.ascii	"duty_cycle\000"
+ 10487 1f68 64757479 		.ascii	"duty_cycle\000"
  10487      5F637963 
  10487      6C6500
  10488              	.LASF484:
- 10489 1f69 49325343 		.ascii	"I2SConfig\000"
+ 10489 1f73 49325343 		.ascii	"I2SConfig\000"
  10489      6F6E6669 
  10489      6700
  10490              	.LASF593:
- 10491 1f73 75645F73 		.ascii	"ud_size\000"
+ 10491 1f7d 75645F73 		.ascii	"ud_size\000"
  10491      697A6500 
  10492              	.LASF696:
- 10493 1f7b 696E5F6D 		.ascii	"in_maxsize\000"
+ 10493 1f85 696E5F6D 		.ascii	"in_maxsize\000"
  10493      61787369 
  10493      7A6500
  10494              	.LASF311:
- 10495 1f86 50464461 		.ascii	"PFData\000"
+ 10495 1f90 50464461 		.ascii	"PFData\000"
  10495      746100
  10496              	.LASF404:
- 10497 1f8d 4558545F 		.ascii	"EXT_STOP\000"
+ 10497 1f97 4558545F 		.ascii	"EXT_STOP\000"
  10497      53544F50 
  10497      00
  10498              	.LASF45:
- 10499 1f96 705F7374 		.ascii	"p_state\000"
+ 10499 1fa0 705F7374 		.ascii	"p_state\000"
  10499      61746500 
  10500              	.LASF485:
- 10501 1f9e 49325344 		.ascii	"I2SD2\000"
+ 10501 1fa8 49325344 		.ascii	"I2SD2\000"
  10501      3200
  10502              	.LASF534:
- 10503 1fa4 69735F69 		.ascii	"is_inserted\000"
+ 10503 1fae 69735F69 		.ascii	"is_inserted\000"
  10503      6E736572 
  10503      74656400 
  10504              	.LASF61:
- 10505 1fb0 63685F74 		.ascii	"ch_threads_list\000"
+ 10505 1fba 63685F74 		.ascii	"ch_threads_list\000"
  10505      68726561 
  10505      64735F6C 
  10505      69737400 
  10506              	.LASF170:
- 10507 1fc0 44434F55 		.ascii	"DCOUNT\000"
+ 10507 1fca 44434F55 		.ascii	"DCOUNT\000"
  10507      4E5400
  10508              	.LASF155:
- 10509 1fc7 4F415231 		.ascii	"OAR1\000"
+ 10509 1fd1 4F415231 		.ascii	"OAR1\000"
  10509      00
  10510              	.LASF156:
- 10511 1fcc 4F415232 		.ascii	"OAR2\000"
+ 10511 1fd6 4F415232 		.ascii	"OAR2\000"
  10511      00
  10512              	.LASF57:
- 10513 1fd1 705F7374 		.ascii	"p_stats\000"
+ 10513 1fdb 705F7374 		.ascii	"p_stats\000"
  10513      61747300 
  10514              	.LASF577:
- 10515 1fd9 75736273 		.ascii	"usbstate_t\000"
+ 10515 1fe3 75736273 		.ascii	"usbstate_t\000"
  10515      74617465 
  10515      5F7400
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 212
+
+
  10516              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 212
-
-
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 213
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 213
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbcfg.c
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:18     .text.get_descriptor:00000000 $t
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:25     .text.get_descriptor:00000000 get_descriptor
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:91     .text.get_descriptor:00000040 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:99     .text.usb_event:00000000 $t
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:106    .text.usb_event:00000000 usb_event
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:225    .text.usb_event:00000058 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:233    .text.usb_start:00000000 $t
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:241    .text.usb_start:00000000 usb_start
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:308    .text.usb_start:00000050 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:383    .rodata.serusbcfg:00000000 serusbcfg
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:394    .rodata.usbcfg:00000000 usbcfg
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:324    .bss.SDU1:00000000 SDU1
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:320    .bss.SDU1:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:327    .bss.ep1instate:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:330    .bss.ep1instate:00000000 ep1instate
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:333    .bss.ep1outstate:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:336    .bss.ep1outstate:00000000 ep1outstate
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:339    .bss.ep2instate:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:342    .bss.ep2instate:00000000 ep2instate
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:345    .rodata.ep1config:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:349    .rodata.ep1config:00000000 ep1config
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:362    .rodata.ep2config:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:366    .rodata.ep2config:00000000 ep2config
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:379    .rodata.serusbcfg:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:390    .rodata.usbcfg:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:400    .rodata.vcom_configuration_descriptor:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:404    .rodata.vcom_configuration_descriptor:00000000 vcom_configuration_descriptor
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:411    .rodata.vcom_configuration_descriptor_data:00000000 vcom_configuration_descriptor_data
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:408    .rodata.vcom_configuration_descriptor_data:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:480    .rodata.vcom_device_descriptor:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:484    .rodata.vcom_device_descriptor:00000000 vcom_device_descriptor
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:491    .rodata.vcom_device_descriptor_data:00000000 vcom_device_descriptor_data
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:488    .rodata.vcom_device_descriptor_data:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:511    .rodata.vcom_string0:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:514    .rodata.vcom_string0:00000000 vcom_string0
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:520    .rodata.vcom_string1:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:523    .rodata.vcom_string1:00000000 vcom_string1
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:563    .rodata.vcom_string2:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:566    .rodata.vcom_string2:00000000 vcom_string2
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:604    .rodata.vcom_string3:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:607    .rodata.vcom_string3:00000000 vcom_string3
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:617    .rodata.vcom_strings:00000000 $d
-C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s:621    .rodata.vcom_strings:00000000 vcom_strings
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:18     .text.get_descriptor:00000000 $t
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:25     .text.get_descriptor:00000000 get_descriptor
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:91     .text.get_descriptor:00000040 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:99     .text.usb_event:00000000 $t
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:106    .text.usb_event:00000000 usb_event
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:225    .text.usb_event:00000058 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:233    .text.usb_start:00000000 $t
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:241    .text.usb_start:00000000 usb_start
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:308    .text.usb_start:00000050 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:383    .rodata.serusbcfg:00000000 serusbcfg
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:394    .rodata.usbcfg:00000000 usbcfg
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:324    .bss.SDU1:00000000 SDU1
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:320    .bss.SDU1:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:327    .bss.ep1instate:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:330    .bss.ep1instate:00000000 ep1instate
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:333    .bss.ep1outstate:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:336    .bss.ep1outstate:00000000 ep1outstate
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:339    .bss.ep2instate:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:342    .bss.ep2instate:00000000 ep2instate
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:345    .rodata.ep1config:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:349    .rodata.ep1config:00000000 ep1config
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:362    .rodata.ep2config:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:366    .rodata.ep2config:00000000 ep2config
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:379    .rodata.serusbcfg:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:390    .rodata.usbcfg:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:400    .rodata.vcom_configuration_descriptor:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:404    .rodata.vcom_configuration_descriptor:00000000 vcom_configuration_descriptor
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:411    .rodata.vcom_configuration_descriptor_data:00000000 vcom_configuration_descriptor_data
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:408    .rodata.vcom_configuration_descriptor_data:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:480    .rodata.vcom_device_descriptor:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:484    .rodata.vcom_device_descriptor:00000000 vcom_device_descriptor
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:491    .rodata.vcom_device_descriptor_data:00000000 vcom_device_descriptor_data
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:488    .rodata.vcom_device_descriptor_data:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:511    .rodata.vcom_string0:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:514    .rodata.vcom_string0:00000000 vcom_string0
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:520    .rodata.vcom_string1:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:523    .rodata.vcom_string1:00000000 vcom_string1
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:563    .rodata.vcom_string2:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:566    .rodata.vcom_string2:00000000 vcom_string2
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:604    .rodata.vcom_string3:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:607    .rodata.vcom_string3:00000000 vcom_string3
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:617    .rodata.vcom_strings:00000000 $d
+C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s:621    .rodata.vcom_strings:00000000 vcom_strings
 
 UNDEFINED SYMBOLS
 __stack_chk_fail
@@ -12721,7 +12722,7 @@ _dbg_check_unlock_from_isr
 _stats_stop_measure_crit_isr
 sduObjectInit
 sduStart
-ARM GAS  C:\Users\Fahra\AppData\Local\Temp\ccvjvcii.s 			page 214
+ARM GAS  C:\Users\melch\AppData\Local\Temp\ccqaKZmi.s 			page 214
 
 
 chThdSleep
