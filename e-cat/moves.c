@@ -55,6 +55,7 @@ static THD_FUNCTION(Mover, arg) {
 			printf("look_around");
 		if(action == circle_move)
 			printf("circle_move");
+		chTHDSleep(MS2ST(1000));
 	}
 
 }
