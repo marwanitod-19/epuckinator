@@ -47,10 +47,12 @@ static void timer12_start(void){
 int main(void)
 {
 	motors_init();
-
+	systime_t time;
 
 	while(1){
+		time = chVTGetSystemTime();
 		stroll();
+		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 
 }
