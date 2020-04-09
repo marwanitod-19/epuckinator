@@ -46,6 +46,12 @@ static void timer12_start(void){
 
 int main(void)
 {
+	halInit();
+	chSysInit();
+	mpu_init();
+
+	serial_start();
+	usb_start();
 	motors_init();
 	systime_t time;
 
