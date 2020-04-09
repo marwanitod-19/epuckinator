@@ -12,17 +12,8 @@
 #include <audio/microphone.h>
 
 #include <audio_processing.h>
-#include <fft.h>
 #include <communications.h>
 #include <arm_math.h>
-
-//uncomment to send the FFTs results from the real microphones
-//#define SEND_FROM_MIC
-
-//uncomment to use double buffering to send the FFT to the computer
-#define DOUBLE_BUFFERING
-
-static complex_float converted_buff[FFT_SIZE];
 
 static void serial_start(void)
 {
@@ -55,82 +46,6 @@ static void timer12_start(void){
 int main(void)
 {
 
-    halInit();
-    chSysInit();
-    mpu_init();
-
-    //starts the serial communication
-    serial_start();
-    //starts the USB communication
-    usb_start();
-    //starts timer 12
-    timer12_start();
-    //inits the motors
-    motors_init();
-
-    //send_tab is used to save the state of the buffer to send (double buffering)
-    //to avoid modifications of the buffer while sending it
-    static float send_tab[FFT_SIZE];
-
-#ifdef SEND_FROM_MIC
-    //starts the microphones processing thread.
-    //it calls the callback given in parameter when samples are ready
-    mic_start(&processAudioData);
-#endif  /* SEND_FROM_MIC */
-
-    /* Infinite loop. */
-    while (1) {
-#ifdef SEND_FROM_MIC
-        //waits until a result must be sent to the computer
-        wait_send_to_computer();
-#ifdef DOUBLE_BUFFERING
-        //we copy the buffer to avoid conflicts
-        arm_copy_f32(get_audio_buffer_ptr(LEFT_OUTPUT), send_tab, FFT_SIZE); //puts content of left_output pointer in send_tab
-        SendFloatToComputer((BaseSequentialStream *) &SD3, send_tab, FFT_SIZE); //sends buffer data to computer (UART3)
-#else
-        SendFloatToComputer((BaseSequentialStream *) &SD3, get_audio_buffer_ptr(LEFT_OUTPUT), FFT_SIZE); //same as above, but no double buffering
-#endif  /* DOUBLE_BUFFERING */
-#else
-
-        float* bufferCmplxInput = get_audio_buffer_ptr(LEFT_CMPLX_INPUT);
-        float* bufferOutput = get_audio_buffer_ptr(LEFT_OUTPUT);
-
-        uint16_t size = ReceiveInt16FromComputer((BaseSequentialStream *) &SD3, bufferCmplxInput, FFT_SIZE);
-
-        volatile uint16_t time = 0;
-
-        if(size == FFT_SIZE){
-//
-//        	//non-optimized FFT
-            chSysLock();
-            GPTD12.tim->CNT = 0;
-//        	for(uint16_t i = 0; i<(FFT_SIZE); i++){
-//        		converted_buff[i].real = bufferCmplxInput[2*i];
-//        		converted_buff[i].imag = bufferCmplxInput[2*i+1];
-//        	}
-//
-//
-        	doFFT_c(FFT_SIZE, bufferCmplxInput);
-//
-//          	for(uint16_t i = 0; i<(FFT_SIZE); i++){
-//        		bufferCmplxInput[2*i] = converted_buff[i].real;
-//        	    bufferCmplxInput[2*i+1] = converted_buff[i].imag;
-//        	}
-
-            doFFT_optimized(FFT_SIZE, bufferCmplxInput);
-
-            arm_cmplx_mag_f32(bufferCmplxInput, bufferOutput, FFT_SIZE);
-
-          	time = GPTD12.tim->CNT;
-          	chSysUnlock();
-          	chprintf((BaseSequentialStream *)&SD3, "time=%dus\n", time);
-
-
-            SendFloatToComputer((BaseSequentialStream *) &SD3, bufferOutput, FFT_SIZE);
-
-        }
-#endif  /* SEND_FROM_MIC */
-    }
 }
 
 #define STACK_CHK_GUARD 0xe2dee396
