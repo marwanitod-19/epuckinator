@@ -1,12 +1,12 @@
 #ifndef MOVES_H_
 #define MOVES_H_
 
-void randomizer();
+void randomizer(void);
 
-void rotator();
+void rotator(void);
 
 //Casual stroll in a given direction
-void stroll();
+void stroll(void);
 
 
 #endif /* MOVES_H_ */

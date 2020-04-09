@@ -8,9 +8,9 @@
 #ifndef EYES_H_
 #define EYES_H_
 
-void view();
+void view(void);
 
-void follow();
+void follow(void);
 
 
 

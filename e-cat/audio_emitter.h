@@ -2,9 +2,9 @@
 #define AUDIO_EMITTER_H_
 
 
-void meow();
+void meow(void);
 
-void purr();
+void purr(void);
 
 
 #endif /* AUDIO_EMITTER_H_ */
