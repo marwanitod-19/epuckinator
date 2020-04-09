@@ -1,9 +1,8 @@
+#include "hearing.h"
 #include "ch.h"
 #include "hal.h"
 #include <main.h>
 #include <math.h>
-#include <fft.h>
-
 #include <arm_math.h>
 #include <arm_const_structs.h>
 
