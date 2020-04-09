@@ -49,9 +49,10 @@ int main(void)
 	motors_init();
 	systime_t time;
 
+	stroll();
+
 	while(1){
 		time = chVTGetSystemTime();
-		stroll();
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 
