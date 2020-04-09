@@ -1,7 +1,7 @@
 #ifndef MOVES_H_
 #define MOVES_H_
 
-void randomizer(void);
+int randomizer(void);
 
 void rotator(void);
 
