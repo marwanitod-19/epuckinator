@@ -29,6 +29,11 @@ void stroll(){
 }
 
 
+void make_pause(){
+	right_motor_set_speed(0);
+	left_motor_set_speed(0);
+}
+
 
 static THD_WORKING_AREA(waMover, 256);
 static THD_FUNCTION(Mover, arg) {
@@ -43,7 +48,7 @@ static THD_FUNCTION(Mover, arg) {
 		// Condition qui choisit entre rotation et stroll?
 		action = randomizer();
 		if(action == pause)
-			printf("pause");
+			make_pause();
 		if(action == stroll_move)
 			stroll();
 		if(action == look_around)
