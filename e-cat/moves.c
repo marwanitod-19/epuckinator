@@ -48,9 +48,9 @@ static THD_FUNCTION(Mover, arg) {
 		// Condition qui choisit entre rotation et stroll?
 		action = randomizer();
 		if(action == pause)
-			make_pause();
-		if(action == stroll_move)
 			stroll();
+		if(action == stroll_move)
+			make_pause();
 		if(action == look_around)
 			printf("look_around");
 		if(action == circle_move)
