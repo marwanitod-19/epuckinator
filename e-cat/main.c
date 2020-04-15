@@ -55,7 +55,7 @@ int main(void)
 	motors_init();
 	systime_t time;
 
-	stroll();
+	//stroll();
 
 	while(1){
 		time = chVTGetSystemTime();
