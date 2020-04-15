@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 #include "ch.h"
 #include "hal.h"
 #include "memory_protection.h"
+#include <stm32f407xx.h>
 #include <usbcfg.h>
 #include <main.h>
 #include <chprintf.h>
@@ -53,11 +55,18 @@ int main(void)
 	serial_start();
 	usb_start();
 	motors_init();
+	mover_start();
 	systime_t time;
+
+	//RNG->CR |= RNG_CR_IE;
+	RCC->AHB2RSTR &= !RCC_AHB2RSTR_RNGRST;
+	RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN;
+	RNG->CR |= RNG_CR_RNGEN;
 
 	//stroll();
 
 	while(1){
+		//chprintf((BaseSequentialStream *)&SD3, "Main While \n");
 		time = chVTGetSystemTime();
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}

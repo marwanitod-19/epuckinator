@@ -1,14 +1,21 @@
 #ifndef MOVES_H_
 #define MOVES_H_
 
-int randomizer(void);
+//int _gettimeofday( struct timeval *tv, void *tzvp );
 
-void make_pause();
+//int randomizer(void);
 
-void rotator(void);
+void make_pause(void);
+
+void rotator(int speed);
 
 //Casual stroll in a given direction
-void stroll(void);
+void stroll(int left_speed, int right_speed);
+
+void mover_start(void);
+
+void make_circle(int size, int speed);
+
 
 
 #endif /* MOVES_H_ */
