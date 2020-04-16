@@ -24,9 +24,9 @@ enum moves {pause, stroll_move, look_around, circle_move};
 //} // end _gettimeofday()
 //
 
-int randomizer(void){
+int randomizer(int nb_rand){
 	int action = pause;
-	action = RNG->DR % NB_MOVES;
+	action = RNG->DR % nb_rand;
 	return action;
 }
 
@@ -53,6 +53,27 @@ void make_circle(int size, int speed){
 	left_motor_set_speed((speed + size)*CMtoSTEP);
 }
 
+void make_look_around(void){		//regarde à gauche et a droite et choisit entre partir à gauche, à droite ou au milieu.
+	int direction = randomizer(2);
+	rotator(-8);
+	chThdSleep(MS2ST(500));
+	rotator(8);
+	chThdSleep(MS2ST(1000));
+	if(direction == 0){
+		//Cas où il part à gauche
+		rotator(-8);
+		chThdSleep(MS2ST(1000));
+	}
+	else if(direction == 1){
+		//Cas où il part au milieu
+		rotator(-8);
+		chThdSleep(MS2ST(500));
+	}
+	else{
+		//Cas où il part à droite
+		chThdSleep(MS2ST(200));
+	}
+}
 
 static THD_WORKING_AREA(waMover, 256);
 static THD_FUNCTION(Mover, arg) {
@@ -63,14 +84,15 @@ static THD_FUNCTION(Mover, arg) {
 	while(1){
 		//time = chVTGetSystemTime();
 		// Condition qui choisit entre rotation et stroll?
-		action = randomizer();
+		action = look_around; //randomizer(NB_MOVES);
 		chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
 		if(action == pause)
 			make_pause();
 		if(action == stroll_move)
 			stroll(5,5);
 		if(action == look_around)
-			rotator(-3);
+			make_look_around();
+			make_pause();
 		if(action == circle_move)
 			make_circle(3, 3);
 		chThdSleep(MS2ST(1000));

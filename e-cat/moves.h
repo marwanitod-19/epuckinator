@@ -3,7 +3,7 @@
 
 //int _gettimeofday( struct timeval *tv, void *tzvp );
 
-//int randomizer(void);
+int randomizer(int nb_rand);
 
 void make_pause(void);
 
@@ -16,6 +16,6 @@ void mover_start(void);
 
 void make_circle(int size, int speed);
 
-
+void make_look_around(void);
 
 #endif /* MOVES_H_ */
