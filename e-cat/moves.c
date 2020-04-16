@@ -114,19 +114,26 @@ static THD_FUNCTION(Mover, arg) {
 		// Condition qui choisit entre rotation et stroll?
 		action = randomizer(NB_MOVES);
 		chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
-		if(action == pause)
+		if(action == pause){
 			make_pause();
-		if(action == stroll_move)
+			chThdSleep(MS2ST(1000));
+		}
+		if(action == stroll_move){
 			stroll(5,5);
+			chThdSleep(MS2ST(2500));
+		}
 		if(action == look_around){
 			make_look_around();
-			make_pause();
+			pause_until(500);
 		}
-		if(action == circle_move)
+		if(action == circle_move){
 			make_circle(3, 3);
-		if(action == jump)
-			make_jump();
-		chThdSleep(MS2ST(1000));
+			chThdSleep(MS2ST(2000));
+		}
+		if(action == jump){
+			//make_jump();
+			//chThdSleep(MS2ST(2000));
+		}
 	}
 
 }
