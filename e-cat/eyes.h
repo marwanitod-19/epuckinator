@@ -12,6 +12,8 @@ void view(void);
 
 void follow(void);
 
+void eyes_start(void);
+
 
 
 #endif /* EYES_H_ */

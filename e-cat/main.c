@@ -18,6 +18,10 @@
 #include <communications.h>
 #include <arm_math.h>
 
+messagebus_t bus;
+MUTEX_DECL(bus_lock);
+CONDVAR_DECL(bus_condvar);
+
 static void serial_start(void)
 {
 	static SerialConfig ser_cfg = {
@@ -55,7 +59,10 @@ int main(void)
 	serial_start();
 	usb_start();
 	motors_init();
-	mover_start();
+	//mover_start();
+	messagebus_init(&bus, &bus_lock, &bus_condvar);
+	eyes_start();
+
 	systime_t time;
 
 	//RNG->CR |= RNG_CR_IE;
