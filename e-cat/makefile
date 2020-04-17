@@ -12,6 +12,7 @@ GLOBAL_PATH = ../../lib/e-puck2_main-processor
 CSRC += ./main.c \
 		./audio_processing.c \
 		./communications.c \
+		./fft.c \
 		./hearing.c \
 		./obstacle.c \
 		./audio_emitter.c \

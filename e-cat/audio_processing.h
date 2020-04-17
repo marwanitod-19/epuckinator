@@ -18,6 +18,8 @@ typedef enum {
 } BUFFER_NAME_t;
 
 
+float get_audio_direction(float* data, uint16_t num_samples);
+
 void processAudioData(int16_t *data, uint16_t num_samples);
 
 /*
