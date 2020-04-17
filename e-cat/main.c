@@ -59,7 +59,7 @@ int main(void)
 	usb_start();
     timer12_start();
 	motors_init();
-	mover_start();
+	//mover_start();
 
 	//temp tab used to store values in complex_float format
 	    //needed bx doFFT_c

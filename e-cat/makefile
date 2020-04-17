@@ -13,11 +13,11 @@ CSRC += ./main.c \
 		./audio_processing.c \
 		./communications.c \
 		./fft.c \
-		./hearing.c \
 		./obstacle.c \
 		./audio_emitter.c \
 		./eyes.c \
 		./moves.c \
+		#./hearing.c \
 
 #Header folders to include
 INCDIR += 
