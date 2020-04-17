@@ -99,7 +99,7 @@ float get_herzt_value(int16_t max_norm_index){
 /*
  *
  */
-float get_audio_direction(float* data, uint16_t num_samples){
+void get_audio_direction(float* data, uint16_t num_samples){
 
 	float angle = 0; 	//angle in radians from front camera, 0° means the sound source is right in front
 						//of the front mic, positive° means it is to its right.
@@ -145,9 +145,9 @@ float get_audio_direction(float* data, uint16_t num_samples){
 	}
 
 	//chprintf to check values.
-	chprintf((BaseSequentialStream *)&SD3, "The Front mic pahse is : %f \n\r", phase_F);
-	chprintf((BaseSequentialStream *)&SD3, "The Left mic pahse is : %f \n\r", phase_L);
-	chprintf((BaseSequentialStream *)&SD3, "The Right mic pahse is : %f \n\r", phase_R);
+	chprintf((BaseSequentialStream *)&SD3, "The Front mic phase is : %f \n\r", phase_F);
+	chprintf((BaseSequentialStream *)&SD3, "The Left mic phase is : %f \n\r", phase_L);
+	chprintf((BaseSequentialStream *)&SD3, "The Right mic phase is : %f \n\r", phase_R);
 
 }
 
@@ -229,8 +229,6 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		get_audio_direction(data, num_samples);
 
 
-
-		/* commented because useless for us-.
 		//sends only one FFT result over 10 for 1 mic to not flood the computer
 		//sends to UART3
 		if(mustSend > 8){
@@ -240,7 +238,7 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		}
 		nb_samples = 0;
 		mustSend++;
-		*/
+
 		sound_remote(micLeft_output);
 	}
 }

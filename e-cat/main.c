@@ -19,6 +19,10 @@
 #include <communications.h>
 #include <arm_math.h>
 
+//uncomment to send the FFTs results from the real microphones
+#define SEND_FROM_MIC
+
+//uncomment to use double buffering to send the FFT to the computer
 #define DOUBLE_BUFFERING
 
 static void serial_start(void)
@@ -51,14 +55,18 @@ static void timer12_start(void){
 
 int main(void)
 {
-	halInit();
-	chSysInit();
-	mpu_init();
+    halInit();
+    chSysInit();
+    mpu_init();
 
-	serial_start();
-	usb_start();
+    //starts the serial communication
+    serial_start();
+    //starts the USB communication
+    usb_start();
+    //starts timer 12
     timer12_start();
-	motors_init();
+    //inits the motors
+    motors_init();
 	//mover_start();
 
 	//temp tab used to store values in complex_float format
@@ -68,19 +76,21 @@ int main(void)
 	    //to avoid modifications of the buffer while sending it
 	    static float send_tab[FFT_SIZE];
 
+
 	#ifdef SEND_FROM_MIC
 	    //starts the microphones processing thread.
 	    //it calls the callback given in parameter when samples are ready
+		chprintf((BaseSequentialStream *)&SD3, "Y U DO DIS E-PUCK ???.\n\r");
 	    mic_start(&processAudioData);
 	#endif  /* SEND_FROM_MIC */
 
 
-	systime_t time;
+	//systime_t time;
 
-	//RNG->CR |= RNG_CR_IE;
-	RCC->AHB2RSTR &= !RCC_AHB2RSTR_RNGRST;
-	RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN;
-	RNG->CR |= RNG_CR_RNGEN;
+
+//	RCC->AHB2RSTR &= !RCC_AHB2RSTR_RNGRST;
+//	RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN;
+//	RNG->CR |= RNG_CR_RNGEN;
 
 	//stroll();
 
