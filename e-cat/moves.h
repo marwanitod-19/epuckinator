@@ -18,4 +18,6 @@ void make_circle(int size, int speed);
 
 void make_look_around(void);
 
+void make_jump(void);
+
 #endif /* MOVES_H_ */
