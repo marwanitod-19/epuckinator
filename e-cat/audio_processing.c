@@ -44,6 +44,9 @@ static float micBack_output[FFT_SIZE];
 #define FREQ_BACKWARD_L		(FREQ_BACKWARD-1)
 #define FREQ_BACKWARD_H		(FREQ_BACKWARD+1)
 
+#define RESOLUTION			15.625  // Relation between the data position in buffer and the frequency.
+
+
 /*
 *	Simple function used to detect the highest value in a buffer
 *	and to execute a motor command depending on it
@@ -93,7 +96,7 @@ void sound_remote(float* data){
  */
 float get_herzt_value(int16_t max_norm_index){
 
-	float frequency = max_norm_index*15.625;
+	float frequency = max_norm_index*RESOLUTION;
 	return frequency;
 }
 /*
