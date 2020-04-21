@@ -75,6 +75,8 @@ int main(void)
 
 	while(1){
 		//chprintf((BaseSequentialStream *)&SD3, "Main While \n");
+		chprintf((BaseSequentialStream *)&SD3, "Left motor step count is %d \n\n\n", left_motor_get_pos());
+		chprintf((BaseSequentialStream *)&SD3, "Right motor step count is %d \n\n\n", right_motor_get_pos());
 		time = chVTGetSystemTime();
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}

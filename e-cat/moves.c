@@ -34,7 +34,6 @@ int randomizer(int nb_rand){
 void stroll(int left_speed, int right_speed){
 	right_motor_set_speed(left_speed*CMtoSTEP);
 	left_motor_set_speed(right_speed*CMtoSTEP);
-
 }
 
 //By default, rotates to its right for positive speeds
