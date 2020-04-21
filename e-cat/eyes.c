@@ -54,7 +54,7 @@ static THD_FUNCTION(Eyes, arg) {
 
 		if(highest_prox != 10)
 			make_pause();
-		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(i));
+		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(highest_prox));
 		chThdSleep(MS2ST(1000));
 	}
 
