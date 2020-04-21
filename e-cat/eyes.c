@@ -8,6 +8,7 @@
 #include <stm32f4xx.h>
 #include <usbcfg.h>
 #include <chprintf.h>
+#include <moves.h>
 #include <sensors/proximity.h>
 #include <sensors/VL53L0X/VL53L0X.h>
 
@@ -29,7 +30,7 @@ static THD_FUNCTION(Eyes, arg) {
 
 	//uint8_t sat_sensor[8] = { 0 };
 	uint8_t highest_prox = 0;
-	uint16_t distance = 0;
+	uint16_t inv_distance = 0;
 
 
 
@@ -39,18 +40,20 @@ static THD_FUNCTION(Eyes, arg) {
 	VL53L0X_start();
 
 	while(1){
-		highest_prox = 0;
+		highest_prox = 10;
 		for(int i = 0 ; i < 7 ; i++){
-			//distance = get_calibrated_prox(i);
-			if(distance < 6000){
+			inv_distance = get_calibrated_prox(i);
+			if(inv_distance < 50 ){
 				//sat_sensor[i] = 1;
-				if(i != 0 && get_calibrated_prox(i-1) > distance){
+				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
 				}
 			}
 		}
 
-		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, VL53L0X_get_dist_mm());
+		if(highest_prox != 10)
+			make_pause();
+		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(1));
 		chThdSleep(MS2ST(1000));
 	}
 
