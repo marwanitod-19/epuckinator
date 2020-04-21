@@ -10,7 +10,7 @@
 #include <chprintf.h>
 #include <moves.h>
 #include <sensors/proximity.h>
-#include <sensors/VL53L0X/VL53L0X.h>
+//#include <sensors/VL53L0X/VL53L0X.h>
 
 
 void view(){
@@ -37,13 +37,14 @@ static THD_FUNCTION(Eyes, arg) {
 	proximity_start();
 	calibrate_ir();
 
-	VL53L0X_start();
+	//VL53L0X_start();
 
 	while(1){
 		highest_prox = 10;
 		for(int i = 0 ; i < 7 ; i++){
 			inv_distance = get_calibrated_prox(i);
-			if(inv_distance < 50 ){
+			chprintf((BaseSequentialStream *)&SD3, "Sensor %d is sees an object at distance %d \n\n\n", i, get_calibrated_prox(i));
+			if(inv_distance > 50){
 				//sat_sensor[i] = 1;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
@@ -53,7 +54,7 @@ static THD_FUNCTION(Eyes, arg) {
 
 		if(highest_prox != 10)
 			make_pause();
-		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(1));
+		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(i));
 		chThdSleep(MS2ST(1000));
 	}
 

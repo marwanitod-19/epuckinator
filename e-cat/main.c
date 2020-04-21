@@ -13,6 +13,7 @@
 #include <motors.h>
 #include <audio/microphone.h>
 #include <moves.h>
+#include <eyes.h>
 
 #include <audio_processing.h>
 #include <communications.h>
