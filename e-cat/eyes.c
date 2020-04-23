@@ -10,6 +10,8 @@
 #include <chprintf.h>
 #include <moves.h>
 #include <sensors/proximity.h>
+#include <motors.h>
+
 //#include <sensors/VL53L0X/VL53L0X.h>
 
 #define NO_OBSTACLES	10
@@ -44,55 +46,72 @@ static THD_FUNCTION(Eyes, arg) {
 
 	while(1){
 		highest_prox = NO_OBSTACLES;
-		for(int i = 0 ; i < 7 ; i++){
+		for(int i = 0 ; i < 8 ; i++){
 			inv_distance = get_calibrated_prox(i);
-			chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\n\n", i, get_calibrated_prox(i));
+			chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
 			if(inv_distance > OBST_THRESHOLD){
 				//sat_sensor[i] = 1;
+				highest_prox = 0;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
 				}
 			}
 		}
-
+		chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
 		switch(highest_prox){
 			case prox0:
-				rotator(2);
+				rotator(8);
+				chThdSleep(MS2ST(1000));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox1:
-				rotator(4);
+				rotator(8);
+				chThdSleep(MS2ST(800));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox2:
 				rotator(8);
+				chThdSleep(MS2ST(500));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox3:
-				rotator(12);
+				rotator(8);
+				chThdSleep(MS2ST(200));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox4:
-				rotator(-12);
+				rotator(-8);
+				chThdSleep(MS2ST(200));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox5:
 				rotator(-8);
+				chThdSleep(MS2ST(500));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox6:
-				rotator(-4);
+				rotator(-8);
+				chThdSleep(MS2ST(800));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case prox7:
-				rotator(-2);
+				rotator(-8);
+				chThdSleep(MS2ST(1000));
 				right_motor_set_pos(right_motor_get_pos()-50);
 				left_motor_set_pos(left_motor_get_pos()-50);
+				break;
 			case NO_OBSTACLES:
 				break;
 		}
-		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(highest_prox));
-		chThdSleep(MS2ST(1000));
+		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
+		chThdSleep(MS2ST(100));
 	}
 
 
