@@ -21,6 +21,11 @@ void sound_remote(float* data);
 
 float get_herzt_value(int16_t max_norm_index);
 
+float get_phase_shift_FR(void);
+
+float get_phase_shift_FL(void);
+
+
 void get_audio_direction(void);
 
 void processAudioData(int16_t *data, uint16_t num_samples);

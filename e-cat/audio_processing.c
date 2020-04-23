@@ -26,6 +26,9 @@ static float micRight_output[FFT_SIZE];
 static float micFront_output[FFT_SIZE];
 static float micBack_output[FFT_SIZE];
 
+float phase_FL = 0;	//Phase difference between Front and Left mic
+float phase_FR = 0;	//Phase difference between Front and Right mic
+
 #define MIN_VALUE_THRESHOLD	10000
 
 #define MIN_FREQ		10	//we don't analyze before this index to not use resources for nothing
@@ -45,7 +48,7 @@ static float micBack_output[FFT_SIZE];
 #define FREQ_BACKWARD_H		(FREQ_BACKWARD+1)
 
 #define RESOLUTION			15.625  // Relation between the data position in buffer and the frequency.
-
+s
 
 /*
 *	Simple function used to detect the highest value in a buffer
@@ -99,6 +102,15 @@ float get_herzt_value(int16_t max_norm_index){
 	float frequency = max_norm_index*RESOLUTION;
 	return frequency;
 }
+
+float get_phase_shift_FR(void){
+	return phase_FR;
+}
+
+float get_phase_shift_FL(void){
+	return phase_FL;
+}
+
 /*
  *
  */
@@ -109,9 +121,6 @@ void get_audio_direction(void){
 	float phase_F = 0;	//Front mic phase
 	float phase_L = 0;	//Left mic phase
 	float phase_R = 0;	//Right mic phase
-
-	float phase_FL = 0;	//Phase difference between Front and Left mic
-	float phase_FR = 0;	//Phase difference between Front and Right mic
 
 	float max_leftnorm = MIN_VALUE_THRESHOLD;
 	float max_rightnorm = MIN_VALUE_THRESHOLD;
