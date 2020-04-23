@@ -48,7 +48,7 @@ float phase_FR = 0;	//Phase difference between Front and Right mic
 #define FREQ_BACKWARD_H		(FREQ_BACKWARD+1)
 
 #define RESOLUTION			15.625  // Relation between the data position in buffer and the frequency.
-s
+
 
 /*
 *	Simple function used to detect the highest value in a buffer
