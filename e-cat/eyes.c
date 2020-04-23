@@ -14,7 +14,7 @@
 
 #define NO_OBSTACLES	10
 #define OBST_THRESHOLD  50
-enum proximity{prox0 = 2, prox1 = 4, prox2 = 8, prox3 = 12, prox4 = -12, prox5 = -8, prox6 = -4, prox7 = -2};
+enum proximity{prox0 = 0, prox1 = 1, prox2 = 2, prox3 = 3, prox4 = 4, prox5 = 5, prox6 = 6, prox7 = 7};
 
 void view(){
 
