@@ -113,20 +113,39 @@ void get_audio_direction(float* data, uint16_t num_samples){
 	float phase_FL = 0;	//Phase difference between Front and Left mic
 	float phase_FR = 0;	//Phase difference between Front and Right mic
 
-	float max_norm = MIN_VALUE_THRESHOLD;
-	int16_t max_norm_index = -1;
+	float max_leftnorm = MIN_VALUE_THRESHOLD;
+	float max_rightnorm = MIN_VALUE_THRESHOLD;
+	float max_frontnorm = MIN_VALUE_THRESHOLD;
+
+	int16_t max_leftnorm_index = -1;
+	int16_t max_rightnorm_index = -1;
+	int16_t max_frontnorm_index = -1;
 
 	//search for the highest peak
 	for(uint16_t i = MIN_FREQ ; i <= MAX_FREQ ; i++){
-		if(data[i] > max_norm){
-			max_norm = data[i];
-			max_norm_index = i;
+		if(micLeft_output[i] > max_leftnorm){
+			max_leftnorm = micLeft_output[i];
+			max_leftnorm_index = i;
+		}
+	}
+	//search for the highest peak
+	for(uint16_t i = MIN_FREQ ; i <= MAX_FREQ ; i++){
+		if(micRight_output[i] > max_rightnorm){
+			max_rightnorm = micRight_output[i];
+			max_rightnorm_index = i;
+		}
+	}
+	//search for the highest peak
+	for(uint16_t i = MIN_FREQ ; i <= MAX_FREQ ; i++){
+		if(micFront_output[i] > max_frontnorm){
+			max_frontnorm = micFront_output[i];
+			max_frontnorm_index = i;
 		}
 	}
 
-	phase_F = atan2f(micFront_output[max_norm_index+1], micFront_output[max_norm_index]);
-	phase_L = atan2f(micLeft_output[max_norm_index+1], micLeft_output[max_norm_index]);
-	phase_R = atan2f(micRight_output[max_norm_index+1], micRight_output[max_norm_index]);
+	phase_F = atan2f(micFront_output[max_frontnorm_index+1], micFront_output[max_frontnorm_index]);
+	phase_L = atan2f(micLeft_output[max_leftnorm_index+1], micLeft_output[max_leftnorm_index]);
+	phase_R = atan2f(micRight_output[max_rightnorm_index+1], micRight_output[max_rightnorm_index]);
 
 	phase_FL = phase_F - phase_L;
 	phase_FR = phase_F - phase_R;
