@@ -14,6 +14,7 @@
 
 #define NO_OBSTACLES	10
 #define OBST_THRESHOLD  50
+enum proximity{prox0 = 2, prox1 = 4, prox2 = 8, prox3 = 12, prox4 = -12, prox5 = -8, prox6 = -4, prox7 = -2};
 
 void view(){
 
@@ -54,8 +55,42 @@ static THD_FUNCTION(Eyes, arg) {
 			}
 		}
 
-		if(highest_prox != 10)
-			make_pause();
+		switch(highest_prox){
+			case prox0:
+				rotator(2);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox1:
+				rotator(4);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox2:
+				rotator(8);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox3:
+				rotator(12);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox4:
+				rotator(-12);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox5:
+				rotator(-8);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox6:
+				rotator(-4);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case prox7:
+				rotator(-2);
+				right_motor_set_pos(right_motor_get_pos()-50);
+				left_motor_set_pos(left_motor_get_pos()-50);
+			case NO_OBSTACLES:
+				break;
+		}
 		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\n\n", highest_prox, get_calibrated_prox(highest_prox));
 		chThdSleep(MS2ST(1000));
 	}

@@ -60,7 +60,7 @@ int main(void)
 	serial_start();
 	usb_start();
 	motors_init();
-	//mover_start();
+	mover_start();
 	messagebus_init(&bus, &bus_lock, &bus_condvar);
 	eyes_start();
 
