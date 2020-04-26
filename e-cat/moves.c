@@ -10,6 +10,7 @@
 #include <stm32f4xx.h>
 #include <usbcfg.h>
 #include <chprintf.h>
+#include <audio_emitter.h>
 
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
@@ -111,7 +112,7 @@ static THD_FUNCTION(Mover, arg) {
 	while(1){
 		//time = chVTGetSystemTime();
 		// Condition qui choisit entre rotation et stroll?
-		action = randomizer(NB_MOVES);
+		action = stroll_move; //randomizer(NB_MOVES);
 		chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
 		if(action == pause){
 			make_pause();
@@ -119,6 +120,7 @@ static THD_FUNCTION(Mover, arg) {
 		}
 		if(action == stroll_move){
 			stroll(5,5);
+			meow();
 			chThdSleep(MS2ST(2500));
 		}
 		if(action == look_around){

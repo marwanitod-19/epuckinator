@@ -15,6 +15,12 @@
 #include <moves.h>
 #include <eyes.h>
 #include <audio_emitter.h>
+#include <audio/play_sound_file.h>
+#include <sdio.h>
+#include <audio/audio_thread.h>
+#include <fat.h>
+
+
 
 #include <audio_processing.h>
 #include <communications.h>
@@ -60,11 +66,15 @@ int main(void)
 
 	serial_start();
 	usb_start();
+	dac_start();
+	sdio_start();
+	mountSDCard();
 	motors_init();
 	mover_start();
 	messagebus_init(&bus, &bus_lock, &bus_condvar);
 	eyes_start();
 	playSoundFileStart();
+	//setSoundFileVolume(40);
 
 	systime_t time;
 
@@ -80,6 +90,7 @@ int main(void)
 		//chprintf((BaseSequentialStream *)&SD3, "Left motor step count is %d \n\n\n", left_motor_get_pos());
 		//chprintf((BaseSequentialStream *)&SD3, "Right motor step count is %d \n\n\n", right_motor_get_pos());
 		time = chVTGetSystemTime();
+		//meow(); // MEOOOOOOOOOOW
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 

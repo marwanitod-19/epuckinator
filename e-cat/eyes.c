@@ -51,7 +51,7 @@ static THD_FUNCTION(Eyes, arg) {
 		highest_prox = NO_OBSTACLES;
 		for(int i = 0 ; i < 8 ; i++){
 			inv_distance = get_calibrated_prox(i);
-			chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
+			//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
 			if(inv_distance > OBST_THRESHOLD){
 				//sat_sensor[i] = 1;
 				highest_prox = prox0;
@@ -62,10 +62,10 @@ static THD_FUNCTION(Eyes, arg) {
 				}
 			}
 		}
-		chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
-		if(sensor_count > 3){
-			rotator(12);
-			chThdSleep(MS2ST(2000));
+		//chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
+		if(sensor_count > 2){
+			chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
+			chThdSleep(MS2ST(2500));
 		}
 		switch(highest_prox){
 			case prox0:
@@ -93,7 +93,6 @@ static THD_FUNCTION(Eyes, arg) {
 				chThdSleep(MS2ST(500));
 				break;
 			case prox6:
-				meow(); // MEOOOOOOOOOOW
 				rotator(-8);
 				chThdSleep(MS2ST(800));
 				break;
@@ -105,7 +104,7 @@ static THD_FUNCTION(Eyes, arg) {
 				break;
 		}
 		sensor_count = 0;
-		chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
+		//chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
 		if(mv_in_progress){
 			chThdSleep(MS2ST(1000));
 			mv_in_progress = false;
