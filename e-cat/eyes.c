@@ -11,6 +11,7 @@
 #include <moves.h>
 #include <sensors/proximity.h>
 #include <motors.h>
+#include <audio_emitter.h>
 
 //#include <sensors/VL53L0X/VL53L0X.h>
 
@@ -92,6 +93,7 @@ static THD_FUNCTION(Eyes, arg) {
 				chThdSleep(MS2ST(500));
 				break;
 			case prox6:
+				meow(); // MEOOOOOOOOOOW
 				rotator(-8);
 				chThdSleep(MS2ST(800));
 				break;

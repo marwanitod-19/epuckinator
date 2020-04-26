@@ -14,6 +14,7 @@
 #include <audio/microphone.h>
 #include <moves.h>
 #include <eyes.h>
+#include <audio_emitter.h>
 
 #include <audio_processing.h>
 #include <communications.h>
@@ -63,6 +64,7 @@ int main(void)
 	mover_start();
 	messagebus_init(&bus, &bus_lock, &bus_condvar);
 	eyes_start();
+	playSoundFileStart();
 
 	systime_t time;
 
