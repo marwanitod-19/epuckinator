@@ -74,7 +74,7 @@ int main(void)
 	messagebus_init(&bus, &bus_lock, &bus_condvar);
 	eyes_start();
 	playSoundFileStart();
-	//setSoundFileVolume(40);
+	setSoundFileVolume(40);
 
 	systime_t time;
 

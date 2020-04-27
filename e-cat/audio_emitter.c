@@ -5,15 +5,17 @@
 
 void meow(){
 	//dac_power_speaker(1);
-	//waitSoundFileHasFinished();
+
 	stopCurrentSoundFile();
-	//dac_start();
-	setSoundFileVolume(20);
-	//dac_play(500);
-	playSoundFile("/sound/meow.wav", 0);
-	//chThdSleep(MS2ST(3000));
-	//playWAVFile("/sound/meow.wav");
 	//waitSoundFileHasFinished();
+
+	//dac_start();
+	//setSoundFileVolume(20);
+	//dac_play(500);
+	playSoundFile("/sound/meow.wav", SF_FORCE_CHANGE);
+	chThdSleep(MS2ST(2500));
+	stopCurrentSoundFile();
+	//playWAVFile("/sound/meow.wav");
 
 	//dac_stop();
 

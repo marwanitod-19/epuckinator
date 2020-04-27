@@ -65,39 +65,56 @@ static THD_FUNCTION(Eyes, arg) {
 		//chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
 		if(sensor_count > 2){
 			chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
-			chThdSleep(MS2ST(2500));
+			meow();
+			//chThdSleep(MS2ST(2500));
 		}
 		switch(highest_prox){
 			case prox0:
 				rotator(8);
 				chThdSleep(MS2ST(1000));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox1:
 				rotator(8);
 				chThdSleep(MS2ST(800));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox2:
 				rotator(8);
 				chThdSleep(MS2ST(500));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox3:
 				rotator(8);
 				chThdSleep(MS2ST(200));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox4:
 				rotator(-8);
 				chThdSleep(MS2ST(200));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox5:
 				rotator(-8);
 				chThdSleep(MS2ST(500));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox6:
 				rotator(-8);
 				chThdSleep(MS2ST(800));
+				stroll(5,5);
+				chThdSleep(MS2ST(1000));
 				break;
 			case prox7:
 				rotator(-8);
+				chThdSleep(MS2ST(1000));
+				stroll(5,5);
 				chThdSleep(MS2ST(1000));
 				break;
 			case NO_OBSTACLES:
@@ -118,5 +135,5 @@ static THD_FUNCTION(Eyes, arg) {
 }
 
 void eyes_start(void){
-	chThdCreateStatic(waEyes, sizeof(waEyes), NORMALPRIO, Eyes, NULL);
+	chThdCreateStatic(waEyes, sizeof(waEyes), HIGHPRIO, Eyes, NULL);
 }

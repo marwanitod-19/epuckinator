@@ -70,23 +70,29 @@ void make_circle(int size, int speed){
 //Looks at left and right side and chooses randomly between going left, right or straight.
 void make_look_around(void){
 	int direction = randomizer(2);
-	rotator(-8);
+	rotator(-5);
 	chThdSleep(MS2ST(500));
-	rotator(8);
+	rotator(5);
 	chThdSleep(MS2ST(1000));
 	if(direction == 0){
 		//Cas où il part à gauche
-		rotator(-8);
+		rotator(-5);
+		chThdSleep(MS2ST(1000));
+		stroll(5,5);
 		chThdSleep(MS2ST(1000));
 	}
 	else if(direction == 1){
 		//Cas où il part au milieu
-		rotator(-8);
+		rotator(-5);
 		chThdSleep(MS2ST(500));
+		stroll(5,5);
+		chThdSleep(MS2ST(1000));
 	}
 	else{
 		//Cas où il part à droite
 		chThdSleep(MS2ST(200));
+		stroll(5,5);
+		chThdSleep(MS2ST(1000));
 	}
 }
 
@@ -112,7 +118,7 @@ static THD_FUNCTION(Mover, arg) {
 	while(1){
 		//time = chVTGetSystemTime();
 		// Condition qui choisit entre rotation et stroll?
-		action = stroll_move; //randomizer(NB_MOVES);
+		action = randomizer(NB_MOVES);
 		chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
 		if(action == pause){
 			make_pause();
@@ -120,7 +126,7 @@ static THD_FUNCTION(Mover, arg) {
 		}
 		if(action == stroll_move){
 			stroll(5,5);
-			meow();
+			//meow();
 			chThdSleep(MS2ST(2500));
 		}
 		if(action == look_around){
