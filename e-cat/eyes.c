@@ -63,11 +63,11 @@ static THD_FUNCTION(Eyes, arg) {
 			}
 		}
 		//chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
-		if(sensor_count > 2){
-			chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
-			meow();
-			//chThdSleep(MS2ST(2500));
-		}
+//		if(sensor_count > 2){
+//			chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
+//			meow();
+//			//chThdSleep(MS2ST(2500));
+//		}
 		switch(highest_prox){
 			case prox0:
 				rotator(8);
@@ -123,6 +123,8 @@ static THD_FUNCTION(Eyes, arg) {
 
 		if(highest_prox == 3 || highest_prox == 4 ){
 			if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
+				chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
+				meow();
 				stroll(15, 15);
 				chThdSleep(MS2ST(200));
 			}
