@@ -23,6 +23,13 @@ void meow(){
 
 
 void purr(){
+	stopCurrentSoundFile();
+	//waitSoundFileHasFinished();
 
-
+	//dac_start();
+	//setSoundFileVolume(20);
+	//dac_play(500);
+	playSoundFile("/sound/purr.wav", SF_FORCE_CHANGE);
+	chThdSleep(MS2ST(2500));
+	stopCurrentSoundFile();
 }
