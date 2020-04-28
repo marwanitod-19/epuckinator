@@ -124,8 +124,8 @@ static THD_FUNCTION(Eyes, arg) {
 		if(highest_prox == 3 || highest_prox == 4 ){
 			if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
 				chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
-				meow();
 				stroll(15, 15);
+				meow();
 				chThdSleep(MS2ST(200));
 			}
 		}
