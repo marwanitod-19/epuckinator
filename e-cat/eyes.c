@@ -34,7 +34,7 @@ static THD_FUNCTION(Eyes, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 
-	//uint8_t sat_sensor[8] = { 0 };
+	uint8_t sat_sensor[8] = { 0 };
 	uint8_t highest_prox = NO_OBSTACLES;
 	uint8_t sensor_count = 0;
 	uint16_t inv_distance = 0;
@@ -53,7 +53,7 @@ static THD_FUNCTION(Eyes, arg) {
 			inv_distance = get_calibrated_prox(i);
 			//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
 			if(inv_distance > OBST_THRESHOLD){
-				//sat_sensor[i] = 1;
+				sat_sensor[i] = 1;
 				highest_prox = prox0;
 				mv_in_progress = true;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
@@ -87,18 +87,18 @@ static THD_FUNCTION(Eyes, arg) {
 				stroll(5,5);
 				chThdSleep(MS2ST(1000));
 				break;
-			case prox3:
-				rotator(8);
-				chThdSleep(MS2ST(200));
-				stroll(5,5);
-				chThdSleep(MS2ST(1000));
-				break;
-			case prox4:
-				rotator(-8);
-				chThdSleep(MS2ST(200));
-				stroll(5,5);
-				chThdSleep(MS2ST(1000));
-				break;
+//			case prox3:
+//				rotator(8);
+//				chThdSleep(MS2ST(200));
+//				stroll(5,5);
+//				chThdSleep(MS2ST(1000));
+//				break;
+//			case prox4:
+//				rotator(-8);
+//				chThdSleep(MS2ST(200));
+//				stroll(5,5);
+//				chThdSleep(MS2ST(1000));
+//				break;
 			case prox5:
 				rotator(-8);
 				chThdSleep(MS2ST(500));
@@ -119,6 +119,13 @@ static THD_FUNCTION(Eyes, arg) {
 				break;
 			case NO_OBSTACLES:
 				break;
+		}
+
+		if(highest_prox == 3 || highest_prox == 4 ){
+			if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
+				stroll(15, 15);
+				chThdSleep(MS2ST(200));
+			}
 		}
 		sensor_count = 0;
 		//chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
