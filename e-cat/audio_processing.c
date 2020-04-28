@@ -26,8 +26,8 @@ static float micRight_output[FFT_SIZE];
 static float micFront_output[FFT_SIZE];
 static float micBack_output[FFT_SIZE];
 
-float phase_FL = 0;	//Phase difference between Front and Left mic
-float phase_FR = 0;	//Phase difference between Front and Right mic
+static float phase_FL = 0;	//Phase difference between Front and Left mic
+static float phase_FR = 0;	//Phase difference between Front and Right mic
 
 #define MIN_VALUE_THRESHOLD	10000
 
@@ -162,6 +162,13 @@ void get_audio_direction(void){
 	/* 	add a compare if to check if the variation in amplitude is to big between the mic,
 	 * 	to ignore this loop if it is the case.
 	 */
+	if (max_leftnorm_index > (max_frontnorm_index + 2) || max_leftnorm_index < (max_frontnorm_index - 2)){
+		phase_FL = GOAL_ANGLE;
+	}
+
+	if (max_rightnorm_index > (max_frontnorm_index + 2) || max_rightnorm_index < (max_frontnorm_index - 2)){
+		phase_FR = GOAL_ANGLE;
+	}
 
 	/*
 	 * 	Condition checking if the measure of phase shifts are too big to be plausible.
@@ -169,16 +176,19 @@ void get_audio_direction(void){
 
 	if (phase_FL > 0.5 || phase_FL < -0.5){
 		//ignore this measurement.
+		phase_FL = GOAL_ANGLE;
+		//bool isPhaseValid
 	}
 
 	if (phase_FR > 0.5 || phase_FR < -0.5){
 		//ignore this measurement.
+		phase_FR = GOAL_ANGLE;
 	}
 
 	//chprintf to check values.
-	chprintf((BaseSequentialStream *)&SDU1, "The Front-Left mic phase is : %f \n\r", phase_FL);
+	//chprintf((BaseSequentialStream *)&SDU1, "The Front-Left mic phase is : %f \n\r", phase_FL);
 	//chprintf((BaseSequentialStream *)&SD3, "The Left mic phase is : %f \n\r", phase_L);
-	chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
+	//chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
 
 }
 
@@ -270,7 +280,7 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		nb_samples = 0;
 		mustSend++;
 
-		sound_remote(micLeft_output);
+		//sound_remote(micLeft_output);
 	}
 }
 
