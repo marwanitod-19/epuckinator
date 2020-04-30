@@ -71,7 +71,7 @@ void sound_remote(float* data){
 	//go forward
 	if(max_norm_index >= FREQ_FORWARD_L && max_norm_index <= FREQ_FORWARD_H){
 		rotator(pi_regulator(phase_FL, GOAL_ANGLE));
-		//chprintf((BaseSequentialStream *)&SDU1, "Should turn");
+		chprintf((BaseSequentialStream *)&SDU1, "Should turn \n\r");
 	}
 	//turn left
 	else if(max_norm_index >= FREQ_LEFT_L && max_norm_index <= FREQ_LEFT_H){
@@ -111,6 +111,14 @@ float get_phase_shift_FR(void){
 
 float get_phase_shift_FL(void){
 	return phase_FL;
+}
+
+float* get_micLeft_output(void){
+	return micLeft_output;
+}
+
+float* get_micRight_output(void){
+	return micRight_output;
 }
 
 /*
@@ -188,9 +196,9 @@ void get_audio_direction(void){
 	}
 
 	//chprintf to check values.
-	//chprintf((BaseSequentialStream *)&SDU1, "The Front-Left mic phase is : %f \n\r", phase_FL);
+	chprintf((BaseSequentialStream *)&SDU1, "The Front-Left mic phase is : %f \n\r", phase_FL);
 	//chprintf((BaseSequentialStream *)&SD3, "The Left mic phase is : %f \n\r", phase_L);
-	//chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
+	chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
 
 }
 
@@ -282,7 +290,7 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		nb_samples = 0;
 		mustSend++;
 
-		sound_remote(micLeft_output);
+		//sound_remote(micLeft_output);
 	}
 }
 

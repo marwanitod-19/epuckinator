@@ -70,7 +70,8 @@ static THD_FUNCTION(PiRegulator, arg) {
 //        }
 
         //applies the speed from the PI regulator and the correction for the rotation
-        rotator(speed);
+        //rotator(speed);
+        sound_remote(get_micLeft_output());
 //		right_motor_set_speed(speed - ROTATION_COEFF * speed_correction);
 //		left_motor_set_speed(speed + ROTATION_COEFF * speed_correction);
 

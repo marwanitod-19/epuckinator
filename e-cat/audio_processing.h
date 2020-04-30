@@ -25,6 +25,9 @@ float get_phase_shift_FR(void);
 
 float get_phase_shift_FL(void);
 
+float* get_micLeft_output(void);
+
+float* get_micRight_output(void);
 
 void get_audio_direction(void);
 
