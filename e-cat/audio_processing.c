@@ -10,7 +10,9 @@
 #include <communications.h>
 #include <fft.h>
 #include <arm_math.h>
-#include "hearing.h"
+#include <hearing.h>
+#include <pi_regulator.h>
+#include <moves.h>
 
 //semaphore
 static BSEMAPHORE_DECL(sendToComputer_sem, TRUE);
@@ -68,27 +70,27 @@ void sound_remote(float* data){
 
 	//go forward
 	if(max_norm_index >= FREQ_FORWARD_L && max_norm_index <= FREQ_FORWARD_H){
-		left_motor_set_speed(600);
-		right_motor_set_speed(600);
+		rotator(pi_regulator(phase_FL, GOAL_ANGLE));
+		//chprintf((BaseSequentialStream *)&SDU1, "Should turn");
 	}
 	//turn left
 	else if(max_norm_index >= FREQ_LEFT_L && max_norm_index <= FREQ_LEFT_H){
-		left_motor_set_speed(-600);
-		right_motor_set_speed(600);
+//		left_motor_set_speed(-600);
+//		right_motor_set_speed(600);
 	}
 	//turn right
 	else if(max_norm_index >= FREQ_RIGHT_L && max_norm_index <= FREQ_RIGHT_H){
-		left_motor_set_speed(600);
-		right_motor_set_speed(-600);
+//		left_motor_set_speed(600);
+//		right_motor_set_speed(-600);
 	}
 	//go backward
 	else if(max_norm_index >= FREQ_BACKWARD_L && max_norm_index <= FREQ_BACKWARD_H){
-		left_motor_set_speed(-600);
-		right_motor_set_speed(-600);
+//		left_motor_set_speed(-600);
+//		right_motor_set_speed(-600);
 	}
 	else{
-		left_motor_set_speed(0);
-		right_motor_set_speed(0);
+//		left_motor_set_speed(0);
+//		right_motor_set_speed(0);
 	}
 
 }
@@ -280,7 +282,7 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		nb_samples = 0;
 		mustSend++;
 
-		//sound_remote(micLeft_output);
+		sound_remote(micLeft_output);
 	}
 }
 
