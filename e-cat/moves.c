@@ -26,8 +26,6 @@ enum moves {pause, stroll_move, look_around, circle_move, jump};
 //} // end _gettimeofday()
 //
 
-static int preset_move;
-
 int randomizer(int nb_rand){
 	int action = pause;
 	action = RNG->DR % nb_rand;
@@ -112,10 +110,6 @@ void make_jump(void){
 
 }
 
-int get_preset_move(void){
-	return preset_move;
-}
-
 static THD_WORKING_AREA(waMover, 256);
 static THD_FUNCTION(Mover, arg) {
 	chRegSetThreadName(__FUNCTION__);
@@ -124,7 +118,6 @@ static THD_FUNCTION(Mover, arg) {
 	uint8_t action = pause;
 	while(1){
 		if(get_obst_move() == 0){
-			preset_move = 1;
 			//time = chVTGetSystemTime();
 			// Condition qui choisit entre rotation et stroll?
 			action = randomizer(NB_MOVES);
@@ -150,12 +143,11 @@ static THD_FUNCTION(Mover, arg) {
 				//make_jump();
 				//chThdSleep(MS2ST(2000));
 			}
-			preset_move = 0;
 		}
 
-//		else{
-//			chThdSleep(MS2ST(2000));
-//		}
+		else{
+			chThdSleep(MS2ST(2000));
+		}
 	}
 }
 
