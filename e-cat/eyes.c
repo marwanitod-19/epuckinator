@@ -49,28 +49,22 @@ static THD_FUNCTION(Eyes, arg) {
 	//VL53L0X_start();
 
 	while(1){
-		if(get_selector() != 1)
-		{
-			highest_prox = NO_OBSTACLES;
-			for(int i = 0 ; i < 8 ; i++){
-				inv_distance = get_calibrated_prox(i);
-				//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
-				if(inv_distance > OBST_THRESHOLD){
-					sat_sensor[i] = 1;
-					highest_prox = prox0;
-					mv_in_progress = true;
-					if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
-						highest_prox = i;
-						sensor_count++;
-					}
+		highest_prox = NO_OBSTACLES;
+		for(int i = 0 ; i < 8 ; i++){
+			inv_distance = get_calibrated_prox(i);
+			//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
+			if(inv_distance > OBST_THRESHOLD){
+				sat_sensor[i] = 1;
+				highest_prox = prox0;
+				mv_in_progress = true;
+				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
+					highest_prox = i;
+					sensor_count++;
 				}
 			}
-			//chprintf((BaseSequentialStream *)&SD3, "Prox number : %d \n\r", highest_prox);
-	//		if(sensor_count > 2){
-	//			chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
-	//			meow();
-	//			//chThdSleep(MS2ST(2500));
-	//		}
+		}
+		if(get_selector() != 1)
+		{
 			switch(highest_prox){
 				case prox0:
 					rotator(8);
@@ -140,15 +134,66 @@ static THD_FUNCTION(Eyes, arg) {
 			}
 			else
 				chThdSleep(MS2ST(100));
-
 		}
+
 		else{
+			switch(highest_prox){
+				case prox0:
+					rotator(-8);
+					chThdSleep(MS2ST(200));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox1:
+					rotator(-8);
+					chThdSleep(MS2ST(500));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox2:
+					rotator(-8);
+					chThdSleep(MS2ST(800));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox3:
+					rotator(-8);
+					chThdSleep(MS2ST(1000));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox4://other side
+					rotator(8);
+					chThdSleep(MS2ST(1000));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox5:
+					rotator(8);
+					chThdSleep(MS2ST(800));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox6:
+					rotator(8);
+					chThdSleep(MS2ST(500));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case prox7:
+					rotator(8);
+					chThdSleep(MS2ST(200));
+					stroll(5,5);
+					chThdSleep(MS2ST(1000));
+					break;
+				case NO_OBSTACLES:
+					break;
+			}
 			purr();
 			chThdSleep(MS2ST(3000));
 		}
-	}
 
-}
+	}
 
 void eyes_start(void){
 	chThdCreateStatic(waEyes, sizeof(waEyes), HIGHPRIO, Eyes, NULL);
