@@ -148,57 +148,57 @@ static THD_FUNCTION(Eyes, arg) {
 						rotator(-8);
 						chThdSleep(MS2ST(200));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox1:
 						rotator(-8);
 						chThdSleep(MS2ST(500));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox2:
 						rotator(-8);
 						chThdSleep(MS2ST(800));
 						stroll(5,5);
 						purr();
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox3:
 						rotator(-8);
 						chThdSleep(MS2ST(1000));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox4://other side
 						rotator(8);
 						chThdSleep(MS2ST(1000));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox5:
 						rotator(8);
 						chThdSleep(MS2ST(800));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox6:
 						rotator(8);
 						chThdSleep(MS2ST(500));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case prox7:
 						rotator(8);
 						chThdSleep(MS2ST(200));
 						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						chThdSleep(MS2ST(500));
 						break;
 					case NO_OBSTACLES:
 						break;
 				}
 				sensor_count = 0;
 				if(mv_in_progress){
-					chThdSleep(MS2ST(1000));
+					//chThdSleep(MS2ST(1000));
 					mv_in_progress = false;
 				}
 				else
