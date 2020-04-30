@@ -154,6 +154,7 @@ static THD_FUNCTION(Eyes, arg) {
 					rotator(-8);
 					chThdSleep(MS2ST(800));
 					stroll(5,5);
+					purr();
 					chThdSleep(MS2ST(1000));
 					break;
 				case prox3:
@@ -189,11 +190,18 @@ static THD_FUNCTION(Eyes, arg) {
 				case NO_OBSTACLES:
 					break;
 			}
-			purr();
-			chThdSleep(MS2ST(3000));
+			sensor_count = 0;
+			if(mv_in_progress){
+				chThdSleep(MS2ST(1000));
+				mv_in_progress = false;
+			}
+			else
+				chThdSleep(MS2ST(100));
+			//chThdSleep(MS2ST(3000));
 		}
 
 	}
+}
 
 void eyes_start(void){
 	chThdCreateStatic(waEyes, sizeof(waEyes), HIGHPRIO, Eyes, NULL);
