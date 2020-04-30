@@ -20,4 +20,6 @@ void make_look_around(void);
 
 void make_jump(void);
 
+int get_preset_move(void);
+
 #endif /* MOVES_H_ */

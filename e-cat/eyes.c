@@ -15,7 +15,7 @@
 #include <selector.h>
 
 //#include <sensors/VL53L0X/VL53L0X.h>
-static int obst_move = 0;
+static int obst_move;
 
 #define NO_OBSTACLES	10
 #define OBST_THRESHOLD  50
@@ -54,158 +54,160 @@ static THD_FUNCTION(Eyes, arg) {
 	//VL53L0X_start();
 
 	while(1){
-		highest_prox = NO_OBSTACLES;
-		for(int i = 0 ; i < 8 ; i++){
-			inv_distance = get_calibrated_prox(i);
-			//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
-			if(inv_distance > OBST_THRESHOLD){
-				sat_sensor[i] = 1;
-				highest_prox = prox0;
-				mv_in_progress = true;
-				obst_move = 1;
-				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
-					highest_prox = i;
-					sensor_count++;
+		if(get_preset_move() == 0){
+			highest_prox = NO_OBSTACLES;
+			for(int i = 0 ; i < 8 ; i++){
+				inv_distance = get_calibrated_prox(i);
+				//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
+				if(inv_distance > OBST_THRESHOLD){
+					sat_sensor[i] = 1;
+					highest_prox = prox0;
+					mv_in_progress = true;
+					obst_move = 1;
+					if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
+						highest_prox = i;
+						sensor_count++;
+					}
 				}
 			}
-		}
-		if(get_selector() != 1)
-		{
-			switch(highest_prox){
-				case prox0:
-					rotator(8);
-					chThdSleep(MS2ST(1000));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox1:
-					rotator(8);
-					chThdSleep(MS2ST(800));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox2:
-					rotator(8);
-					chThdSleep(MS2ST(500));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-	//			case prox3:
-	//				rotator(8);
-	//				chThdSleep(MS2ST(200));
-	//				stroll(5,5);
-	//				chThdSleep(MS2ST(1000));
-	//				break;
-	//			case prox4:
-	//				rotator(-8);
-	//				chThdSleep(MS2ST(200));
-	//				stroll(5,5);
-	//				chThdSleep(MS2ST(1000));
-	//				break;
-				case prox5:
-					rotator(-8);
-					chThdSleep(MS2ST(500));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox6:
-					rotator(-8);
-					chThdSleep(MS2ST(800));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox7:
-					rotator(-8);
-					chThdSleep(MS2ST(1000));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case NO_OBSTACLES:
-					break;
-			}
-
-			if(highest_prox == 3 || highest_prox == 4 ){
-				if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
-					chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
-					stroll(15, 15);
-					meow();
-					chThdSleep(MS2ST(200));
+			if(get_selector() != 1)
+			{
+				switch(highest_prox){
+					case prox0:
+						rotator(8);
+						chThdSleep(MS2ST(1000));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox1:
+						rotator(8);
+						chThdSleep(MS2ST(800));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox2:
+						rotator(8);
+						chThdSleep(MS2ST(500));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+		//			case prox3:
+		//				rotator(8);
+		//				chThdSleep(MS2ST(200));
+		//				stroll(5,5);
+		//				chThdSleep(MS2ST(1000));
+		//				break;
+		//			case prox4:
+		//				rotator(-8);
+		//				chThdSleep(MS2ST(200));
+		//				stroll(5,5);
+		//				chThdSleep(MS2ST(1000));
+		//				break;
+					case prox5:
+						rotator(-8);
+						chThdSleep(MS2ST(500));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox6:
+						rotator(-8);
+						chThdSleep(MS2ST(800));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox7:
+						rotator(-8);
+						chThdSleep(MS2ST(1000));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case NO_OBSTACLES:
+						break;
 				}
-			}
-			sensor_count = 0;
-			//chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
-			if(mv_in_progress){
-				chThdSleep(MS2ST(1000));
-				mv_in_progress = false;
-			}
-			else
-				chThdSleep(MS2ST(100));
-		}
 
-		else{
-			switch(highest_prox){
-				case prox0:
-					rotator(-8);
-					chThdSleep(MS2ST(200));
-					stroll(5,5);
+				if(highest_prox == 3 || highest_prox == 4 ){
+					if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
+						chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
+						stroll(15, 15);
+						meow();
+						chThdSleep(MS2ST(200));
+					}
+				}
+				sensor_count = 0;
+				//chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
+				if(mv_in_progress){
 					chThdSleep(MS2ST(1000));
-					break;
-				case prox1:
-					rotator(-8);
-					chThdSleep(MS2ST(500));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox2:
-					rotator(-8);
-					chThdSleep(MS2ST(800));
-					stroll(5,5);
-					purr();
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox3:
-					rotator(-8);
-					chThdSleep(MS2ST(1000));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox4://other side
-					rotator(8);
-					chThdSleep(MS2ST(1000));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox5:
-					rotator(8);
-					chThdSleep(MS2ST(800));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox6:
-					rotator(8);
-					chThdSleep(MS2ST(500));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case prox7:
-					rotator(8);
-					chThdSleep(MS2ST(200));
-					stroll(5,5);
-					chThdSleep(MS2ST(1000));
-					break;
-				case NO_OBSTACLES:
-					break;
+					mv_in_progress = false;
+				}
+				else
+					chThdSleep(MS2ST(100));
 			}
-			sensor_count = 0;
-			if(mv_in_progress){
-				chThdSleep(MS2ST(1000));
-				mv_in_progress = false;
+
+			else{
+				switch(highest_prox){
+					case prox0:
+						rotator(-8);
+						chThdSleep(MS2ST(200));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox1:
+						rotator(-8);
+						chThdSleep(MS2ST(500));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox2:
+						rotator(-8);
+						chThdSleep(MS2ST(800));
+						stroll(5,5);
+						purr();
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox3:
+						rotator(-8);
+						chThdSleep(MS2ST(1000));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox4://other side
+						rotator(8);
+						chThdSleep(MS2ST(1000));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox5:
+						rotator(8);
+						chThdSleep(MS2ST(800));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox6:
+						rotator(8);
+						chThdSleep(MS2ST(500));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case prox7:
+						rotator(8);
+						chThdSleep(MS2ST(200));
+						stroll(5,5);
+						chThdSleep(MS2ST(1000));
+						break;
+					case NO_OBSTACLES:
+						break;
+				}
+				sensor_count = 0;
+				if(mv_in_progress){
+					chThdSleep(MS2ST(1000));
+					mv_in_progress = false;
+				}
+				else
+					chThdSleep(MS2ST(100));
+				//chThdSleep(MS2ST(3000));
 			}
-			else
-				chThdSleep(MS2ST(100));
-			//chThdSleep(MS2ST(3000));
-		}
-		obst_move = 0;
+				obst_move = 0;
+			}
 	}
 }
 
