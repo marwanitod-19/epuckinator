@@ -70,11 +70,11 @@ void make_circle(int size, int speed){
 
 //Looks at left and right side and chooses randomly between going left, right or straight.
 void make_look_around(void){
-	int direction = randomizer(2);
+	int direction = randomizer(2); //choisit entre gauche, droite et milieu
 	rotator(-5);
-	chThdSleep(MS2ST(500));
+	chThdSleep(MS2ST(500));	// Tourne à gauche
 	rotator(5);
-	chThdSleep(MS2ST(1000));
+	chThdSleep(MS2ST(1000)); // Tourne à droite
 	if(direction == 0){
 		//Cas où il part à gauche
 		rotator(-5);
