@@ -11,6 +11,7 @@
 #include <usbcfg.h>
 #include <chprintf.h>
 #include <audio_emitter.h>
+#include <eyes.h>
 
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
@@ -116,34 +117,40 @@ static THD_FUNCTION(Mover, arg) {
 	//systime_t time;
 	uint8_t action = pause;
 	while(1){
-		//time = chVTGetSystemTime();
-		// Condition qui choisit entre rotation et stroll?
-		action = randomizer(NB_MOVES);
-		chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
-		if(action == pause){
-			make_pause();
-			chThdSleep(MS2ST(1000));
+		if(get_obst_move() == 0){
+			//time = chVTGetSystemTime();
+			// Condition qui choisit entre rotation et stroll?
+			action = randomizer(NB_MOVES);
+			chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
+			if(action == pause){
+				make_pause();
+				chThdSleep(MS2ST(1000));
+			}
+			if(action == stroll_move){
+				stroll(5,5);
+				//meow();
+				chThdSleep(MS2ST(2500));
+			}
+			if(action == look_around){
+				make_look_around();
+				pause_until(500);
+			}
+			if(action == circle_move){
+				make_circle(3, 3);
+				chThdSleep(MS2ST(2000));
+			}
+			if(action == jump){
+				//make_jump();
+				//chThdSleep(MS2ST(2000));
+			}
 		}
-		if(action == stroll_move){
-			stroll(5,5);
-			//meow();
-			chThdSleep(MS2ST(2500));
-		}
-		if(action == look_around){
-			make_look_around();
-			pause_until(500);
-		}
-		if(action == circle_move){
-			make_circle(3, 3);
+
+		else{
 			chThdSleep(MS2ST(2000));
 		}
-		if(action == jump){
-			//make_jump();
-			//chThdSleep(MS2ST(2000));
-		}
 	}
-
 }
+
 
 void mover_start(void){
 	chThdCreateStatic(waMover, sizeof(waMover), NORMALPRIO, Mover, NULL);

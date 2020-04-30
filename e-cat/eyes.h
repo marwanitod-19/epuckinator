@@ -14,6 +14,8 @@ void follow(void);
 
 void eyes_start(void);
 
+int get_obst_move(void);
+
 
 
 #endif /* EYES_H_ */

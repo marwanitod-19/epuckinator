@@ -15,6 +15,7 @@
 #include <selector.h>
 
 //#include <sensors/VL53L0X/VL53L0X.h>
+static int obst_move = 0;
 
 #define NO_OBSTACLES	10
 #define OBST_THRESHOLD  50
@@ -28,6 +29,10 @@ void view(){
 void follow(){
 
 
+}
+
+int get_obst_move(void){
+	return obst_move;
 }
 
 static THD_WORKING_AREA(waEyes, 256);
@@ -57,6 +62,7 @@ static THD_FUNCTION(Eyes, arg) {
 				sat_sensor[i] = 1;
 				highest_prox = prox0;
 				mv_in_progress = true;
+				obst_move = 1;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
 					sensor_count++;
@@ -199,7 +205,7 @@ static THD_FUNCTION(Eyes, arg) {
 				chThdSleep(MS2ST(100));
 			//chThdSleep(MS2ST(3000));
 		}
-
+		obst_move = 0;
 	}
 }
 
