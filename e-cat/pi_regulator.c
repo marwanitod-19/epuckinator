@@ -55,7 +55,7 @@ static THD_FUNCTION(PiRegulator, arg) {
     //int16_t speed_correction = 0;
 
     while(1){
-        time = chVTGetSystemTime();
+        //time = chVTGetSystemTime();
         
         //computes the speed to give to the motors
         //distance_cm is modified by the image processing thread
@@ -71,12 +71,15 @@ static THD_FUNCTION(PiRegulator, arg) {
 
         //applies the speed from the PI regulator and the correction for the rotation
         //rotator(speed);
-        sound_remote(get_micLeft_output());
+
+        //sound_remote(get_micLeft_output());
+
+
 //		right_motor_set_speed(speed - ROTATION_COEFF * speed_correction);
 //		left_motor_set_speed(speed + ROTATION_COEFF * speed_correction);
 
         //100Hz
-        chThdSleepUntilWindowed(time, time + MS2ST(10));
+        //chThdSleepUntilWindowed(time, time + MS2ST(10));
     }
 }
 

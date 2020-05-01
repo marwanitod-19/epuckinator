@@ -71,7 +71,7 @@ void sound_remote(float* data){
 	//go forward
 	if(max_norm_index >= FREQ_FORWARD_L && max_norm_index <= FREQ_FORWARD_H){
 		rotator(pi_regulator(phase_FL, GOAL_ANGLE));
-		chprintf((BaseSequentialStream *)&SDU1, "Should turn \n\r");
+		//chprintf((BaseSequentialStream *)&SDU1, "Should turn \n\r");
 	}
 	//turn left
 	else if(max_norm_index >= FREQ_LEFT_L && max_norm_index <= FREQ_LEFT_H){
@@ -184,13 +184,12 @@ void get_audio_direction(void){
 	 * 	Condition checking if the measure of phase shifts are too big to be plausible.
 	 */
 
-	if (phase_FL > 0.5 || phase_FL < -0.5){
+	if (phase_FL > 1 || phase_FL < -1){
 		//ignore this measurement.
 		phase_FL = GOAL_ANGLE;
-		//bool isPhaseValid
 	}
 
-	if (phase_FR > 0.5 || phase_FR < -0.5){
+	if (phase_FR > 1 || phase_FR < -1){
 		//ignore this measurement.
 		phase_FR = GOAL_ANGLE;
 	}
@@ -198,7 +197,7 @@ void get_audio_direction(void){
 	//chprintf to check values.
 	chprintf((BaseSequentialStream *)&SDU1, "The Front-Left mic phase is : %f \n\r", phase_FL);
 	//chprintf((BaseSequentialStream *)&SD3, "The Left mic phase is : %f \n\r", phase_L);
-	chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
+	//chprintf((BaseSequentialStream *)&SDU1, "The Front-Right mic phase is : %f \n\r", phase_FR);
 
 }
 

@@ -69,7 +69,7 @@ int main(void)
     //inits the motors
     motors_init();
 	//mover_start();
-    //pi_regulator_start();
+    pi_regulator_start();
 
 	//temp tab used to store values in complex_float format
 	    //needed bx doFFT_c
