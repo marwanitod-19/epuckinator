@@ -12,10 +12,14 @@
 #include <chprintf.h>
 #include <audio_emitter.h>
 #include <eyes.h>
+#include <chthreads.h>
 
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
 enum moves {pause, stroll_move, look_around, circle_move, jump};
+
+static thread_t *moves_thd;
+
 //
 //int _gettimeofday( struct timeval *tv, void *tzvp )
 //{
@@ -66,6 +70,10 @@ void make_circle(int size, int speed){
 		left_motor_set_speed(speed*CMtoSTEP);
 		right_motor_set_speed((speed + size)*CMtoSTEP);
 	}
+}
+
+thread_t* get_thd_ptr(void){
+	return moves_thd;
 }
 
 //Looks at left and right side and chooses randomly between going left, right or straight.
@@ -153,5 +161,5 @@ static THD_FUNCTION(Mover, arg) {
 
 
 void mover_start(void){
-	chThdCreateStatic(waMover, sizeof(waMover), NORMALPRIO, Mover, NULL);
+	moves_thd = chThdCreateStatic(waMover, sizeof(waMover), NORMALPRIO, Mover, NULL);
 }

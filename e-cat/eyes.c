@@ -62,6 +62,7 @@ static THD_FUNCTION(Eyes, arg) {
 					sat_sensor[i] = 1;
 					highest_prox = prox0;
 					mv_in_progress = true;
+					chThdWait(get_thd_ptr());
 					obst_move = 1;
 					if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 						highest_prox = i;
