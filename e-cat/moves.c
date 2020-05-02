@@ -13,6 +13,7 @@
 
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
+
 enum moves {pause, stroll_move, look_around, circle_move, jump};
 //
 //int _gettimeofday( struct timeval *tv, void *tzvp )
