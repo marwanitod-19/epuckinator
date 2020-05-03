@@ -20,8 +20,10 @@
 
 
 
-float pi_regulator(float phase_FL, float goal){
-	float speed;
+float pi_regulator(float phase_FL){
+	float speed = 0;
+
+/*
 	float error;
 	static float sum_error = 0;
 	static float last_error = 0;
@@ -30,7 +32,7 @@ float pi_regulator(float phase_FL, float goal){
 	float value;
 
 
-	error = phase_FL - goal;
+	error = phase_FL - GOAL_ANGLE;
 	sum_error += error;
 
 	if(sum_error > MAX_SUM_ERROR){
@@ -42,28 +44,25 @@ float pi_regulator(float phase_FL, float goal){
 	value = 0.10*error + 0.3*last_error + 0.3*last_last_error + 0.3*last_last_last_error;
 
 
-	speed = KP*value; // KP*error + KI*sum_error + KD*(error - last_error);
+	speed = KP*value + KI*sum_error; // KP*error + KI*sum_error + KD*(error - last_error);
 	//chprintf((BaseSequentialStream *) &SDU1, "error: %f		speed: %f\r", error, speed);
 
 	last_last_last_error = last_last_error;
 	last_last_error = last_error;
 	last_error = error;
+*/
 
-	/*
-	if((phase_FL < (goal + ERROR_THRESHOLD)) || (phase_FL > (goal - ERROR_THRESHOLD)))
-		PI_REGULATOR_PROCESS = false;
-	*/
-	/*
-	if (phase_FL > (goal + ERROR_THRESHOLD)){
-		speed = 2;
+
+	if (phase_FL > (GOAL_ANGLE + ERROR_THRESHOLD)){
+		speed = 3;
 	}
-	else if (phase_FL < (goal - ERROR_THRESHOLD)){
-		speed = -2;
+	else if (phase_FL < (GOAL_ANGLE - ERROR_THRESHOLD)){
+		speed = -3;
 	}
 	else{
 		//PI_REGULATOR_PROCESS = false;
 	}
-	*/
+
 	return speed;
 }
 
@@ -81,11 +80,13 @@ static THD_FUNCTION(PiRegulator, arg) {
 	while(1){
 		time = chVTGetSystemTime();
 
-		speed = pi_regulator(get_phase_FL(), GOAL_ANGLE);
-		//chprintf((BaseSequentialStream *) &SDU1, "%f \r", speed);
+		speed = pi_regulator(get_phase_FL());
+		//chprintf((BaseSequentialStream *) &SDU1, "%d \r", get_pi_process_bool());
 
-		if (PI_REGULATOR_PROCESS)
+		if (get_pi_process_bool()){
 			rotator(speed);
+			//chprintf((BaseSequentialStream *) &SDU1, "Front-Left phase : %f \r", get_phase_FL());
+		}
 		else{
 			rotator(0);
 		}
