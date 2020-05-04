@@ -161,5 +161,5 @@ static THD_FUNCTION(Mover, arg) {
 
 
 void mover_start(void){
-	moves_thd = chThdCreateStatic(waMover, sizeof(waMover), NORMALPRIO, Mover, NULL);
+	chThdCreateStatic(waMover, sizeof(waMover), NORMALPRIO, Mover, NULL);
 }
