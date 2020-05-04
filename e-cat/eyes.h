@@ -8,9 +8,7 @@
 #ifndef EYES_H_
 #define EYES_H_
 
-void view(void);
-
-void follow(void);
+void reaction(int rot_speed, int time);
 
 void eyes_start(void);
 

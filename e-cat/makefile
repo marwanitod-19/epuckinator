@@ -13,7 +13,6 @@ CSRC += ./main.c \
 		./audio_processing.c \
 		./communications.c \
 		./hearing.c \
-		./obstacle.c \
 		./audio_emitter.c \
 		./eyes.c \
 		./moves.c \
