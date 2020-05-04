@@ -18,7 +18,7 @@
 #define NB_MOVES	5
 enum moves {pause, stroll_move, look_around, circle_move, jump};
 
-static thread_t *moves_thd;
+//static thread_t *moves_thd;
 
 //
 //int _gettimeofday( struct timeval *tv, void *tzvp )
@@ -72,9 +72,9 @@ void make_circle(int size, int speed){
 	}
 }
 
-thread_t* get_thd_ptr(void){
-	return moves_thd;
-}
+//thread_t* get_thd_ptr(void){
+//	return moves_thd;
+//}
 
 //Looks at left and right side and chooses randomly between going left, right or straight.
 void make_look_around(void){

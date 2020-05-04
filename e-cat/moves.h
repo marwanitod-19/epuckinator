@@ -20,7 +20,7 @@ void make_look_around(void);
 
 void make_jump(void);
 
-thread_t* get_thd_ptr(void);
+//thread_t* get_thd_ptr(void);
 
 int get_preset_move(void);
 

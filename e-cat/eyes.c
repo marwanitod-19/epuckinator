@@ -14,11 +14,14 @@
 #include <audio_emitter.h>
 #include <selector.h>
 
-//#include <sensors/VL53L0X/VL53L0X.h>
 static int obst_move = 0;
 
 #define NO_OBSTACLES	10
 #define OBST_THRESHOLD  50
+#define NB_SENSORS		8
+#define ACTIVATED		1
+#define	MOVE_AV_OBSTACLE	1
+#define OBSTACLE_AWAY	0
 enum proximity{prox0 = 0, prox1, prox2, prox3, prox4, prox5, prox6, prox7};
 
 
@@ -44,24 +47,19 @@ static THD_FUNCTION(Eyes, arg) {
 	uint16_t inv_distance = 0;
 	bool mv_in_progress = false;
 
-
-
 	proximity_start();
 	calibrate_ir();
 
-	//VL53L0X_start();
-
 	while(1){
 		highest_prox = NO_OBSTACLES;
-		for(int i = 0 ; i < 8 ; i++){
+		for(int i = 0 ; i < NB_SENSORS ; i++){
 			inv_distance = get_calibrated_prox(i);
-			chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
 			if(inv_distance > OBST_THRESHOLD){
-				sat_sensor[i] = 1;
+				sat_sensor[i] = ACTIVATED;
 				highest_prox = prox0;
 				mv_in_progress = true;
 				//chThdWait(get_thd_ptr());
-				obst_move = 1;
+				obst_move = MOVE_AV_OBSTACLE;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
 					sensor_count++;
@@ -95,20 +93,11 @@ static THD_FUNCTION(Eyes, arg) {
 
 			if(highest_prox == 3 || highest_prox == 4 ){
 				if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
-					chprintf((BaseSequentialStream *)&SD3, "Meow \n\r");
 					stroll(15, 15);
 					meow();
 					chThdSleep(MS2ST(200));
 				}
 			}
-			sensor_count = 0;
-			//chprintf((BaseSequentialStream *)&SD3, "The Closest distance is at sensor %d and the distance is %d \n\r\r", highest_prox, get_calibrated_prox(highest_prox));
-			if(mv_in_progress){
-				chThdSleep(MS2ST(1000));
-				mv_in_progress = false;
-			}
-			else
-				chThdSleep(MS2ST(100));
 		}
 
 		else if(get_selector() == 2){
@@ -148,13 +137,13 @@ static THD_FUNCTION(Eyes, arg) {
 		}
 		sensor_count = 0;
 		if(mv_in_progress){
-			//chThdSleep(MS2ST(1000));
+			chThdSleep(MS2ST(1000));
 			mv_in_progress = false;
 		}
 		else{
 			chThdSleep(MS2ST(100));
 		}
-		obst_move = 0;
+		obst_move = OBSTACLE_AWAY;
 	}
 }
 
