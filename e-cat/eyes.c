@@ -57,12 +57,12 @@ static THD_FUNCTION(Eyes, arg) {
 			highest_prox = NO_OBSTACLES;
 			for(int i = 0 ; i < 8 ; i++){
 				inv_distance = get_calibrated_prox(i);
-				//chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
+				chprintf((BaseSequentialStream *)&SD3, "Sensor %d sees an object at distance %d \n\r", i, get_calibrated_prox(i));
 				if(inv_distance > OBST_THRESHOLD){
 					sat_sensor[i] = 1;
 					highest_prox = prox0;
 					mv_in_progress = true;
-					chThdWait(get_thd_ptr());
+					//chThdWait(get_thd_ptr());
 					obst_move = 1;
 					if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 						highest_prox = i;
