@@ -21,18 +21,16 @@ static int obst_move = 0;
 #define OBST_THRESHOLD  50
 enum proximity{prox0 = 0, prox1, prox2, prox3, prox4, prox5, prox6, prox7};
 
-void view(){
-
-
-}
-
-void follow(){
-
-
-}
 
 int get_obst_move(void){
 	return obst_move;
+}
+
+void reaction(int rot_speed, int time){
+	rotator(rot_speed);
+	chThdSleep(MS2ST(time));
+	stroll(5,5);
+	chThdSleep(MS2ST(1000));
 }
 
 static THD_WORKING_AREA(waEyes, 256);
@@ -74,52 +72,22 @@ static THD_FUNCTION(Eyes, arg) {
 			{
 				switch(highest_prox){
 					case prox0:
-						rotator(8);
-						chThdSleep(MS2ST(1000));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(8, 1000);
 						break;
 					case prox1:
-						rotator(8);
-						chThdSleep(MS2ST(800));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(8, 800);
 						break;
 					case prox2:
-						rotator(8);
-						chThdSleep(MS2ST(500));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(8, 500);
 						break;
-		//			case prox3:
-		//				rotator(8);
-		//				chThdSleep(MS2ST(200));
-		//				stroll(5,5);
-		//				chThdSleep(MS2ST(1000));
-		//				break;
-		//			case prox4:
-		//				rotator(-8);
-		//				chThdSleep(MS2ST(200));
-		//				stroll(5,5);
-		//				chThdSleep(MS2ST(1000));
-		//				break;
 					case prox5:
-						rotator(-8);
-						chThdSleep(MS2ST(500));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(-8, 500);
 						break;
 					case prox6:
-						rotator(-8);
-						chThdSleep(MS2ST(800));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(-8, 800);
 						break;
 					case prox7:
-						rotator(-8);
-						chThdSleep(MS2ST(1000));
-						stroll(5,5);
-						chThdSleep(MS2ST(1000));
+						reaction(-8, 1000);
 						break;
 					case NO_OBSTACLES:
 						break;
