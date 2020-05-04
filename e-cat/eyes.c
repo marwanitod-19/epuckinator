@@ -111,7 +111,7 @@ static THD_FUNCTION(Eyes, arg) {
 				chThdSleep(MS2ST(100));
 		}
 
-		else if(get_selector == 2){
+		else if(get_selector() == 2){
 			switch(highest_prox){
 				case prox0:
 					reaction(-8, 200);
