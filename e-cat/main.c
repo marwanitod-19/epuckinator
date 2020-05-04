@@ -18,6 +18,7 @@
 #include <communications.h>
 #include <arm_math.h>
 #include <fft.h>
+#include <speed_regulator.h>
 
 //uncomment to send the FFTs results from the real microphones
 #define SEND_FROM_MIC
@@ -63,7 +64,7 @@ int main(void)
 	usb_start();
 	motors_init();
 	//mover_start();
-	pi_regulator_start();
+	speed_regulator_start();
 
 	systime_t time;
 

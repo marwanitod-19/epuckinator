@@ -61,7 +61,7 @@ static int16_t max_frontnorm_index = -1;
 static float phase_FL;
 static float phase_FR;
 
-static bool	PI_REGULATOR_PROCESS = false;
+static bool	SPEED_REGULATOR_PROCESS = false;
 
 float get_phase_FL(void){
 	return phase_FL;
@@ -71,8 +71,8 @@ float get_phase_FR(void){
 	return phase_FR;
 }
 
-bool get_pi_process_bool(void){
-	return PI_REGULATOR_PROCESS;
+bool get_speed_process_bool(void){
+	return SPEED_REGULATOR_PROCESS;
 }
 
 void phase_shift(void){
@@ -106,18 +106,18 @@ void phase_shift(void){
 	}
 
 
-	////chprintf((BaseSequentialStream *) &SDU1, "hey:  %d \r", PI_REGULATOR_PROCESS);
+	////chprintf((BaseSequentialStream *) &SDU1, "hey:  %d \r", SPEED_REGULATOR_PROCESS);
 	if ((max_rightnorm_index > max_frontnorm_index + FREQ_MAXERROR) || (max_rightnorm_index < max_frontnorm_index - FREQ_MAXERROR)){
-		PI_REGULATOR_PROCESS = false;
+		SPEED_REGULATOR_PROCESS = false;
 		//chprintf((BaseSequentialStream *) &SDU1, "Freq coincident pas \r");
 	}
 
 	else if ((max_leftnorm_index > max_frontnorm_index + FREQ_MAXERROR) || (max_leftnorm_index < max_frontnorm_index - FREQ_MAXERROR)){
-		PI_REGULATOR_PROCESS = false;
+		SPEED_REGULATOR_PROCESS = false;
 		//chprintf((BaseSequentialStream *) &SDU1, "Freq coincident pas \r");
 	}
 	else{
-		PI_REGULATOR_PROCESS = true;
+		SPEED_REGULATOR_PROCESS = true;
 		//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
 	}
 
@@ -143,30 +143,30 @@ void phase_shift(void){
 
 
 	if(max_frontnorm_index <= FREQ_FORWARD_L || max_frontnorm_index >= FREQ_FORWARD_H){	//filtre sur fréquences
-		PI_REGULATOR_PROCESS = false;
+		SPEED_REGULATOR_PROCESS = false;
 		//chprintf((BaseSequentialStream *) &SDU1, "Mauvaise freq \r");
 	}
 	else{
 		//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
 		if ((phase_FR > PHASE_MAXERROR) || (phase_FR < -PHASE_MAXERROR)){
-			PI_REGULATOR_PROCESS = false;
+			SPEED_REGULATOR_PROCESS = false;
 			//chprintf((BaseSequentialStream *) &SDU1, "Phase error \r");
 		}
 
 		else if ((phase_FL > PHASE_MAXERROR) || (phase_FL < -PHASE_MAXERROR)){
-			PI_REGULATOR_PROCESS = false;
+			SPEED_REGULATOR_PROCESS = false;
 			//chprintf((BaseSequentialStream *) &SDU1, "Phase error \r");
 		}
 
 		else{
 			//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
 			if((phase_FL < (GOAL_ANGLE + ERROR_THRESHOLD)) && (phase_FL > (GOAL_ANGLE - ERROR_THRESHOLD))){
-				PI_REGULATOR_PROCESS = false;
+				SPEED_REGULATOR_PROCESS = false;
 				//chprintf((BaseSequentialStream *) &SDU1, "GOAL \r");
 				//chprintf((BaseSequentialStream *) &SDU1, "Front-Left phase : %f \r", phase_FL);
 			}
 			else{
-				PI_REGULATOR_PROCESS = true;
+				SPEED_REGULATOR_PROCESS = true;
 				//chprintf((BaseSequentialStream *) &SDU1, "no GOAL \r");
 			}
 		}

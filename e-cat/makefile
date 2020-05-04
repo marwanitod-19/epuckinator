@@ -17,7 +17,7 @@ CSRC += ./main.c \
 		./eyes.c \
 		./moves.c \
 		./fft.c \
-		./pi_regulator.c \
+		./speed_regulator.c \
 		#./hearing.c \
 
 #Header folders to include
