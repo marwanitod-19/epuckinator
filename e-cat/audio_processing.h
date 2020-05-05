@@ -17,6 +17,13 @@ typedef enum {
 	BACK_OUTPUT
 } BUFFER_NAME_t;
 
+float get_phase_FL(void);
+
+float get_phase_FR(void);
+
+bool get_speed_process_bool(void);
+
+void phase_shift(void);
 
 void processAudioData(int16_t *data, uint16_t num_samples);
 
