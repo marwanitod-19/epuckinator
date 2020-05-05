@@ -10,7 +10,6 @@
 #include <communications.h>
 #include <arm_math.h>
 #include <stdbool.h>
-//#include "hearing.h"
 #include <fft.h>
 
 
@@ -105,20 +104,16 @@ void phase_shift(void){
 		}
 	}
 
-
-	////chprintf((BaseSequentialStream *) &SDU1, "hey:  %d \r", SPEED_REGULATOR_PROCESS);
+	// Condition to check if the max amplitude frequency is similar between front-left and front-right microphones
 	if ((max_rightnorm_index > max_frontnorm_index + FREQ_MAXERROR) || (max_rightnorm_index < max_frontnorm_index - FREQ_MAXERROR)){
 		SPEED_REGULATOR_PROCESS = false;
-		//chprintf((BaseSequentialStream *) &SDU1, "Freq coincident pas \r");
 	}
 
 	else if ((max_leftnorm_index > max_frontnorm_index + FREQ_MAXERROR) || (max_leftnorm_index < max_frontnorm_index - FREQ_MAXERROR)){
 		SPEED_REGULATOR_PROCESS = false;
-		//chprintf((BaseSequentialStream *) &SDU1, "Freq coincident pas \r");
 	}
 	else{
 		SPEED_REGULATOR_PROCESS = true;
-		//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
 	}
 
 	//phase shift processing
@@ -130,92 +125,34 @@ void phase_shift(void){
 	phase_FR = phase_F - phase_R;
 	phase_FL = phase_F - phase_L;
 
-	//Chpintf to check values
-//	//chprintf((BaseSequentialStream *) &SDU1, "Left phase : %f \r", phase_L);
-//	//chprintf((BaseSequentialStream *) &SDU1, "Right phase : %f \r", phase_R);
-//	//chprintf((BaseSequentialStream *) &SDU1, "Front phase : %f \r", phase_F);
-
-//	//chprintf((BaseSequentialStream *) &SDU1, "Front-Right phase : %f \r", phase_FR);
-//	chprintf((BaseSequentialStream *) &SDU1, "Front-Left phase : %f \r", phase_FL);
-
-
-
-
-
-	if(max_frontnorm_index <= FREQ_FORWARD_L || max_frontnorm_index >= FREQ_FORWARD_H){	//filtre sur fréquences
+	//Condition to let the e-cat only use the frequencies around 250 Hz. (+- 30Hz).
+	if(max_frontnorm_index <= FREQ_FORWARD_L || max_frontnorm_index >= FREQ_FORWARD_H){
 		SPEED_REGULATOR_PROCESS = false;
-		//chprintf((BaseSequentialStream *) &SDU1, "Mauvaise freq \r");
 	}
 	else{
-		//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
+		//Condition to filter out the data with incoherent phases between front-right microphones.
 		if ((phase_FR > PHASE_MAXERROR) || (phase_FR < -PHASE_MAXERROR)){
 			SPEED_REGULATOR_PROCESS = false;
-			//chprintf((BaseSequentialStream *) &SDU1, "Phase error \r");
 		}
 
+		//Condition to filter out the data with incoherent phases between front-left microphones.
 		else if ((phase_FL > PHASE_MAXERROR) || (phase_FL < -PHASE_MAXERROR)){
 			SPEED_REGULATOR_PROCESS = false;
-			//chprintf((BaseSequentialStream *) &SDU1, "Phase error \r");
 		}
 
 		else{
-			//chprintf((BaseSequentialStream *) &SDU1, "should be TRUE \r");
+			//Condition to check if we reached a goal with a threshold margin to avoid oscillations around the goal angle.
 			if((phase_FL < (GOAL_ANGLE + ERROR_THRESHOLD)) && (phase_FL > (GOAL_ANGLE - ERROR_THRESHOLD))){
 				SPEED_REGULATOR_PROCESS = false;
-				//chprintf((BaseSequentialStream *) &SDU1, "GOAL \r");
-				//chprintf((BaseSequentialStream *) &SDU1, "Front-Left phase : %f \r", phase_FL);
 			}
 			else{
 				SPEED_REGULATOR_PROCESS = true;
-				//chprintf((BaseSequentialStream *) &SDU1, "no GOAL \r");
 			}
 		}
 	}
 
 }
 
-/*
-*	Simple function used to detect the highest value in a buffer
-*	and to execute a motor command depending on it
-*/
-void sound_remote(float* data){
-	float max_norm = MIN_VALUE_THRESHOLD;
-	int16_t max_norm_index = -1;
-
-	//search for the highest peak
-	for(uint16_t i = MIN_FREQ ; i <= MAX_FREQ ; i++){
-		if(data[i] > max_norm){
-			max_norm = data[i];
-			max_norm_index = i;
-		}
-	}
-
-	//go forward
-	if(max_norm_index >= FREQ_FORWARD_L && max_norm_index <= FREQ_FORWARD_H){
-		left_motor_set_speed(600);
-		right_motor_set_speed(600);
-	}
-	//turn left
-	else if(max_norm_index >= FREQ_LEFT_L && max_norm_index <= FREQ_LEFT_H){
-		left_motor_set_speed(-600);
-		right_motor_set_speed(600);
-	}
-	//turn right
-	else if(max_norm_index >= FREQ_RIGHT_L && max_norm_index <= FREQ_RIGHT_H){
-		left_motor_set_speed(600);
-		right_motor_set_speed(-600);
-	}
-	//go backward
-	else if(max_norm_index >= FREQ_BACKWARD_L && max_norm_index <= FREQ_BACKWARD_H){
-		left_motor_set_speed(-600);
-		right_motor_set_speed(-600);
-	}
-	else{
-		left_motor_set_speed(0);
-		right_motor_set_speed(0);
-	}
-
-}
 
 /*
 *	Callback called when the demodulation of the four microphones is done.
@@ -263,12 +200,12 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 	}
 
 	if(nb_samples >= (2 * FFT_SIZE)){
+
 		/*	FFT proccessing
 		*
 		*	This FFT function stores the results in the input buffer given.
 		*	This is an "In Place" function.
 		*/
-
 		doFFT_optimized(FFT_SIZE, micRight_cmplx_input);
 		doFFT_optimized(FFT_SIZE, micLeft_cmplx_input);
 		doFFT_optimized(FFT_SIZE, micFront_cmplx_input);
@@ -297,7 +234,6 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		mustSend++;
 
 		phase_shift();
-		//sound_remote(micLeft_output);
 	}
 }
 

@@ -19,18 +19,6 @@
 
 enum moves {pause, stroll_move, look_around, circle_move, jump};
 
-//static thread_t *moves_thd;
-
-//
-//int _gettimeofday( struct timeval *tv, void *tzvp )
-//{
-//    uint32_t t = 150000000;  // get uptime in nanoseconds
-//    tv->tv_sec = t / 1000000000;  // convert to seconds
-//    tv->tv_usec = ( t % 1000000000 ) / 1000;  // get remaining microseconds
-//    return 0;  // return non-zero for error
-//} // end _gettimeofday()
-//
-
 int randomizer(int nb_rand){
 	int action = pause;
 	action = RNG->DR % nb_rand;
@@ -38,9 +26,9 @@ int randomizer(int nb_rand){
 }
 
 //Casual stroll in a given direction.
-void stroll(int left_speed, int right_speed){
-	right_motor_set_speed(left_speed*CMtoSTEP);
-	left_motor_set_speed(right_speed*CMtoSTEP);
+void stroll(int right_speed, int left_speed){
+	right_motor_set_speed(right_speed*CMtoSTEP);
+	left_motor_set_speed(left_speed*CMtoSTEP);
 }
 
 //By default, rotates to its right for positive speeds.
@@ -72,10 +60,6 @@ void make_circle(int size, int speed){
 		right_motor_set_speed((speed + size)*CMtoSTEP);
 	}
 }
-
-//thread_t* get_thd_ptr(void){
-//	return moves_thd;
-//}
 
 //Looks at left and right side and chooses randomly between going left, right or straight.
 void make_look_around(void){
@@ -123,12 +107,9 @@ static THD_WORKING_AREA(waMover, 256);
 static THD_FUNCTION(Mover, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
-	//systime_t time;
 	uint8_t action = pause;
 	while(1){
 		if(get_obst_move() == 0){
-			//time = chVTGetSystemTime();
-			// Condition qui choisit entre rotation et stroll?
 			action = randomizer(NB_MOVES);
 			chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
 			if(action == pause && get_obst_move() == 0){

@@ -29,11 +29,11 @@ int get_obst_move(void){
 	return obst_move;
 }
 
-void reaction(int rot_speed, int time){
+void reaction(int rot_speed, int time, int delay){
 	rotator(rot_speed);
 	chThdSleep(MS2ST(time));
 	stroll(5,5);
-	chThdSleep(MS2ST(1000));
+	chThdSleep(MS2ST(delay));
 }
 
 static THD_WORKING_AREA(waEyes, 256);
@@ -58,7 +58,6 @@ static THD_FUNCTION(Eyes, arg) {
 				sat_sensor[i] = ACTIVATED;
 				highest_prox = prox0;
 				mv_in_progress = true;
-				//chThdWait(get_thd_ptr());
 				obst_move = MOVE_AV_OBSTACLE;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
@@ -70,22 +69,22 @@ static THD_FUNCTION(Eyes, arg) {
 		{
 			switch(highest_prox){
 				case prox0:
-					reaction(8, 1000);
+					reaction(8, 1000, 1000);
 					break;
 				case prox1:
-					reaction(8, 800);
+					reaction(8, 800, 1000);
 					break;
 				case prox2:
-					reaction(8, 500);
+					reaction(8, 500, 1000);
 					break;
 				case prox5:
-					reaction(-8, 500);
+					reaction(-8, 500, 1000);
 					break;
 				case prox6:
-					reaction(-8, 800);
+					reaction(-8, 800, 1000);
 					break;
 				case prox7:
-					reaction(-8, 1000);
+					reaction(-8, 1000, 1000);
 					break;
 				case NO_OBSTACLES:
 					break;
@@ -103,33 +102,36 @@ static THD_FUNCTION(Eyes, arg) {
 		else if(get_selector() == 2){
 			switch(highest_prox){
 				case prox0:
-					reaction(-8, 200);
+					reaction(-8, 200, 500);
+					purr();
 					break;
 				case prox1:
-					reaction(-8, 500);
+					reaction(-8, 500, 500);
 					break;
 				case prox2:
-					reaction(-8, 800);
+					reaction(-8, 800, 500);
+					purr();
 					break;
 				case prox3:
-					reaction(-8, 1000);
+					reaction(-8, 1000, 500);
 					break;
 				case prox4://other side
-					reaction(8, 1000);
+					reaction(8, 1000, 500);
+					purr();
 					break;
 				case prox5:
-					reaction(8, 800);
+					reaction(8, 800, 500);
 					break;
 				case prox6:
-					reaction(8, 500);
+					reaction(8, 500, 500);
+					purr();
 					break;
 				case prox7:
-					reaction(8, 200);
+					reaction(8, 200, 500);
 					break;
 				case NO_OBSTACLES:
 					break;
 			}
-			//chThdSleep(MS2ST(3000));
 		}
 
 		else{
