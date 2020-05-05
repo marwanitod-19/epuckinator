@@ -16,6 +16,7 @@
 #include <moves.h>
 #include <speed_regulator.h>
 #include <audio_processing.h>
+#include <selector.h>
 
 
 
@@ -48,15 +49,16 @@ static THD_FUNCTION(SpeedRegulator, arg) {
 	while(1){
 		time = chVTGetSystemTime();
 
-		speed = speed_regulator(get_phase_FL());
+		if(get_selector() == 0){
+			speed = speed_regulator(get_phase_FL());
 
-		if (get_speed_process_bool()){
-			rotator(speed);
+			if (get_speed_process_bool()){
+				rotator(speed);
+			}
+			else{
+				rotator(0);
+			}
 		}
-		else{
-			rotator(0);
-		}
-
 		//100Hz
 		chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}

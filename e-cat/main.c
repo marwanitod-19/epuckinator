@@ -20,8 +20,6 @@
 #include <audio/audio_thread.h>
 #include <fat.h>
 
-
-
 #include <audio_processing.h>
 #include <communications.h>
 #include <arm_math.h>
@@ -78,10 +76,9 @@ int main(void)
 	sdio_start();
 	mountSDCard();
 	motors_init();
-	//mover_start();
+	mover_start();
 	speed_regulator_start();
 
-	mover_start();
 	messagebus_init(&bus, &bus_lock, &bus_condvar);
 	eyes_start();
 	playSoundFileStart();
@@ -110,6 +107,7 @@ int main(void)
 
 	    /* Infinite loop. */
 	    while (1) {
+	    	time = chVTGetSystemTime();
 	#ifdef SEND_FROM_MIC
 	        //waits until a result must be sent to the computer
 	        wait_send_to_computer();
@@ -161,6 +159,7 @@ int main(void)
 
 	        }
 	#endif  /* SEND_FROM_MIC */
+	        chThdSleepUntilWindowed(time, time + MS2ST(10));
 	    }
 	}
 #define STACK_CHK_GUARD 0xe2dee396
