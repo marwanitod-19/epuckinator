@@ -40,6 +40,13 @@ float get_phase_FR(void);
 bool get_speed_process_bool(void);
 
 /*
+ * 	Return true/false if the goal angle is reached or not, used to know if e-cat should go away or not yet.
+ *
+ * 	Output:	goal reached boolean.
+ */
+bool get_goal_bool(void);
+
+/*
  * 	Function that computes the phase shifts between the 3 microphones used. Uses the static variables:
  * 					max_rightnorm, max_rightnorm_index, max_leftnorm, max_leftnorm_index, max_frontnorm,
  * 					max_frontnorm_index, phase_FL, phase_FR.
@@ -47,6 +54,9 @@ bool get_speed_process_bool(void);
  * 	and arrays : 	micLeft_cmplx_input, micRight_cmplx_input, micFront_cmplx_input, micBack_cmplx_input,
  * 					micLeft_output, micRight_output, micFront_output, micBack_output.
  */
+
+bool set_goal_bool(bool reset);
+
 void phase_shift(void);
 
 /*

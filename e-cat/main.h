@@ -15,7 +15,7 @@ extern "C" {
 
 #define GOAL_ANGLE	 			0.0f
 #define MAX_ANGLE				25.0f
-#define ERROR_THRESHOLD			0.05f
+#define ERROR_THRESHOLD			0.08f
 #define KP						20.0f	//800.0f
 #define KI 						0.05f	//must not be zero
 #define KD						0.5f

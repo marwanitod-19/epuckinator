@@ -62,6 +62,8 @@ static float phase_FR;
 
 static bool	SPEED_REGULATOR_PROCESS = false;
 
+static bool GOAL_REACHED = false;
+
 float get_phase_FL(void){
 	return phase_FL;
 }
@@ -72,6 +74,14 @@ float get_phase_FR(void){
 
 bool get_speed_process_bool(void){
 	return SPEED_REGULATOR_PROCESS;
+}
+
+bool get_goal_bool(void){
+	return GOAL_REACHED;
+}
+
+bool set_goal_bool(bool reset){
+	GOAL_REACHED = reset;
 }
 
 void phase_shift(void){
@@ -144,9 +154,11 @@ void phase_shift(void){
 			//Condition to check if we reached a goal with a threshold margin to avoid oscillations around the goal angle.
 			if((phase_FL < (GOAL_ANGLE + ERROR_THRESHOLD)) && (phase_FL > (GOAL_ANGLE - ERROR_THRESHOLD))){
 				SPEED_REGULATOR_PROCESS = false;
+				GOAL_REACHED = true;
 			}
 			else{
 				SPEED_REGULATOR_PROCESS = true;
+				GOAL_REACHED = false;
 			}
 		}
 	}

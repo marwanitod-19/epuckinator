@@ -13,6 +13,7 @@
 #include <audio_emitter.h>
 #include <eyes.h>
 #include <chthreads.h>
+#include <audio_processing.h>
 
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
@@ -109,32 +110,36 @@ static THD_FUNCTION(Mover, arg) {
 	(void)arg;
 	uint8_t action = pause;
 	while(1){
-		if(get_obst_move() == 0){
-			action = randomizer(NB_MOVES);
-			chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
-			if(action == pause && get_obst_move() == 0){
-				make_pause();
-				chThdSleep(MS2ST(1000));
+		if (!get_speed_process_bool()){
+			if(get_obst_move() == 0){
+				action = randomizer(NB_MOVES);
+				chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
+				if(action == pause && get_obst_move() == 0){
+					make_pause();
+					chThdSleep(MS2ST(1000));
+				}
+				if(action == stroll_move && get_obst_move() == 0){
+					stroll(5,5);
+					//meow();
+					chThdSleep(MS2ST(2500));
+				}
+				if(action == look_around && get_obst_move() == 0){
+					make_look_around();
+					pause_until(500);
+				}
+				if(action == circle_move && get_obst_move() == 0){
+					make_circle(3, 3);
+					chThdSleep(MS2ST(2000));
+				}
+				if(action == jump){
+					//make_jump();
+					//chThdSleep(MS2ST(2000));
+				}
 			}
-			if(action == stroll_move && get_obst_move() == 0){
-				stroll(5,5);
-				//meow();
-				chThdSleep(MS2ST(2500));
-			}
-			if(action == look_around && get_obst_move() == 0){
-				make_look_around();
-				pause_until(500);
-			}
-			if(action == circle_move && get_obst_move() == 0){
-				make_circle(3, 3);
+			else{
 				chThdSleep(MS2ST(2000));
 			}
-			if(action == jump){
-				//make_jump();
-				//chThdSleep(MS2ST(2000));
-			}
 		}
-
 		else{
 			chThdSleep(MS2ST(2000));
 		}
