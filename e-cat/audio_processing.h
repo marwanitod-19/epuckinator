@@ -47,6 +47,13 @@ bool get_speed_process_bool(void);
 bool get_goal_bool(void);
 
 /*
+ * 	Sets the GOAL_REACHED boolean from audio_processing.c to true or false.
+ *
+ * 	Input:	Booleans true or false.
+ */
+void set_goal_bool(bool reset);
+
+/*
  * 	Function that computes the phase shifts between the 3 microphones used. Uses the static variables:
  * 					max_rightnorm, max_rightnorm_index, max_leftnorm, max_leftnorm_index, max_frontnorm,
  * 					max_frontnorm_index, phase_FL, phase_FR.
@@ -54,9 +61,6 @@ bool get_goal_bool(void);
  * 	and arrays : 	micLeft_cmplx_input, micRight_cmplx_input, micFront_cmplx_input, micBack_cmplx_input,
  * 					micLeft_output, micRight_output, micFront_output, micBack_output.
  */
-
-bool set_goal_bool(bool reset);
-
 void phase_shift(void);
 
 /*

@@ -13,15 +13,18 @@
 #include <motors.h>
 #include <audio_emitter.h>
 #include <selector.h>
+#include <audio_processing.h>
 
 static int obst_move = 0;
 
-#define NO_OBSTACLES	10
-#define OBST_THRESHOLD  50
-#define NB_SENSORS		8
-#define ACTIVATED		1
-#define	MOVE_AV_OBSTACLE	1
-#define OBSTACLE_AWAY	0
+#define NO_OBSTACLES		10
+#define OBST_THRESHOLD  	50	//threshold after which a proximity sensor consider an object as an obstacle.
+#define NB_SENSORS			8
+#define ACTIVATED			1
+#define	MOVE_AV_OBSTACLE	1	//State of e-cat is "moving away from obstacle"
+#define OBSTACLE_AWAY		0	//State of e-cat is "moved away from obstacle"
+#define	NORMAL_MODE				1
+#define FRIENDLY_MODE			2
 enum proximity{prox0 = 0, prox1, prox2, prox3, prox4, prox5, prox6, prox7};
 
 
@@ -65,7 +68,7 @@ static THD_FUNCTION(Eyes, arg) {
 				}
 			}
 		}
-		if(get_selector() == 1)
+		if(get_selector() == NORMAL_MODE && !get_speed_process_bool())
 		{
 			switch(highest_prox){
 				case prox0:
@@ -90,16 +93,22 @@ static THD_FUNCTION(Eyes, arg) {
 					break;
 			}
 
-			if(highest_prox == 3 || highest_prox == 4 ){
-				if(sat_sensor[3] == 1 && sat_sensor[4] == 1){
-					stroll(15, 15);
+
+			if((highest_prox == prox3 || highest_prox == prox4) && !get_speed_process_bool()){
+				if(sat_sensor[prox3] == ACTIVATED && sat_sensor[prox4] == ACTIVATED){
+					stroll(10, 10);
 					meow();
 					chThdSleep(MS2ST(200));
 				}
 			}
 		}
 
-		else if(get_selector() == 2){
+		else{
+			chThdSleep(MS2ST(2000));
+		}
+
+
+		if(get_selector() == FRIENDLY_MODE && !get_speed_process_bool()){
 			switch(highest_prox){
 				case prox0:
 					reaction(-8, 200, 500);

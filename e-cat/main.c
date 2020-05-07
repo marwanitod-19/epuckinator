@@ -63,16 +63,11 @@ int main(void)
 	playSoundFileStart();
 	setSoundFileVolume(40);
 
-	//systime_t time;
-
 	//Random number generator register and clock activation
 	RCC->AHB2RSTR &= !RCC_AHB2RSTR_RNGRST;
 	RCC->AHB2ENR |= RCC_AHB2ENR_RNGEN;
 	RNG->CR |= RNG_CR_RNGEN;
 
-	//temp tab used to store values in complex_float format
-	//needed bx doFFT_c
-	//                       ATTENTION      -----------> static complex_float temp_tab[FFT_SIZE]; <-------------
 	//send_tab is used to save the state of the buffer to send (double buffering)
 	//to avoid modifications of the buffer while sending it
 	static float send_tab[FFT_SIZE];
@@ -83,16 +78,14 @@ int main(void)
 
 	/* Infinite loop. */
 	while (1) {
-		//time = chVTGetSystemTime();
 		//waits until a result must be sent to the computer
 		wait_send_to_computer();
 		//we copy the buffer to avoid conflicts
 		arm_copy_f32(get_audio_buffer_ptr(LEFT_OUTPUT), send_tab, FFT_SIZE);
 		SendFloatToComputer((BaseSequentialStream *) &SD3, send_tab, FFT_SIZE);
-
-		//chThdSleepUntilWindowed(time, time + MS2ST(10));
 	}
 }
+
 #define STACK_CHK_GUARD 0xe2dee396
 uintptr_t __stack_chk_guard = STACK_CHK_GUARD;
 

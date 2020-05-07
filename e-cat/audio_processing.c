@@ -80,7 +80,7 @@ bool get_goal_bool(void){
 	return GOAL_REACHED;
 }
 
-bool set_goal_bool(bool reset){
+void set_goal_bool(bool reset){
 	GOAL_REACHED = reset;
 }
 

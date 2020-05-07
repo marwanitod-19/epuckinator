@@ -43,13 +43,13 @@ void make_pause(void){
 	left_motor_set_speed(0);
 }
 
-//Stops motors and ads a Thread sleep delay in ms.
+//Stops motors and adds a Thread sleep delay in ms.
 void pause_until(int ms_time){
 	make_pause();
 	chThdSleep(MS2ST(ms_time));
 }
 
-//Makes an arc like move, random on which side is took.
+//Makes an arc like move, random on which side is taken.
 void make_circle(int size, int speed){
 	int direction = randomizer(1);
 	if (direction == 0){
@@ -120,7 +120,6 @@ static THD_FUNCTION(Mover, arg) {
 				}
 				if(action == stroll_move && get_obst_move() == 0){
 					stroll(5,5);
-					//meow();
 					chThdSleep(MS2ST(2500));
 				}
 				if(action == look_around && get_obst_move() == 0){

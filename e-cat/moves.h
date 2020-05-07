@@ -3,6 +3,15 @@
 
 //int _gettimeofday( struct timeval *tv, void *tzvp );
 
+
+/*
+ * 	Returns a random number between 0 and nb_rand. Based on the true random number generator module included in the
+ * 	e-puck.
+ *
+ * 	Input:	nb_rand: upper limit of possible random numbers to get.
+ *
+ * 	Output:	random number generated between [0, nb_rand].
+ */
 int randomizer(int nb_rand);
 
 /*
