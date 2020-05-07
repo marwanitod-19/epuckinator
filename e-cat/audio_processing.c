@@ -59,6 +59,7 @@ static int16_t max_frontnorm_index = -1;
 
 static float phase_FL;
 static float phase_FR;
+static float phase_LR;
 
 static bool	SPEED_REGULATOR_PROCESS = false;
 
@@ -70,6 +71,10 @@ float get_phase_FL(void){
 
 float get_phase_FR(void){
 	return phase_FR;
+}
+
+float get_phase_LR(void){
+	return phase_LR;
 }
 
 bool get_speed_process_bool(void){
@@ -134,6 +139,7 @@ void phase_shift(void){
 
 	phase_FR = phase_F - phase_R;
 	phase_FL = phase_F - phase_L;
+	phase_LR = phase_L - phase_R;
 
 	//Condition to let the e-cat only use the frequencies around 250 Hz. (+- 30Hz).
 	if(max_frontnorm_index <= FREQ_FORWARD_L || max_frontnorm_index >= FREQ_FORWARD_H){
@@ -150,9 +156,14 @@ void phase_shift(void){
 			SPEED_REGULATOR_PROCESS = false;
 		}
 
+		//Condition to filter out the data with incoherent phases between left-right microphones.
+		else if ((phase_LR > PHASE_MAXERROR) || (phase_LR < -PHASE_MAXERROR)){
+			SPEED_REGULATOR_PROCESS = false;
+		}
+
 		else{
 			//Condition to check if we reached a goal with a threshold margin to avoid oscillations around the goal angle.
-			if((phase_FL < (GOAL_ANGLE + ERROR_THRESHOLD)) && (phase_FL > (GOAL_ANGLE - ERROR_THRESHOLD))){
+			if((phase_LR < (GOAL_ANGLE + ERROR_THRESHOLD)) && (phase_LR > (GOAL_ANGLE - ERROR_THRESHOLD))){
 				SPEED_REGULATOR_PROCESS = false;
 				GOAL_REACHED = true;
 			}

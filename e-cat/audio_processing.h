@@ -31,6 +31,8 @@ float get_phase_FL(void);
  */
 float get_phase_FR(void);
 
+float get_phase_LR(void);
+
 /*
  * 	Returns the speed process boolean, used to know if the thread SpeedProcess
  * 	should process the data it received or not.

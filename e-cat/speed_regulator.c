@@ -24,10 +24,10 @@ float speed_regulator(float phase_FL){
 	float speed = 0;
 
 	if (phase_FL > (GOAL_ANGLE + ERROR_THRESHOLD)){
-		speed = 3;
+		speed = -3; //phase_FL*20;
 	}
 	else if (phase_FL < (GOAL_ANGLE - ERROR_THRESHOLD)){
-		speed = -3;
+		speed =	3; // phase_FL*20;
 	}
 	else{
 		//PI_REGULATOR_PROCESS = false;
@@ -50,7 +50,7 @@ static THD_FUNCTION(SpeedRegulator, arg) {
 
 	while(1){
 		time = chVTGetSystemTime();
-		speed = speed_regulator(get_phase_FL());
+		speed = speed_regulator(get_phase_LR());
 		if (get_speed_process_bool())// || !get_goal_bool()){
 			rotator(speed);
 
