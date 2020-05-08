@@ -18,14 +18,16 @@
 static int obst_move = 0;
 
 #define NO_OBSTACLES			10
-#define OBST_THRESHOLD  		50	//threshold after which a proximity sensor consider an object as an obstacle.
+#define OBST_THRESHOLD  		50		//threshold after which a proximity sensor consider an object as an obstacle.
 #define NB_SENSORS				8
 #define ACTIVATED				1
-#define	MOVE_AV_OBSTACLE		1	//State of e-cat is "moving away from obstacle"
-#define OBSTACLE_AWAY			0	//State of e-cat is "moved away from obstacle"
+#define	MOVE_AV_OBSTACLE		1		//State of e-cat is "moving away from obstacle"
+#define OBSTACLE_AWAY			0		//State of e-cat is "moved away from obstacle"
 #define	NORMAL_MODE				1
 #define FRIENDLY_MODE			2
-#define NORMAL_SPEED			8
+#define ROTATION_SPEED			8		//Specifically used for the reaction rotation
+#define NORMAL					1000	//Sleep time after executing a move when in normal mode
+#define FRIENDLY				500		//Sleep time after executing a move when in friendly mode
 enum proximity{prox0 = 0, prox1, prox2, prox3, prox4, prox5, prox6, prox7};
 
 
@@ -36,7 +38,7 @@ int get_obst_move(void){
 void reaction(int rot_speed, int time, int delay){
 	rotator(rot_speed);
 	chThdSleep(MS2ST(time));
-	stroll(5,5);
+	stroll(STROLL_SPEED,STROLL_SPEED);
 	chThdSleep(MS2ST(delay));
 }
 
@@ -45,7 +47,7 @@ static THD_FUNCTION(Eyes, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
 
-	uint8_t sat_sensor[8] = { 0 };
+	uint8_t sat_sensor[NB_SENSORS] = { 0 };
 	uint8_t highest_prox = NO_OBSTACLES;
 	uint8_t sensor_count = 0;
 	uint16_t inv_distance = 0;
@@ -73,22 +75,22 @@ static THD_FUNCTION(Eyes, arg) {
 		{
 			switch(highest_prox){
 				case prox0:
-					reaction(NORMAL_SPEED, 1000, 1000);
+					reaction(ROTATION_SPEED, 1000, NORMAL);
 					break;
 				case prox1:
-					reaction(NORMAL_SPEED, 800, 1000);
+					reaction(ROTATION_SPEED, 800, NORMAL);
 					break;
 				case prox2:
-					reaction(NORMAL_SPEED, 500, 1000);
+					reaction(ROTATION_SPEED, 500, NORMAL);
 					break;
 				case prox5:
-					reaction(-NORMAL_SPEED, 500, 1000);
+					reaction(-ROTATION_SPEED, 500, NORMAL);
 					break;
 				case prox6:
-					reaction(-NORMAL_SPEED, 800, 1000);
+					reaction(-ROTATION_SPEED, 800, NORMAL);
 					break;
 				case prox7:
-					reaction(-NORMAL_SPEED, 1000, 1000);
+					reaction(-ROTATION_SPEED, 1000, NORMAL);
 					break;
 				case NO_OBSTACLES:
 					break;
@@ -97,7 +99,7 @@ static THD_FUNCTION(Eyes, arg) {
 
 			if((highest_prox == prox3 || highest_prox == prox4) && !get_speed_process_bool()){
 				if(sat_sensor[prox3] == ACTIVATED && sat_sensor[prox4] == ACTIVATED){
-					stroll(10, 10);
+					stroll(2*STROLL_SPEED, 2*STROLL_SPEED); //cf definition of STROLL_SPEED for the 2* explanation
 					meow();
 					chThdSleep(MS2ST(200));
 				}
@@ -112,32 +114,32 @@ static THD_FUNCTION(Eyes, arg) {
 		if(get_selector() == FRIENDLY_MODE && !get_speed_process_bool()){
 			switch(highest_prox){
 				case prox0:
-					reaction(-NORMAL_SPEED, 200, 500);
+					reaction(-ROTATION_SPEED, 200, FRIENDLY);
 					purr();
 					break;
 				case prox1:
-					reaction(-NORMAL_SPEED, 500, 500);
+					reaction(-ROTATION_SPEED, 500, FRIENDLY);
 					break;
 				case prox2:
-					reaction(-NORMAL_SPEED, 800, 500);
+					reaction(-ROTATION_SPEED, 800, FRIENDLY);
 					purr();
 					break;
 				case prox3:
-					reaction(-NORMAL_SPEED, 1000, 500);
+					reaction(-ROTATION_SPEED, 1000, FRIENDLY);
 					break;
 				case prox4://other side
-					reaction(NORMAL_SPEED, 1000, 500);
+					reaction(ROTATION_SPEED, 1000, FRIENDLY);
 					purr();
 					break;
 				case prox5:
-					reaction(NORMAL_SPEED, 800, 500);
+					reaction(ROTATION_SPEED, 800, FRIENDLY);
 					break;
 				case prox6:
-					reaction(NORMAL_SPEED, 500, 500);
+					reaction(ROTATION_SPEED, 500, FRIENDLY);
 					purr();
 					break;
 				case prox7:
-					reaction(NORMAL_SPEED, 200, 500);
+					reaction(ROTATION_SPEED, 200, FRIENDLY);
 					break;
 				case NO_OBSTACLES:
 					break;

@@ -65,28 +65,28 @@ void make_circle(int size, int speed){
 //Looks at left and right side and chooses randomly between going left, right or straight.
 void make_look_around(void){
 	int direction = randomizer(2); //choisit entre gauche, droite et milieu
-	rotator(-5);
+	rotator(-STROLL_SPEED);
 	chThdSleep(MS2ST(500));	// Tourne à gauche
-	rotator(5);
+	rotator(STROLL_SPEED);
 	chThdSleep(MS2ST(1000)); // Tourne à droite
 	if(direction == 0){
 		//Cas où il part à gauche
-		rotator(-5);
+		rotator(-STROLL_SPEED);
 		chThdSleep(MS2ST(1000));
-		stroll(5,5);
+		stroll(STROLL_SPEED,STROLL_SPEED);
 		chThdSleep(MS2ST(1000));
 	}
 	else if(direction == 1){
 		//Cas où il part au milieu
-		rotator(-5);
+		rotator(-STROLL_SPEED);
 		chThdSleep(MS2ST(500));
-		stroll(5,5);
+		stroll(STROLL_SPEED,STROLL_SPEED);
 		chThdSleep(MS2ST(1000));
 	}
 	else{
 		//Cas où il part à droite
 		chThdSleep(MS2ST(200));
-		stroll(5,5);
+		stroll(STROLL_SPEED,STROLL_SPEED);
 		chThdSleep(MS2ST(1000));
 	}
 }
@@ -95,10 +95,10 @@ void make_look_around(void){
 //Make it look around first and choose where to jump randomly.
 void make_jump(void){
 	make_look_around();
-	stroll(15,15);
+	stroll(3*STROLL_SPEED,3*STROLL_SPEED);
 	chThdSleep(MS2ST(200));
 	pause_until(300);
-	stroll(15,15);
+	stroll(3*STROLL_SPEED,3*STROLL_SPEED);
 	chThdSleep(MS2ST(200));
 	pause_until(300);
 

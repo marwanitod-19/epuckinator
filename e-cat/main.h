@@ -20,6 +20,8 @@ extern "C" {
 #define KI 						0.05f	//must not be zero
 #define KD						0.5f
 #define MAX_SUM_ERROR 			(MOTOR_SPEED_LIMIT/(KI*CMtoSTEP))
+#define STROLL_SPEED			5		//= 5cm/s but possible to add a certain number to make it go faster.
+										// To go twice as fast, just do 2*STROLL_SPEED for example.
 
 
 /** Robot wide IPC bus. */
