@@ -10,8 +10,8 @@ extern "C" {
 #include "parameter/parameter.h"
 
 //à replacer ces deux dans moves
-#define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
-#define NB_MOVES	5
+#define CMtoSTEP				77.922 // 1 cm/s -> 77.922 step/s
+#define NB_MOVES				5
 
 #define GOAL_ANGLE	 			0.0f
 #define MAX_ANGLE				25.0f

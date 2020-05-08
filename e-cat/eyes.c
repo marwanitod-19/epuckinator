@@ -1,4 +1,5 @@
 #include <eyes.h>
+#include <main.h>
 #include "ch.h"
 #include "hal.h"
 #include <stdlib.h>

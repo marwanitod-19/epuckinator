@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <moves.h>
+#include <main.h>
 #include <motors.h>
 #include <time.h>
 #include <stdint.h>
