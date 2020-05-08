@@ -53,7 +53,7 @@ int main(void)
 	usb_start();
 	dac_start();
 	sdio_start();
-	mountSDCard(); //Check if needed
+	//mountSDCard(); //Check if needed
 	motors_init();
 	mover_start();
 	speed_regulator_start();

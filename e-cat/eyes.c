@@ -150,13 +150,13 @@ static THD_FUNCTION(Eyes, arg) {
 			chThdSleep(MS2ST(1000));
 		}
 		sensor_count = 0;
-		if(mv_in_progress){
-			chThdSleep(MS2ST(1000));
-			mv_in_progress = false;
-		}
-		else{
-			chThdSleep(MS2ST(100));
-		}
+//		if(mv_in_progress){
+//			chThdSleep(MS2ST(1000));
+//			mv_in_progress = false;
+//		}
+//		else{
+//			chThdSleep(MS2ST(100));
+//		}
 		obst_move = OBSTACLE_AWAY;
 	}
 }

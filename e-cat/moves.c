@@ -130,7 +130,7 @@ static THD_FUNCTION(Mover, arg) {
 					make_circle(3, 3);
 					chThdSleep(MS2ST(2000));
 				}
-				if(action == jump){
+				if(action == jump){ //Not implemented
 					//make_jump();
 					//chThdSleep(MS2ST(2000));
 				}

@@ -31,9 +31,6 @@ float speed_regulator(float phase_FL){
 	else if (phase_FL < (GOAL_ANGLE - ERROR_THRESHOLD)){
 		speed =	REACTION_ROT_SPEED; // phase_FL*20;
 	}
-	else{
-		//PI_REGULATOR_PROCESS = false;
-	}
 
 	return speed;
 }
@@ -56,23 +53,12 @@ static THD_FUNCTION(SpeedRegulator, arg) {
 		if (get_speed_process_bool())// || !get_goal_bool()){
 			rotator(speed);
 
-		else{
-			//rotator(0);
-		}
 		if (get_goal_bool()){
 			if (chVTGetSystemTime()-time_passed > MS2ST(500)){
 				//arrêter tout et stroll pendant un moment
-				//chprintf((BaseSequentialStream *)&SDU1, "Goal reached \r");
 				stroll(3*STROLL_SPEED,3*STROLL_SPEED);
 				chThdSleep(MS2ST(2000));
-
-				//chThdSleep(MS2ST(4000));
-				//stroll(0,0);
-				//chThdSleep(MS2ST(2000));
 				set_goal_bool(false);
-			}
-			else{
-
 			}
 		}
 		else{
