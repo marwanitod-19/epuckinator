@@ -19,10 +19,10 @@
 #define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
 #define NB_MOVES	5
 
-enum moves {pause, stroll_move, look_around, circle_move, jump};
+enum moves {pauser, stroll_move, look_around, circle_move, jump};
 
 int randomizer(int nb_rand){
-	int action = pause;
+	int action = pauser;
 	action = RNG->DR % nb_rand;
 	return action;
 }
@@ -109,13 +109,13 @@ static THD_WORKING_AREA(waMover, 256);
 static THD_FUNCTION(Mover, arg) {
 	chRegSetThreadName(__FUNCTION__);
 	(void)arg;
-	uint8_t action = pause;
+	uint8_t action = pauser;
 	while(1){
 		if (!get_speed_process_bool()){
 			if(get_obst_move() == 0){
 				action = randomizer(NB_MOVES);
 				chprintf((BaseSequentialStream *)&SD3, "Action == %d \n", action);
-				if(action == pause && get_obst_move() == 0){
+				if(action == pauser && get_obst_move() == 0){
 					make_pause();
 					chThdSleep(MS2ST(1000));
 				}

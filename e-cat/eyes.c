@@ -29,6 +29,9 @@ static int obst_move = 0;
 #define ROTATION_SPEED			8		//Specifically used for the reaction rotation
 #define NORMAL					1000	//Sleep time after executing a move when in normal mode
 #define FRIENDLY				500		//Sleep time after executing a move when in friendly mode
+#define HALF_TURN				1000	//Used to make the e-cat turn half a turn
+#define THIRD_TURN				800		//Used to make the e-cat turn one third of a turn
+#define SIXTH_TURN				500		//Used to make the e-cat turn one sixth of a turn
 enum proximity{prox0 = 0, prox1, prox2, prox3, prox4, prox5, prox6, prox7};
 
 
@@ -52,7 +55,6 @@ static THD_FUNCTION(Eyes, arg) {
 	uint8_t highest_prox = NO_OBSTACLES;
 	uint8_t sensor_count = 0;
 	uint16_t inv_distance = 0;
-	bool mv_in_progress = false;
 
 	proximity_start();
 	calibrate_ir();
@@ -64,7 +66,6 @@ static THD_FUNCTION(Eyes, arg) {
 			if(inv_distance > OBST_THRESHOLD){
 				sat_sensor[i] = ACTIVATED;
 				highest_prox = prox0;
-				mv_in_progress = true;
 				obst_move = MOVE_AV_OBSTACLE;
 				if(i != 0 && get_calibrated_prox(i-1) < inv_distance){
 					highest_prox = i;
@@ -76,24 +77,25 @@ static THD_FUNCTION(Eyes, arg) {
 		{
 			switch(highest_prox){
 				case prox0:
-					reaction(ROTATION_SPEED, 1000, NORMAL);
+					reaction(ROTATION_SPEED, HALF_TURN, NORMAL);
 					break;
 				case prox1:
-					reaction(ROTATION_SPEED, 800, NORMAL);
+					reaction(ROTATION_SPEED, THIRD_TURN, NORMAL);
 					break;
 				case prox2:
-					reaction(ROTATION_SPEED, 500, NORMAL);
+					reaction(ROTATION_SPEED, SIXTH_TURN, NORMAL);
 					break;
 				case prox5:
-					reaction(-ROTATION_SPEED, 500, NORMAL);
+					reaction(-ROTATION_SPEED, SIXTH_TURN, NORMAL);
 					break;
 				case prox6:
-					reaction(-ROTATION_SPEED, 800, NORMAL);
+					reaction(-ROTATION_SPEED, THIRD_TURN, NORMAL);
 					break;
 				case prox7:
-					reaction(-ROTATION_SPEED, 1000, NORMAL);
+					reaction(-ROTATION_SPEED, HALF_TURN, NORMAL);
 					break;
 				case NO_OBSTACLES:
+					chThdSleep(MS2ST(1000));
 					break;
 			}
 
@@ -107,57 +109,42 @@ static THD_FUNCTION(Eyes, arg) {
 			}
 		}
 
-		else{
-			chThdSleep(MS2ST(2000));
-		}
-
-
-		if(get_selector() == FRIENDLY_MODE && !get_speed_process_bool()){
+		else if(get_selector() == FRIENDLY_MODE && !get_speed_process_bool() ){
 			switch(highest_prox){
 				case prox0:
-					reaction(-ROTATION_SPEED, 200, FRIENDLY);
 					purr();
 					break;
 				case prox1:
-					reaction(-ROTATION_SPEED, 500, FRIENDLY);
+					reaction(-ROTATION_SPEED, SIXTH_TURN, FRIENDLY);
 					break;
 				case prox2:
-					reaction(-ROTATION_SPEED, 800, FRIENDLY);
-					purr();
+					reaction(-ROTATION_SPEED, THIRD_TURN, FRIENDLY);
 					break;
 				case prox3:
-					reaction(-ROTATION_SPEED, 1000, FRIENDLY);
+					reaction(-ROTATION_SPEED, HALF_TURN, FRIENDLY);
 					break;
 				case prox4://other side
-					reaction(ROTATION_SPEED, 1000, FRIENDLY);
-					purr();
+					reaction(ROTATION_SPEED, HALF_TURN, FRIENDLY);
 					break;
 				case prox5:
-					reaction(ROTATION_SPEED, 800, FRIENDLY);
+					reaction(ROTATION_SPEED, THIRD_TURN, FRIENDLY);
 					break;
 				case prox6:
-					reaction(ROTATION_SPEED, 500, FRIENDLY);
-					purr();
+					reaction(ROTATION_SPEED, SIXTH_TURN, FRIENDLY);
 					break;
 				case prox7:
-					reaction(ROTATION_SPEED, 200, FRIENDLY);
+					purr();
 					break;
 				case NO_OBSTACLES:
+					chThdSleep(MS2ST(1000));
 					break;
 			}
 		}
 
 		else{
-			chThdSleep(MS2ST(1000));
+			chThdSleep(MS2ST(2000));
 		}
 		sensor_count = 0;
-//		if(mv_in_progress){
-//			chThdSleep(MS2ST(1000));
-//			mv_in_progress = false;
-//		}
-//		else{
-//			chThdSleep(MS2ST(100));
-//		}
 		obst_move = OBSTACLE_AWAY;
 	}
 }

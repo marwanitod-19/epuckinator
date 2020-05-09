@@ -195,7 +195,6 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 	*	1024 samples, then we compute the FFTs.
 	*
 	*/
-
 	static uint16_t nb_samples = 0;
 	static uint8_t mustSend = 0;
 
@@ -222,8 +221,8 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		}
 	}
 
-	if(nb_samples >= (2 * FFT_SIZE)){
 
+	if(nb_samples >= (2 * FFT_SIZE)){
 		/*	FFT proccessing
 		*
 		*	This FFT function stores the results in the input buffer given.
@@ -233,7 +232,6 @@ void processAudioData(int16_t *data, uint16_t num_samples){
 		doFFT_optimized(FFT_SIZE, micLeft_cmplx_input);
 		doFFT_optimized(FFT_SIZE, micFront_cmplx_input);
 		doFFT_optimized(FFT_SIZE, micBack_cmplx_input);
-
 		/*	Magnitude processing
 		*
 		*	Computes the magnitude of the complex numbers and

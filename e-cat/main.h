@@ -9,10 +9,6 @@ extern "C" {
 #include "msgbus/messagebus.h"
 #include "parameter/parameter.h"
 
-//à replacer ces deux dans moves
-#define CMtoSTEP				77.922 // 1 cm/s -> 77.922 step/s
-#define NB_MOVES				5
-
 #define GOAL_ANGLE	 			0.0f
 #define MAX_ANGLE				25.0f
 #define ERROR_THRESHOLD			0.1f
@@ -22,7 +18,6 @@ extern "C" {
 #define MAX_SUM_ERROR 			(MOTOR_SPEED_LIMIT/(KI*CMtoSTEP))
 #define STROLL_SPEED			5		//= 5cm/s but possible to add a certain number to make it go faster.
 										// To go twice as fast, just do 2*STROLL_SPEED for example.
-
 
 /** Robot wide IPC bus. */
 extern messagebus_t bus;
