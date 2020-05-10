@@ -16,8 +16,9 @@
 #include <chthreads.h>
 #include <audio_processing.h>
 
-#define CMtoSTEP	77.922 // 1 cm/s -> 77.922 step/s
-#define NB_MOVES	5
+#define CMtoSTEP			77.922 // 1 cm/s -> 77.922 step/s
+#define NB_MOVES			5
+#define BASIC_CIRCLE_SIZE	3
 
 enum moves {pauser, stroll_move, look_around, circle_move, jump};
 
@@ -120,7 +121,7 @@ static THD_FUNCTION(Mover, arg) {
 					chThdSleep(MS2ST(1000));
 				}
 				if(action == stroll_move && get_obst_move() == 0){
-					stroll(5,5);
+					stroll(STROLL_SPEED,STROLL_SPEED);
 					chThdSleep(MS2ST(2500));
 				}
 				if(action == look_around && get_obst_move() == 0){
@@ -128,7 +129,7 @@ static THD_FUNCTION(Mover, arg) {
 					pause_until(500);
 				}
 				if(action == circle_move && get_obst_move() == 0){
-					make_circle(3, 3);
+					make_circle(BASIC_CIRCLE_SIZE, BASIC_CIRCLE_SIZE);
 					chThdSleep(MS2ST(2000));
 				}
 				if(action == jump){ //Not implemented

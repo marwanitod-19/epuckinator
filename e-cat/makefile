@@ -17,7 +17,6 @@ CSRC += ./main.c \
 		./moves.c \
 		./fft.c \
 		./speed_regulator.c \
-		#./hearing.c \
 
 #Header folders to include
 INCDIR += 
